@@ -23,6 +23,18 @@ html, body, #content-wrapper, #header{
 
 /* PARTIE DEFINITION */
 
+
+/* ILLUSTRATION DE GAUCHE */
+#definition-left{
+	float:left;
+}
+
+#nuage-twitter{
+	position: relative;
+	left: -230px;
+	top: 380px;
+}
+
 /* div image definition 1 manuscrite */
 #definition1-title{
 	margin-left:250px;
@@ -50,7 +62,7 @@ html, body, #content-wrapper, #header{
 /* image définition tic */
 #texte-definition1-tic img{
 	float:left;
-	margin-top:120px;
+	margin-top:105px;
 	margin-left:-5px;
 	position:relative;
 	z-index:-1;
@@ -64,7 +76,21 @@ html, body, #content-wrapper, #header{
 #tic-link:hover{
 	cursor:pointer;
 }
-/* fin div iamge définition association et tic */
+/* image cliquable pour lien vers PLUS TIC */
+#more-tic-link{
+	top: 235px;
+	left: -150px;
+}
+#more-tic-link:hover{
+	cursor:pointer;
+}
+/* FIN DIV IMAGE DEFINTION ET TIC */
+
+
+
+
+/* FIN PARTIE DEFINITION */
+
 
 /* illustration de définition 1 */
 #illustration-definition1{
