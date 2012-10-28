@@ -21,16 +21,61 @@ html, body, #content-wrapper, #header{
 	margin-top:10%;
 }
 
+/* PARTIE DEFINITION */
+
+/* div image definition 1 manuscrite */
 #definition1-title{
 	margin-left:250px;
 	padding-bottom:100px;
 }
 
-#texte-definition1{
+/* div image defintion object et connecté */
+#texte-definition1-part1{
 	margin-left:25px;
-	padding-bottom:90px;
+	position:relative;
+	z-index:10;
 }
 
+/* div image définition association et tic */
+#texte-definition1-part2{
+	margin-top:-10px;
+	margin-left:260px;
+	padding-bottom:90px;
+	position:relative;
+	z-index:9;
+}
+#texte-definition1-part2 img{
+	float:left;
+}
+/* image définition tic */
+#texte-definition1-tic img{
+	float:left;
+	margin-top:120px;
+	margin-left:-5px;
+	position:relative;
+	z-index:-1;
+}
+/* image cliquable pour lien TIC */
+#tic-link{
+	position: relative;
+	top: 96px;
+	left: -70px;
+}
+#tic-link:hover{
+	cursor:pointer;
+}
+/* fin div iamge définition association et tic */
+
+/* illustration de définition 1 */
 #illustration-definition1{
 	margin-left:35px;
+	margin-top:-110px;
+}
+
+
+
+
+/* clear float */
+.clearer{
+	clear:both;
 }
