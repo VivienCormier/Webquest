@@ -21,6 +21,7 @@ body {
 
 #definition{
 	margin-top: 600px;
+	height:1560px;
 }
 
 #ligne-vie-1{
@@ -48,21 +49,35 @@ body {
 
 /* div image defintion object et connecté */
 #texte-definition1-part1{
-	margin-left:25px;
+	margin-left:255px;
 	position:relative;
 	z-index:10;
+	width:505px;
 }
 
+
 /* div image définition association et tic */
+#texte-definition1-wrapper{
+	height:480px;
+}
+
 #texte-definition1-part2{
 	margin-top:-10px;
 	margin-left:260px;
-	padding-bottom:90px;
+	margin-bottom:90px;
 	position:relative;
 	z-index:9;
+	overflow:hidden;
 }
 #texte-definition1-part2 img{
 	float:left;
+}
+
+#text-association, #wrapper-association{
+	float:left;
+	width:505px;
+	height:203px;
+	overflow:hidden;
 }
 /* image définition tic */
 #texte-definition1-tic img{
@@ -89,7 +104,12 @@ body {
 #more-tic-link:hover{
 	cursor:pointer;
 }
-/* FIN DIV IMAGE DEFINTION ET TIC */
+/* FIN DIV IMAGE DEFINITION ET TIC */
+
+#illustration-definition1{
+	position:relative;
+	top:-100px;
+}
 
 #transition-ville{
 	width: 100%;
@@ -99,6 +119,9 @@ body {
 	margin: auto;
 	width :1540px;
 	height :1124px;
+	background-image:url(../res/transition-1-2/ville.png);
+	position:relative;
+	top:-430px;
 }
 
 /* clear float */
