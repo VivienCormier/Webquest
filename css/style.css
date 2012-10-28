@@ -11,7 +11,18 @@ body {
 	margin-top: 50px;
 }
 
-#twitter-ligne-vie-1{
+#nuage-1{
+	position: absolute;
+	top:0px;
+}
+
+#nuage-2{
+	position: absolute;
+	top: 450px;
+	left: 100px;
+}
+
+#twitter_ligne_vie_1{
 	width: 100%;
 	height: 1560px;
 	background-image: url("../res/nuage_4.png");
@@ -24,7 +35,7 @@ body {
 	height:1560px;
 }
 
-#ligne-vie-1{
+#ligne_vie_1{
 	width: 100%;
 	height: 1560px;
 	background-image: url("../res/partie-1/ligne_de_vie_1.png");
@@ -53,6 +64,7 @@ body {
 	position:relative;
 	z-index:10;
 	width:505px;
+	overflow: hidden;
 }
 
 
@@ -90,8 +102,8 @@ body {
 /* image cliquable pour lien TIC */
 #tic-link{
 	position: relative;
-	top: 96px;
-	left: -70px;
+	top: -107px;
+	left: 434px;
 }
 #tic-link:hover{
 	cursor:pointer;
@@ -117,13 +129,34 @@ body {
 
 #la-ville{
 	margin: auto;
-	width :1540px;
 	height :1124px;
 	background-image:url(../res/transition-1-2/ville.png);
 	position:relative;
+	background-position: top,center;
+	background-repeat: no-repeat;
 	top:-430px;
 }
+#transition-nuages{
+	margin: auto;
+	height :655px;
+	background-image:url(../res/transition-1-2/ville_nuage.png);
+	position:relative;
+	background-position: top,center;
+	background-repeat: no-repeat;
+	top:-430px;
+	z-index: -1;
+}
 
+#transition-soleil{
+	margin: auto;
+	height :655px;
+	background-image:url(../res/transition-1-2/ville_soleil.png);
+	position:relative;
+	background-position: top,center;
+	background-repeat: no-repeat;
+	top: 150px;
+	z-index: -2;
+}
 /* clear float */
 .clearer{
 	clear:both;

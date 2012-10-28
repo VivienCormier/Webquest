@@ -11,6 +11,7 @@
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/jquery.lettering-0.6.1.min.js"></script>
 <script src="js/jquery.superscrollorama.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/animation.js"></script>
 </head>
 
@@ -18,10 +19,12 @@
     <div id="wrapper">
         <div id="header">
             <img src="./res/header.png" />
+            <img src="res/nuage_1.png" id="nuage-1" />
+            <img src="res/nuage_2.png" id="nuage-2" />
         </div>
         <div id="definition">
-            <div id="twitter-ligne-vie-1">
-                <div id="ligne-vie-1">
+            <div id="twitter_ligne_vie_1">
+                <div id="ligne_vie_1">
 
             </div>
             </div>
@@ -42,9 +45,9 @@
                     	<div id="wrapper-association">
                             <div id="text-association">
                                 <img src="res/partie-1/definition_texte_2.png" />
+                                <img id="tic-link" src="res/partie-1/btn_tic.jpg" />
                             </div>
                         </div>
-                        <img id="tic-link" src="res/partie-1/btn_tic.jpg" />
                         <!-- Images info TIC-->
                         <div id="texte-definition1-tic">
                             <img src="res/partie-1/definition_tic.png" />
@@ -60,11 +63,14 @@
                 </div>
                 <div class="clearer"></div>
             </div>
-            <div class="clearer"></div>
+            
         </div>
         <div id="transition-ville">
         	<!--Image bg de la ville -->
-            <div id="la-ville"> </div>
+            <div id="la-ville">
+                <div id="transition-soleil"> </div>
+                <div id="transition-nuages"> </div>
+            </div>
         </div>
     </div>
 </body>
