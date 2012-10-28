@@ -10,12 +10,9 @@
 */
 
 body {
-	background: #222438;
+	background: white;
 	font-family: Georgia, Times New Roman, Times, serif;
-	font-weight: bold;
-	font-size: 20px;
-	text-align: center;
-	visibility: hidden;
+	background-image: url('../res/background.jpg');
 }
 
 #content-wrapper {
