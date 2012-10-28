@@ -38,6 +38,7 @@ html, body, #content-wrapper, #header{
 	position: relative;
 	left: 155px;
 	top: -32px;
+	overflow:hidden;
 }
 /* div image definition 1 manuscrite */
 #definition1-title{
@@ -94,8 +95,8 @@ html, body, #content-wrapper, #header{
 
 #immeuble{
 	position: relative;
-left: -140px;
-top: 200px;
+	left: -140px;
+	top: 200px;
 }
 
 
