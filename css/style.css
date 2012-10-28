@@ -2,7 +2,6 @@ body {
 	background: white;
 	font-family: Georgia, Times New Roman, Times, serif;
 	background-image: url('../res/background.jpg');
-
 }
 
 /* Assure qu'on ne voit que le header au lancement de la page */
@@ -20,4 +19,18 @@ html, body, #content-wrapper, #header{
 #header{
 	min-height:100%;
 	margin-top:10%;
+}
+
+#definition1-title{
+	margin-left:250px;
+	padding-bottom:100px;
+}
+
+#texte-definition1{
+	margin-left:25px;
+	padding-bottom:90px;
+}
+
+#illustration-definition1{
+	margin-left:35px;
 }
