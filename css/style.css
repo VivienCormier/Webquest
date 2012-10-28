@@ -90,7 +90,13 @@ html, body, #content-wrapper, #header{
 }
 /* FIN DIV IMAGE DEFINTION ET TIC */
 
+/* la ville */
 
+#immeuble{
+	position: relative;
+left: -140px;
+top: 200px;
+}
 
 
 /* FIN PARTIE DEFINITION */
