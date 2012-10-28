@@ -1,22 +1,23 @@
-/*
-	COLORS
- 
-	Dark Blue 		#222438
-	Medium Blue		#69697A
-	Light Blue	 	#C5C3DE
-	Yellow			#FFB000
-	Red				#D92B00
-	
-*/
-
 body {
 	background: white;
 	font-family: Georgia, Times New Roman, Times, serif;
 	background-image: url('../res/background.jpg');
+
 }
 
+/* Assure qu'on ne voit que le header au lancement de la page */
+html, body, #content-wrapper, #header{
+	height:100%;
+}
+
+/* regroupe tout le contenu et assure l'affichage centrale */
 #content-wrapper {
-	height: 1600px;
 	width:1000px;
 	margin:auto;
+	text-align:center;
+}
+
+#header{
+	min-height:100%;
+	margin-top:10%;
 }
