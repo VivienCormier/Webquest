@@ -26,15 +26,19 @@ html, body, #content-wrapper, #header{
 
 /* ILLUSTRATION DE GAUCHE */
 #definition-left{
-	float:left;
+	position:absolute;
+	left: 240px;
+	top: 1140px;
 }
 
 #nuage-twitter{
-	position: relative;
-	left: -230px;
-	top: 380px;
 }
 
+#ligne-definition{
+	position: relative;
+	left: 155px;
+	top: -32px;
+}
 /* div image definition 1 manuscrite */
 #definition1-title{
 	margin-left:250px;
