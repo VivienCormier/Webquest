@@ -4,42 +4,42 @@ body {
 	background-image: url('../res/background.jpg');
 }
 
-/* Assure qu'on ne voit que le header au lancement de la page */
-html, body, #content-wrapper, #header{
-	height:100%;
-}
-
-/* regroupe tout le contenu et assure l'affichage centrale */
-#content-wrapper {
-	width:1000px;
-	margin:auto;
-	text-align:center;
-}
-
 #header{
-	min-height:100%;
-	margin-top:10%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-top: 50px;
 }
 
-/* PARTIE DEFINITION */
-
-
-/* ILLUSTRATION DE GAUCHE */
-#definition-left{
-	position:absolute;
-	left: 240px;
-	top: 1140px;
+#twitter-ligne-vie-1{
+	width: 100%;
+	height: 1560px;
+	background-image: url("../res/nuage_4.png");
+	background-position: top,center;
+	background-repeat: no-repeat;
 }
 
-#nuage-twitter{
+#definition{
+	margin-top: 600px;
 }
 
-#ligne-definition{
+#ligne-vie-1{
+	width: 100%;
+	height: 1560px;
+	background-image: url("../res/partie-1/ligne_de_vie_1.png");
+	background-position: top,center;
+	background-repeat: no-repeat;
+}
+
+#definition-wrapper{
+	width: 1000px;
+	height: 1560px;
+	margin : auto;
 	position: relative;
-	left: 155px;
-	top: -32px;
-	overflow:hidden;
+	top: -1560px;
+	text-align: center;
 }
+
 /* div image definition 1 manuscrite */
 #definition1-title{
 	margin-left:250px;
@@ -91,26 +91,15 @@ html, body, #content-wrapper, #header{
 }
 /* FIN DIV IMAGE DEFINTION ET TIC */
 
-/* la ville */
-
-#immeuble{
-	position: relative;
-	left: -140px;
-	top: 200px;
+#transition-ville{
+	width: 100%;
 }
 
-
-/* FIN PARTIE DEFINITION */
-
-
-/* illustration de définition 1 */
-#illustration-definition1{
-	margin-left:35px;
-	margin-top:-110px;
+#la-ville{
+	margin: auto;
+	width :1540px;
+	height :1124px;
 }
-
-
-
 
 /* clear float */
 .clearer{
