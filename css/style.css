@@ -92,12 +92,15 @@ body {
 	overflow:hidden;
 }
 /* image définition tic */
+#texte-definition1-tic{
+	overflow:hidden;
+}
+
 #texte-definition1-tic img{
 	float:left;
 	margin-top:105px;
 	margin-left:-5px;
 	position:relative;
-	z-index:-1;
 }
 /* image cliquable pour lien TIC */
 #tic-link{
@@ -121,6 +124,10 @@ body {
 #illustration-definition1{
 	position:relative;
 	top:-100px;
+}
+
+#illustration-part1, #illustration-fleche, #illustration-part2{
+	overflow:hidden;
 }
 
 #transition-ville{

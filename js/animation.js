@@ -1,45 +1,44 @@
 $(document).ready(function() {
 	
 	$('body').css('visibility','visible');
+	
+	//cache ligne de vie 1 : definition click sur TIC
+	$("#texte-definition1-tic").css('height', '0');
+	
+	//var de test si définition TIC ouverte
+	var ticIsOpen = false;
 	//controller init le plugin superscrollorama
 	var controller = $.superscrollorama();					
 	//les animations
 	
-	
-	
+	//ligne de vie 1 : affiche définition TIC , lien TIC*
 	$("#tic-link").click(function(e) {
-        alert("tu as cliqué sur tic");
+		if(!ticIsOpen){
+        	$("#texte-definition1-tic").stop().animate({height: 386}, 1500); 
+			ticIsOpen = true;
+		}else {
+			$("#texte-definition1-tic").stop().animate({height: 0}, 1500); 
+			ticIsOpen = false;
+		}
     });
-	$("#more-tic-link").click(function(e) {
-        //alert("tu as cliqué sur more tic");
-		$("#texte-definition1-part1").css("width", "0");
-		$("#text-association").css("height", "5");
-		
-		$("#tic-link").css('display','none');
-		
-		$("#ligne-vie-1").animate({height: 1560}, 1500);
-		$("#texte-definition1-part1").animate({width: 505}, 2500);
-		$("#text-association").delay(2500).animate({height: 503}, 2500);
-		setTimeout( function(){
-		  $("#tic-link").css('display','block');
-		},5000);
+	
+	$("#more-tic-link").click( function(e) {
     });
 
     // Simulation du flottement des nuages
-
 	flottementNuageHeader();
 
 	//Animation en Fonction du Scroll
 
 	//Animation de la ligne de vie 1 : #ligne_vie_1
-	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 2.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}));
+	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:0}, immediateRender:true, ease:Circ.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}));
 
 	//Animation de la ligne de vie 1 : #texte-definition1-part1
-	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#texte-definition1-part1'), 1, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:505}, ease:Quad.easeInOut}));
-
+	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#texte-definition1-part1'), 2, {css:{width:0}, immediateRender:true, ease:Quart.easeInOut,},{css:{width:505},ease:Quad.easeInOut,}));
+	
 	//Animation de la ligne de vie 1 : #text-association
-	controller.addTween('#texte-definition1-part1', TweenMax.fromTo( $('#text-association'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:503}, ease:Quad.easeInOut}));
-
+	controller.addTween('#texte-definition1-part1', TweenMax.fromTo( $('#text-association'), 2, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:503}, ease:Quad.easeInOut}),0, 100);
+	
 	//Paralax des nuages et du soleil de la ville 
 	controller.addTween(
 		2000,
@@ -54,6 +53,17 @@ $(document).ready(function() {
 			]),
 		800 // scroll duration of tween
 	);
+	
+	//Animation de la ligne de vie 1 : #illustration-part1
+	controller.addTween('#illustration-part1', TweenMax.fromTo( $('#illustration-part1'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0, 100);
+	//Animation de la ligne de vie 1 : #text-association
+	controller.addTween('#illustration-fleche', TweenMax.fromTo( $('#illustration-fleche'), 1, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:137}, ease:Quad.easeInOut}),0, 100);
+	//Animation de la ligne de vie 1 : #text-association
+	controller.addTween('#illustration-part2', TweenMax.fromTo( $('#illustration-part2'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0, 100);
+	
+	
+
+	
 
 });
 
