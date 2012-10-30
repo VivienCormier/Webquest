@@ -1,6 +1,16 @@
 $(document).ready(function() {
 	
 	$('body').css('visibility','visible');
+
+	$('#item1').click(function(){
+		var offset = $('#definition-wrapper').offset();
+		$('html,body').animate({scrollTop: offset.top}, 2000);
+	});
+
+	$('#item2').click(function(){
+		var offset = $('#aujourdhui-wrapper').offset();
+		$('html,body').animate({scrollTop: offset.top}, 2000);
+	});
 	
 	//cache ligne de vie 1 : definition click sur TIC
 	$("#texte-definition1-tic").css('height', '0');
