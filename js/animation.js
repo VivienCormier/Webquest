@@ -22,7 +22,16 @@ $(document).ready(function() {
 		}
     });
 	
+	//les click boutons
 	$("#more-tic-link").click( function(e) {
+    });
+	
+	$("#btn-nabaztag").click( function(e) {
+		alert('btn nabaztag');
+    });
+	
+	$("#btn-iphone").click( function(e) {
+		alert('btn iphone');
     });
 
     // Simulation du flottement des nuages
@@ -65,13 +74,19 @@ $(document).ready(function() {
 	
 
 	//Animation de la partie Aujourd'hui
+	
+	//titre section
+	controller.addTween('#aujourdhui-title', TweenMax.fromTo( $('#aujourdhui-title'), 1.5, {css:{top:-85, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:0, opacity:1}, ease:Quad.easeInOut}),0,-200);
 
 	//Ligne de vie
 	controller.addTween(4000, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1400}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}));
-	controller.addTween(3200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:682}, immediateRender:true, ease:Back.easeOut}, {css:{height:1400}, ease:Quad.easeInOut}));
-	controller.addTween('#aujourdhui-wrapper', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:682}, ease:Quad.easeInOut}));
+	controller.addTween(3200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:835}, immediateRender:true, ease:Back.easeOut}, {css:{height:1400}, ease:Quad.easeInOut}));
+	controller.addTween('#aujourdhui-wrapper', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 2, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:835}, ease:Quad.easeInOut}),0,-100);
 
 	controller.addTween(3100, TweenMax.fromTo( $('#aujourdhui_ligne_vie_horizontal'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:1000}, ease:Quad.easeInOut}));
+	
+	//texte 1
+	controller.addTween('#aujourdhui-texte1', TweenMax.fromTo( $('#aujourdhui-texte1 img'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:501}, ease:Quad.easeInOut}),0,-100);
 
 });
 

@@ -167,6 +167,11 @@ body {
 }
 
 
+#aujourdhui-title{
+	position:relative;
+	left:-75px;
+}
+
 #aujourdhui{
 	height: 4000px;
 }
@@ -195,6 +200,67 @@ body {
 	top: -3650px;
 	text-align: center;
 }
+
+#aujourdhui-texte1{
+	position:relative;
+	top:75px;
+	left:5px;
+	overflow:hidden;
+	height:161px;
+}
+
+#aujourdhui-nabaztag{
+	position: relative;
+	left: -515px;
+	top: -220px;
+}
+
+#aujourdhui-nabaztag-texte{
+	position: relative;
+	top: -330px;
+	left: -330px;
+}
+
+#btn-nabaztag{
+	position: relative;
+	left: -187px;
+	top: -25px;
+}
+#btn-nabaztag:hover{
+	cursor:pointer;
+}
+	
+#aujourdhui-iphone{
+	position: relative;
+	top: -630px;
+	left: 499px;
+	width:157px;
+}
+
+#aujourdhui-iphone-texte{
+	position: relative;
+	top: -920px;
+	left: 340px;
+}
+
+#btn-iphone{
+	position:relative;
+	top:-20px;
+	left:-300px
+}
+
+#aujourdhui-raquette{
+	position: relative;
+	top: -700px;
+	left: -100px;
+}
+
+#aujourdhui-raquette-texte{
+	position: relative;
+	top: -1015px;
+	left: 95px;
+}
+
 /* clear float */
 .clearer{
 	clear:both;
