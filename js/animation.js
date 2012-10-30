@@ -26,7 +26,9 @@ $(document).ready(function() {
     });
 
     // Simulation du flottement des nuages
-	flottementNuageHeader();
+    setInterval(function() {
+      flottementNuageHeader()
+	}, 2500);
 
 	//Animation en Fonction du Scroll
 
@@ -61,9 +63,15 @@ $(document).ready(function() {
 	//Animation de la ligne de vie 1 : #text-association
 	controller.addTween('#illustration-part2', TweenMax.fromTo( $('#illustration-part2'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0, 100);
 	
-	
 
-	
+	//Animation de la partie Aujourd'hui
+
+	//Ligne de vie
+	controller.addTween(4000, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1400}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}));
+	controller.addTween(3200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:682}, immediateRender:true, ease:Back.easeOut}, {css:{height:1400}, ease:Quad.easeInOut}));
+	controller.addTween('#aujourdhui-wrapper', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:682}, ease:Quad.easeInOut}));
+
+	controller.addTween(3100, TweenMax.fromTo( $('#aujourdhui_ligne_vie_horizontal'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:1000}, ease:Quad.easeInOut}));
 
 });
 
@@ -88,8 +96,4 @@ function flottementNuageHeader(){
         duration:2500, 
         easing:'easeInOutSine'
     });
-
-    setTimeout(function(){
-    	flottementNuageHeader();
-    }, 2500);
 }
