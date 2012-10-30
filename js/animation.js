@@ -138,6 +138,20 @@ $(document).ready(function() {
 	//nabaztag nuage
 	controller.addTween('#aujourdhui-texte1', TweenMax.fromTo( $('#nuage-nabaztag'), 2, {css:{top:-1400}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2140}, ease:Quad.easeOut}));
 	
+	controller.addTween(
+		3600,
+		(new TimelineLite())
+			.append([
+				TweenMax.fromTo($('#aujourdhui-raquette'), 1, 
+					{css:{top: -600}, immediateRender:true}, 
+					{css:{top: -800}}),
+				TweenMax.fromTo($('#aujourdhui-chaussure'), 1, 
+					{css:{top: -900}, immediateRender:true}, 
+					{css:{top: -1350}}),
+			]),
+		800 // scroll duration of tween
+	);
+
 });
 
 function flottementNuageHeader(){
