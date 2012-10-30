@@ -4,6 +4,11 @@ $(document).ready(function() {
 	
 	//cache ligne de vie 1 : definition click sur TIC
 	$("#texte-definition1-tic").css('height', '0');
+	//init
+	$("#aujourdhui-nabaztag-texte img").hide();
+	$("#aujourdhui-iphone-texte img").hide();
+	
+	
 	
 	//var de test si définition TIC ouverte
 	var ticIsOpen = false;
@@ -32,6 +37,10 @@ $(document).ready(function() {
 	
 	$("#btn-iphone").click( function(e) {
 		alert('btn iphone');
+    });
+	
+	$("#btn-raquette").click( function(e) {
+		alert('btn raquette');
     });
 
     // Simulation du flottement des nuages
@@ -77,17 +86,37 @@ $(document).ready(function() {
 	
 	//titre section
 	controller.addTween('#aujourdhui-title', TweenMax.fromTo( $('#aujourdhui-title'), 1.5, {css:{top:-85, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:0, opacity:1}, ease:Quad.easeInOut}),0,-200);
+	
+	//anim bidon pour reinit un élément ( en test)
+	controller.addTween('#la-ville', TweenMax.fromTo( $('#aujourdhui-nabaztag-texte img'), 0.2, {css:{opacity:1}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut,
+	onComplete: function(){
+		$('#aujourdhui-nabaztag-texte img').hide();
+		$('#aujourdhui-iphone-texte img').hide();
+	}}));
 
 	//Ligne de vie
 	controller.addTween(4000, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1400}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}));
 	controller.addTween(3200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:835}, immediateRender:true, ease:Back.easeOut}, {css:{height:1400}, ease:Quad.easeInOut}));
 	controller.addTween('#aujourdhui-wrapper', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 2, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:835}, ease:Quad.easeInOut}),0,-100);
 
-	controller.addTween(3100, TweenMax.fromTo( $('#aujourdhui_ligne_vie_horizontal'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:1000}, ease:Quad.easeInOut}));
+	controller.addTween(3100, TweenMax.fromTo( $('#aujourdhui_ligne_vie_horizontal'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:1000}, ease:Quad.easeInOut,
+	onComplete:function(){
+		$("#aujourdhui-nabaztag-texte img").fadeIn('slow');
+		$("#aujourdhui-iphone-texte img").fadeIn('slow');
+	}
+	
+	}));
 	
 	//texte 1
 	controller.addTween('#aujourdhui-texte1', TweenMax.fromTo( $('#aujourdhui-texte1 img'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:501}, ease:Quad.easeInOut}),0,-100);
-
+	
+	//nabaztag img
+	controller.addTween('#aujourdhui-texte1', TweenMax.fromTo( $('#aujourdhui-nabaztag'), 2, {css:{top:600}, immediateRender:true, ease:Back.easeOut}, {css:{top:-80}, ease:Quad.easeInOut}));
+	//nabaztag nuage
+	controller.addTween('#aujourdhui-texte1', TweenMax.fromTo( $('#nuage-nabaztag'), 2, {css:{top:-1400}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2140}, ease:Quad.easeOut}));
+	
+	//iphone img
+	controller.addTween('#aujourdhui-iphone', TweenMax.fromTo( $('#aujourdhui-iphone'), 1.5, {css:{top:-430}, immediateRender:true, ease:Back.easeOut}, {css:{top:-630}, ease:Quad.easeOut}),0,-400);
 });
 
 function flottementNuageHeader(){

@@ -211,20 +211,32 @@ body {
 
 #aujourdhui-nabaztag{
 	position: relative;
-	left: -515px;
-	top: -220px;
+	left: -190px;
+	top: -80px;
+	width:556px;
+	height:577px;
+	overflow:hidden;
 }
 
 #aujourdhui-nabaztag-texte{
 	position: relative;
 	top: -330px;
-	left: -330px;
+	left: -305px;
+	height:278px;
 }
 
 #btn-nabaztag{
 	position: relative;
 	left: -187px;
 	top: -25px;
+}
+
+#nuage-nabaztag{
+	position:relative;
+	width:434px;
+	height:287px;
+	top:-2140px;
+	left:-300px;
 }
 #btn-nabaztag:hover{
 	cursor:pointer;
@@ -241,6 +253,7 @@ body {
 	position: relative;
 	top: -920px;
 	left: 340px;
+	height:130px;
 }
 
 #btn-iphone{
@@ -258,7 +271,13 @@ body {
 #aujourdhui-raquette-texte{
 	position: relative;
 	top: -1015px;
-	left: 95px;
+	left: 115px;
+}
+
+#btn-raquette{
+	position: relative;
+	left: -300px;
+	top: -20px;
 }
 
 /* clear float */
