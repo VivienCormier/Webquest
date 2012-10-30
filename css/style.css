@@ -301,6 +301,23 @@ body {
 	top: -20px;
 }
 
+#aujourdhui-chaussure{
+	width:343px;
+	height:257px;
+	overflow:hidden;
+	position:relative;
+	top: -1210px;
+	left: 595px;
+}
+#aujourdhui-chaussure-texte{
+	position:relative;
+	width:208px;
+	height:211px;
+	overflow:hidden;
+	top: -1360px;
+	left: 800px;
+}
+
 /* clear float */
 .clearer{
 	clear:both;
