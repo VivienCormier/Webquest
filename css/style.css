@@ -509,6 +509,24 @@ left: -87px;
 	top: -3060px;
 	left: -110px;
 }
+#aujourdhui-bouteille-texte{
+	background:url("../res/partie-2/texte_bouteille.png") top left no-repeat;
+	position: relative;
+	top: -3372px;
+	left: 78px;
+	width:276px;
+	height:140px;
+}
+
+#aujourdhui-bouteille-texte p .majuscules {
+	color:#a0d45b;
+}
+
+#btn-bouteille {
+	position: relative;
+	left: -93px;
+	top: -45px;
+}
 #aujourdhui-nike{
 	position: relative;
 	width: 374px;
@@ -516,6 +534,24 @@ left: -87px;
 	overflow: hidden;
 	top: -3425px;
 	left: 602px;
+}
+#aujourdhui-nike-texte{
+	background:url("../res/partie-2/texte_nike.png") top left no-repeat;
+	position: relative;
+	top: -3582px;
+	left: 710px;
+	width:276px;
+	height:140px;
+}
+
+#aujourdhui-nike-texte p .majuscules {
+	color:#88e0be;
+}
+
+#btn-nike {
+	position: relative;
+	left: -93px;
+	top: -45px;
 }
 
 #aujourdhui-balance{
