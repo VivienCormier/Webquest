@@ -66,6 +66,10 @@ $(document).ready(function() {
 	$("#btn-raquette").click( function(e) {
 		alert('btn raquette');
     });
+	
+	$("#btn-babyfoot").click( function(e) {
+		alert('btn babyfoot');
+    });
 
     // Simulation du flottement des nuages
     setInterval(function() {
@@ -157,7 +161,7 @@ $(document).ready(function() {
 	);
 	
 	//babyfoot img
-	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-1650}, immediateRender:true, ease:Back.easeOut}, {css:{top:-1560}, ease:Quad.easeOut}),500);
+	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-1950}, immediateRender:true, ease:Back.easeOut}, {css:{top:-1860}, ease:Quad.easeOut}),500);
 	
 	//babyfoot img
 	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-brosse'), 2, {css:{top:-1600, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:-1900, opacity:1}, ease:Quad.easeOut}),500);

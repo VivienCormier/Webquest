@@ -447,12 +447,21 @@ p {
 	left: 191px;
 }
 #aujourdhui-babyfoot-texte{
+	background:url("../res/partie-2/texte_babyfoot.png") top left no-repeat;
+    height: 430px;
+    left: -80px;
+    overflow: hidden;
+    position: relative;
+    top: -2128px;
+    width: 338px;
+}
+#aujourdhui-babyfoot-texte p .majuscules {
+	color:#ffda0c;
+}
+#btn-babyfoot{
 	position: relative;
-	width: 214px;
-	height: 216px;
-	overflow: hidden;
-	top: -1665px;
-	left: 30px;
+	left: -125px;
+	top: -30px;
 }
 #aujourdhui-brosse{
 	position: relative;
