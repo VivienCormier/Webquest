@@ -66,10 +66,15 @@ $(document).ready(function() {
 	$("#btn-raquette").click( function(e) {
 		alert('btn raquette');
     });
-	
 	$("#btn-babyfoot").click( function(e) {
 		alert('btn babyfoot');
+	});
+	$("#btn-chaussure").click( function(e) {
+		alert('btn chaussure');
     });
+	$("#btn-brosse").click( function(e) {
+		alert('btn brosse');
+	});
 
     // Simulation du flottement des nuages
     setInterval(function() {
@@ -134,8 +139,8 @@ $(document).ready(function() {
 					{css:{top: 50}, immediateRender:true}, 
 					{css:{top: -100}}),
 				TweenMax.fromTo($('#aujourdhui-iphone'), 1, 
-					{css:{top: -300}, immediateRender:true}, 
-					{css:{top: -630}}),
+					{css:{top: -500}, immediateRender:true}, 
+					{css:{top: -730}}),
 			]),
 		800 // scroll duration of tween
 	);
@@ -152,31 +157,31 @@ $(document).ready(function() {
 			.append([
 				TweenMax.fromTo($('#aujourdhui-raquette'), 1, 
 					{css:{top: -700}, immediateRender:true}, 
-					{css:{top: -900}}),
+					{css:{top: -1000}}),
 				TweenMax.fromTo($('#aujourdhui-chaussure'), 1, 
-					{css:{top: -900}, immediateRender:true}, 
-					{css:{top: -1350}}),
+					{css:{top: -1200}, immediateRender:true}, 
+					{css:{top: -1600}}),
 			]),
 		800 // scroll duration of tween
 	);
 	
 	//babyfoot img
-	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-1950}, immediateRender:true, ease:Back.easeOut}, {css:{top:-1860}, ease:Quad.easeOut}),500);
+	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-2500}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2230}, ease:Quad.easeOut}),500);
 	
-	//babyfoot img
-	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-brosse'), 2, {css:{top:-1600, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:-1900, opacity:1}, ease:Quad.easeOut}),500);
+	//brosse img
+	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-brosse'), 2, {css:{top:-2200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2600, opacity:1}, ease:Quad.easeOut}),500);
 	
 	//bouteille img
-	controller.addTween('#aujourdhui-brosse', TweenMax.fromTo( $('#aujourdhui-bouteille'), 2, {css:{top:-1900}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2275}, ease:Quad.easeOut}),700);
+	controller.addTween('#aujourdhui-brosse', TweenMax.fromTo( $('#aujourdhui-bouteille'), 2, {css:{top:-2800}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3100}, ease:Quad.easeOut}),700);
 	
 	//nike img
-	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-nike'), 2, {css:{top:-2460}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2590}, ease:Quad.easeOut}),500);
+	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-nike'), 2, {css:{top:-3100}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3425}, ease:Quad.easeOut}),500);
 	
 	//balance img
-	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-1900, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-2340, opacity:1}, ease:Quad.easeOut}),0,400);
+	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-2700, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-3160, opacity:1}, ease:Quad.easeOut}),0,400);
 	
 	//oeil img
-	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-1550}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-2180}, ease:Quad.easeOut}),800);
+	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-2900}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-3030}, ease:Quad.easeOut}),800);
 
 });
 

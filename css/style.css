@@ -427,32 +427,42 @@ p {
 	height:257px;
 	overflow:hidden;
 	position:relative;
-	top: -1210px;
-	left: 595px;
+	top: -1495px;
+	left: 620px;
 }
 #aujourdhui-chaussure-texte{
+	background-image:url(../res/partie-2/text_chaussure.png);
 	position:relative;
-	width:208px;
-	height:211px;
+	width:356px;
+	height:365px;
 	overflow:hidden;
-	top: -1360px;
+	top: -1750px;
 	left: 800px;
 }
+#aujourdhui-chaussure-texte p .majuscules{
+	color:#ffb699;
+}
+#btn-chaussure{
+	position:relative;
+	top: -15px;
+	left: -128px;
+}
+
 #aujourdhui-babyfoot{
 	position: relative;
 	width: 291px;
 	height: 192px;
 	overflow: hidden;
-	top: -1560px;
+	top: -2230px;
 	left: 191px;
 }
 #aujourdhui-babyfoot-texte{
 	background:url("../res/partie-2/texte_babyfoot.png") top left no-repeat;
     height: 430px;
-    left: -80px;
+    left: -45px;
     overflow: hidden;
     position: relative;
-    top: -2128px;
+    top: -2360px;
     width: 338px;
 }
 #aujourdhui-babyfoot-texte p .majuscules {
@@ -468,7 +478,7 @@ p {
 	width: 53px;
 	height: 353px;
 	overflow: hidden;
-	top: -1757px;
+	top: -2560px;
 	left: 495px;
 }
 #aujourdhui-brosse-texte{
@@ -477,7 +487,7 @@ p {
 	width: 256px;
 	height: 311px;
 	overflow: hidden;
-	top: -1948px;
+	top: -2755px;
 	left: 545px;
 }
 #aujourdhui-brosse-texte p{
@@ -486,12 +496,17 @@ p {
 #aujourdhui-brosse-texte .majuscules{
 	color:#64d2f6;
 }
+#btn-brosse {
+position: relative;
+top: -36px;
+left: -87px;
+}
 #aujourdhui-bouteille{
 	position: relative;
 	width: 386px;
 	height: 726px;
 	overflow: hidden;
-	top: -2215px;
+	top: -3060px;
 	left: -110px;
 }
 #aujourdhui-nike{
@@ -499,7 +514,7 @@ p {
 	width: 374px;
 	height: 42px;
 	overflow: hidden;
-	top: -2590px;
+	top: -3425px;
 	left: 602px;
 }
 
@@ -508,7 +523,7 @@ p {
 	width: 489px;
 	height: 483px;
 	overflow: hidden;
-	top: -2340px;
+	top: -3170px;
 	left: 60px;
 }
 
@@ -517,7 +532,7 @@ p {
 	width: 339px;
 	height: 153px;
 	overflow: hidden;
-	top: -2180px;
+	top: -3012px;
 	left: 335px;
 }
 #transition-machine{
