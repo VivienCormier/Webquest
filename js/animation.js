@@ -75,6 +75,12 @@ $(document).ready(function() {
 	$("#btn-brosse").click( function(e) {
 		alert('btn brosse');
 	});
+	$("#btn-bouteille").click( function(e) {
+		alert('btn bouteille');
+	});
+	$("#btn-nike").click( function(e) {
+		alert('btn nike');
+	});
 
     // Simulation du flottement des nuages
     setInterval(function() {
