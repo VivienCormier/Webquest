@@ -544,14 +544,18 @@ left: -87px;
 	height:295px;
 }
 
+#aujourdhui-nike-texte p {
+	padding:30px;
+}
+
 #aujourdhui-nike-texte p .majuscules {
 	color:#88e0be;
 }
 
 #btn-nike {
 	position: relative;
-	left: -93px;
-	top: -45px;
+	left: -86px;
+	top: -40px;
 }
 
 #aujourdhui-balance{
