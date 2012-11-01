@@ -136,26 +136,28 @@ p {
 
 #def-objet{
 	width:216px;
-	height:82px;
+	height:72px;
 	background-image:url(../res/partie-1/definition_objet.png);
 	overflow:hidden;
+	padding-top:10px;
 }
 
 #def-connecte{
 	width:218px;
-	height:80px;
+	height:70px;
 	background-image:url(../res/partie-1/connecte_definition.png);
 	overflow:hidden;
 	position:relative;
 	left:-10px;
+	padding-top:10px;
 }
 
 #fleche-connecte{
-position: relative;
-top: 25px;
-left: -6px;
-overflow:hidden;
-z-index:-1;
+	position: relative;
+	top: 25px;
+	left: -6px;
+	overflow:hidden;
+	z-index:-1;
 }
 #fleche-connecte img{
 	position:relative;
@@ -184,6 +186,18 @@ z-index:-1;
 	height:203px;
 	overflow:hidden;
 }
+#text-association{
+	background-image:url(../res/partie-1/definition_texte_2.png);
+	text-align:left;
+}
+
+#text-association div{
+	padding-top:75px;
+	padding-left:50px;
+}
+#tic-link{
+	color:#f2a3b6;
+}
 /* image définition tic */
 #texte-definition1-tic{
 	overflow:hidden;
@@ -196,11 +210,6 @@ z-index:-1;
 	position:relative;
 }
 /* image cliquable pour lien TIC */
-#tic-link{
-	position: relative;
-	top: -107px;
-	left: 434px;
-}
 #tic-link:hover{
 	cursor:pointer;
 }
@@ -433,8 +442,8 @@ z-index:-1;
 }
 #aujourdhui-brosse-texte{
 	position: relative;
-	width: 210px;
-	height: 278px;
+	width: 256px;
+	height: 311px;
 	overflow: hidden;
 	top: -1948px;
 	left: 545px;
