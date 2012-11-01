@@ -626,6 +626,9 @@ left: -87px;
 	top: -400px;
 	z-index: -2;
 }
+#demain-wrapper{
+	height: 400px;
+}
 /* clear float */
 .clearer{
 	clear:both;

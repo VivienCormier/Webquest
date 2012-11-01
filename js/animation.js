@@ -183,6 +183,23 @@ $(document).ready(function() {
 	//oeil img
 	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-2900}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-3030}, ease:Quad.easeOut}),800);
 
+	//Paralax des objets derrière la machine 
+	controller.addTween(
+		'#transition-machine',
+		(new TimelineLite())
+			.append([
+				TweenMax.fromTo($('#spirale-machine'), 1, 
+					{css:{top: -330}, immediateRender:true}, 
+					{css:{top: -600}}),
+				TweenMax.fromTo($('#eclair-machine'), 1, 
+					{css:{top: 200}, immediateRender:true}, 
+					{css:{top: -200}}),
+				TweenMax.fromTo($('#nuage-machine'), 1, 
+					{css:{top: -200}, immediateRender:true}, 
+					{css:{top: -600}})
+			]),
+		1100 // scroll duration of tween
+	);
 });
 
 function flottementNuageHeader(){
