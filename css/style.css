@@ -520,7 +520,25 @@ p {
 	top: -2180px;
 	left: 335px;
 }
-
+#transition-machine{
+	width: 100%;
+	height: 656px;
+	background-image:url(../res/transition-2-3/machine.png);
+	background-position: top,center;
+	background-repeat: no-repeat;
+}
+#anime-machine-wrapper{
+	width: 1000px;
+	height: 700px;
+	margin: auto;
+}
+#ligne-de-vie-machine{
+	width: 161px;
+	height: 360px;
+	background-image:url(../res/transition-2-3/ligne-de-vie-machine.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
 /* clear float */
 .clearer{
 	clear:both;
