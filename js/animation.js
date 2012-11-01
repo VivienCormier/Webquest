@@ -2,6 +2,7 @@ $(document).ready(function() {
 	
 	$('body').css('visibility','visible');
 
+	// Liens de menu
 	$('#item1').click(function(){
 		var offset = $('#definition-wrapper').offset();
 		$('html,body').animate({scrollTop: offset.top}, 2000);
@@ -9,6 +10,21 @@ $(document).ready(function() {
 
 	$('#item2').click(function(){
 		var offset = $('#aujourdhui-wrapper').offset();
+		$('html,body').animate({scrollTop: offset.top}, 2000);
+	});
+
+	$('#item3').click(function(){
+		var offset = $('#demain-wrapper').offset();
+		$('html,body').animate({scrollTop: offset.top}, 2000);
+	});
+
+	$('#item4').click(function(){
+		var offset = $('#acteurs-modele-economique-wrapper').offset();
+		$('html,body').animate({scrollTop: offset.top}, 2000);
+	});
+
+	$('#item5').click(function(){
+		var offset = $('#avantages-limites-dangers-wrapper').offset();
 		$('html,body').animate({scrollTop: offset.top}, 2000);
 	});
 	
