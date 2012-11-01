@@ -8,7 +8,7 @@ body {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 110px;
 }
 
 #DIV_MOVE{
@@ -82,13 +82,42 @@ body {
 
 /* div image defintion object et connecté */
 #texte-definition1-part1{
-	margin-left:255px;
+	margin-left:265px;
 	position:relative;
 	z-index:10;
-	width:505px;
+	width:520px;
 	overflow: hidden;
 }
+#texte-definition1-part1 img, #texte-definition1-part1 div{
+	float:left;
+}
 
+#def-objet{
+	width:216px;
+	height:82px;
+	background-image:url(../res/partie-1/definition_objet.png);
+	overflow:hidden;
+}
+
+#def-connecte{
+	width:218px;
+	height:80px;
+	background-image:url(../res/partie-1/connecte_definition.png);
+	overflow:hidden;
+	position:relative;
+	left:-10px;
+}
+
+#fleche-connecte{
+position: relative;
+top: 25px;
+left: -6px;
+overflow:hidden;
+z-index:-1;
+}
+#fleche-connecte img{
+	position:relative;
+}
 
 /* div image définition association et tic */
 #texte-definition1-wrapper{
@@ -155,6 +184,9 @@ body {
 #transition-ville{
 	width: 100%;
 	height: 253px;
+}
+#wrapper-illustration-fleche{
+	height:140px;
 }
 
 #la-ville{
@@ -349,7 +381,46 @@ body {
 	top: -1948px;
 	left: 545px;
 }
+#aujourdhui-bouteille{
+	position: relative;
+	width: 386px;
+	height: 726px;
+	overflow: hidden;
+	top: -2215px;
+	left: -110px;
+}
+#aujourdhui-nike{
+	position: relative;
+	width: 374px;
+	height: 42px;
+	overflow: hidden;
+	top: -2590px;
+	left: 602px;
+}
+
+#aujourdhui-balance{
+	position: relative;
+	width: 489px;
+	height: 483px;
+	overflow: hidden;
+	top: -2340px;
+	left: 60px;
+}
+
+#aujourdhui-oeil{
+	position: relative;
+	width: 339px;
+	height: 153px;
+	overflow: hidden;
+	top: -2180px;
+	left: 335px;
+}
+
 /* clear float */
 .clearer{
 	clear:both;
+}
+
+.relative{
+	position:relative;
 }
