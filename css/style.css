@@ -2,6 +2,11 @@ body {
 	background: white;
 	font-family: Georgia, Times New Roman, Times, serif;
 	background-image: url('../res/background.jpg');
+	overflow-x: hidden;
+}
+
+#wrapper {
+	overflow: hidden;
 }
 
 #header{
@@ -36,6 +41,7 @@ body {
 #nuage-1{
 	position: absolute;
 	top:0px;
+	right:25px;
 }
 
 #nuage-2{
