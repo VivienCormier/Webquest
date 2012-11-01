@@ -105,8 +105,8 @@ $(document).ready(function() {
 	}}));
 
 	//Ligne de vie
-	controller.addTween(4200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1810}, immediateRender:true, ease:Back.easeOut}, {css:{height:2210}, ease:Quad.easeInOut}));
-	controller.addTween(3900, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1300}, immediateRender:true, ease:Back.easeOut}, {css:{height:1810}, ease:Quad.easeInOut}));
+	controller.addTween(4200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1824}, immediateRender:true, ease:Back.easeOut}, {css:{height:2210}, ease:Quad.easeInOut}));
+	controller.addTween(3900, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1300}, immediateRender:true, ease:Back.easeOut}, {css:{height:1824}, ease:Quad.easeInOut}));
 	controller.addTween(3400, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:835}, immediateRender:true, ease:Back.easeOut}, {css:{height:1300}, ease:Quad.easeInOut}));
 	controller.addTween(3000, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:460}, immediateRender:true, ease:Back.easeOut}, {css:{height:835}, ease:Quad.easeInOut}));
 	controller.addTween('#aujourdhui-wrapper', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 2, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:460}, ease:Quad.easeInOut}),0,-100);

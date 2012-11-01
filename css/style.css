@@ -317,7 +317,38 @@ body {
 	top: -1360px;
 	left: 800px;
 }
-
+#aujourdhui-babyfoot{
+	position: relative;
+	width: 291px;
+	height: 192px;
+	overflow: hidden;
+	top: -1560px;
+	left: 191px;
+}
+#aujourdhui-babyfoot-texte{
+	position: relative;
+	width: 214px;
+	height: 216px;
+	overflow: hidden;
+	top: -1665px;
+	left: 30px;
+}
+#aujourdhui-brosse{
+	position: relative;
+	width: 53px;
+	height: 353px;
+	overflow: hidden;
+	top: -1757px;
+	left: 495px;
+}
+#aujourdhui-brosse-texte{
+	position: relative;
+	width: 210px;
+	height: 278px;
+	overflow: hidden;
+	top: -1948px;
+	left: 545px;
+}
 /* clear float */
 .clearer{
 	clear:both;
