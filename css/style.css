@@ -546,13 +546,49 @@ left: -87px;
 	width: 1000px;
 	height: 700px;
 	margin: auto;
+	position: relative;
+	top: -149px;
 }
 #ligne-de-vie-machine{
-	width: 161px;
-	height: 360px;
+	width: 207px;
+	height: 480px;
 	background-image:url(../res/transition-2-3/ligne-de-vie-machine.png);
 	background-position: center;
 	background-repeat: no-repeat;
+	position: relative;
+	left: 509px;
+}
+#eclair-machine{
+	width: 101px;
+	height: 245px;
+	background-image:url(../res/transition-2-3/eclair.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 129px;
+	z-index: -2;
+}
+#nuage-machine{
+	width: 242px;
+	height: 178px;
+	background-image:url(../res/transition-2-3/nuage-gris.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 419px;
+	top: -200px;
+	z-index: -2;
+}
+#spirale-machine{
+	width: 219px;
+	height: 248px;
+	background-image:url(../res/transition-2-3/spirale.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 719px;
+	top: -400px;
+	z-index: -2;
 }
 /* clear float */
 .clearer{
