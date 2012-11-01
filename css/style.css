@@ -370,34 +370,47 @@ p {
 }
 
 #aujourdhui-iphone-texte{
+	background:url("../res/partie-2/texte_iphone.png") top left no-repeat;
 	position: relative;
-	top: -920px;
-	left: 340px;
-	height:130px;
+	top: -1055px;
+	left: 675px;
+	width: 323px;
+	height: 345px;
+}
+
+#aujourdhui-iphone-texte p .majuscules {
+	color:#88e0be;
 }
 
 #btn-iphone{
 	position:relative;
 	top:-20px;
-	left:-300px
+	left:-118px
 }
 
 #aujourdhui-raquette{
 	position: relative;
 	top: -700px;
-	left: -100px;
+	left: -65px;
 }
 
 #aujourdhui-raquette-texte{
+	background:url("../res/partie-2/texte_raquette.png") top left no-repeat;
 	position: relative;
-	top: -1015px;
-	left: 115px;
+	top: -1352px;
+	left: 468px;
+	width:321px;
+	height:231px;
+}
+
+#aujourdhui-raquette-texte p .majuscules{
+	color:#b69ee2;
 }
 
 #btn-raquette{
 	position: relative;
-	left: -300px;
-	top: -20px;
+	left: -118px;
+	top: -40px;
 }
 
 #aujourdhui-chaussure{

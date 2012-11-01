@@ -147,8 +147,8 @@ $(document).ready(function() {
 		(new TimelineLite())
 			.append([
 				TweenMax.fromTo($('#aujourdhui-raquette'), 1, 
-					{css:{top: -600}, immediateRender:true}, 
-					{css:{top: -800}}),
+					{css:{top: -700}, immediateRender:true}, 
+					{css:{top: -900}}),
 				TweenMax.fromTo($('#aujourdhui-chaussure'), 1, 
 					{css:{top: -900}, immediateRender:true}, 
 					{css:{top: -1350}}),
