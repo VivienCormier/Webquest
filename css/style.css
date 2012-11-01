@@ -454,12 +454,19 @@ p {
 	left: 495px;
 }
 #aujourdhui-brosse-texte{
+	background-image:url(../res/partie-2/texte_brosse.png);
 	position: relative;
 	width: 256px;
 	height: 311px;
 	overflow: hidden;
 	top: -1948px;
 	left: 545px;
+}
+#aujourdhui-brosse-texte p{
+	margin-top:0px;
+}
+#aujourdhui-brosse-texte .majuscules{
+	color:#64d2f6;
 }
 #aujourdhui-bouteille{
 	position: relative;
