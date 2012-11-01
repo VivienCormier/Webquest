@@ -22,11 +22,9 @@ body {
 
 #menu li {
 	list-style:none;
-	margin:15px auto;
-}
-
-#menu li a {
-	padding-left:0px;
+	margin:15px 5px;
+	width:45px;
+	overflow:hidden;
 	-webkit-transition: all 0.25s linear;
 	-moz-transition: all 0.25s linear;
 	-ms-transition: all 0.25s linear;
@@ -34,8 +32,12 @@ body {
 	transition: all 0.25s linear;
 }
 
-#menu li a:hover {
-	padding-left:15px;
+#menu li:hover {
+	width:100%;
+}
+
+#menu li a {
+	padding-left:0px;
 }
 
 #nuage-1{
