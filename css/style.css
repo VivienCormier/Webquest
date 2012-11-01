@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'dosisregular';
+    src: url('dosis-regular-webfont.eot');
+    src: url('dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dosis-regular-webfont.woff') format('woff'),
+         url('dosis-regular-webfont.ttf') format('truetype'),
+         url('dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dosissemibold';
+    src: url('dosis-semibold-webfont.eot');
+    src: url('dosis-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dosis-semibold-webfont.woff') format('woff'),
+         url('dosis-semibold-webfont.ttf') format('truetype'),
+         url('dosis-semibold-webfont.svg#dosissemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 	background: white;
 	font-family: Dosis ,Georgia, Times New Roman, Times, serif;
