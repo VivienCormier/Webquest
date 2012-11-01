@@ -1,8 +1,14 @@
 body {
 	background: white;
-	font-family: Georgia, Times New Roman, Times, serif;
+	font-family: Dosis ,Georgia, Times New Roman, Times, serif;
+	font-size:14px;
 	background-image: url('../res/background.jpg');
 	overflow-x: hidden;
+}
+
+p {
+	text-align:left;
+	padding:35px;
 }
 
 #wrapper {
@@ -14,6 +20,10 @@ body {
 	height: 100%;
 	text-align: center;
 	margin-top: 110px;
+}
+
+.majuscules {
+	text-transform:uppercase;
 }
 
 #DIV_MOVE{
@@ -265,9 +275,15 @@ z-index:-1;
 #aujourdhui-texte1{
 	position:relative;
 	top:75px;
-	left:5px;
+	left:255px;
 	overflow:hidden;
-	height:161px;
+}
+
+#aujourdhui-texte1 p {
+	background:url("../res/partie-2/text_definition.png") top center no-repeat;
+	width:441px;
+	height:98px;
+	padding:35px;
 }
 
 #aujourdhui-nabaztag{
@@ -282,14 +298,24 @@ z-index:-1;
 #aujourdhui-nabaztag-texte{
 	position: relative;
 	top: -330px;
-	left: -305px;
-	height:278px;
+	left: 100px;
+	height:335px;
+	background:url("../res/partie-2/text_nabaztag.png") top left no-repeat;
+}
+
+#aujourdhui-nabaztag-texte p {
+	width:138px;
+	padding:35px;
+}
+
+#aujourdhui-nabaztag-texte p .majuscules{
+	color:#f2a3b6;
 }
 
 #btn-nabaztag{
 	position: relative;
-	left: -187px;
-	top: -25px;
+	left: -455px;
+	top: -45px;
 }
 
 #nuage-nabaztag{
