@@ -33,6 +33,7 @@ body {
 p {
 	text-align:left;
 	padding:35px;
+	line-height:21px;
 }
 
 #wrapper {
@@ -142,6 +143,12 @@ p {
 	padding-top:10px;
 }
 
+#def-objet p, #def-connecte p, #text-association div{
+	padding-top: 0;
+	padding-right: 0;
+	margin-top: 0;
+}
+
 #def-connecte{
 	width:218px;
 	height:70px;
@@ -192,8 +199,8 @@ p {
 }
 
 #text-association div{
-	padding-top:75px;
-	padding-left:50px;
+	padding-top:20px;
+	padding-left:10px;
 }
 #tic-link{
 	color:#f2a3b6;
@@ -337,8 +344,9 @@ p {
 }
 
 #aujourdhui-nabaztag-texte p {
-	width:138px;
-	padding:35px;
+	width: 150px;
+	padding: 35px;
+	padding-top: 25px;
 }
 
 #aujourdhui-nabaztag-texte p .majuscules{
