@@ -921,6 +921,103 @@ left: -108px;
 	position: relative;
 	top: -409px;
 }
+
+/* Partie 4 : acteurs et modèle économique */
+#acteurs-modele-economique-wrapper {
+	width: 1200px;
+	height: 2220px;
+	margin : auto;
+	position: relative;
+}
+#acteurs-modele-economique-content-wrapper {
+	position: absolute;
+	top:305px;
+	left:0;
+}
+#acteurs-modele-economique-wrapper #wrapper-lignedevie {
+	height:2120px;
+	width:900px;
+	background:url("../res/partie-4/ligne-de-vie.png") no-repeat top center;
+	position: absolute;
+	top:0;
+	right:0;
+}
+#acteurs-title {
+	margin-left:360px;
+	padding-bottom:35px;
+}
+#acteurs-sous-titre {
+	padding-bottom:60px;
+	margin-left:360px;
+}
+
+#acteurs-domotique-texte{
+	background:url("../res/partie-4/text-acteurs-domotique.png") top left no-repeat;
+    height: 191px;
+    left: 350px;
+    position: relative;
+    top: 482px;
+    width: 501px;
+}
+
+#acteurs-domotique-texte p {
+	padding:25px 35px;
+	font-size:15px;
+}
+#marques-texte{
+	background:url("../res/partie-4/text-marques.png") top left no-repeat;
+    height: 497px;
+    left: 355px;
+    position: relative;
+    top: 510px;
+    width: 501px;
+}
+
+#marques-texte p {
+	padding:30px 35px;
+	font-size:15px;
+}
+
+
+#tomate{
+	position:relative;
+	top:50px;
+	left:50px;
+}
+#tomate-feuille-1{
+	position:relative;
+	top:-340px;
+	left:300px;
+}
+#tomate-feuille-2{
+    left: 0;
+    position: relative;
+    top: -200px;
+}
+#tomate-texte{
+	background:url("../res/partie-4/text-tomate.png") top left no-repeat;
+    height: 191px;
+    left: 160px;
+    position: relative;
+    top:-313px;
+    width: 340px;
+}
+
+#tomate-texte p {
+	padding:35px;
+	font-size:15px;
+}
+
+#tomate-texte p .majuscules {
+	color:#dd162e;
+}
+
+#btn-tomate {
+position: relative;
+top: -40px;
+left: 35px;
+}
+
 /* clear float */
 .clearer{
 	clear:both;

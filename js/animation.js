@@ -90,6 +90,9 @@ $(document).ready(function() {
 	$("#btn-camera").click( function(e) {
 		alert('btn camera');
 	});
+	$("#btn-tomate").click( function(e) {
+		alert('btn tomate');
+	});
 
 	$("#demain-songdo-video-screen").click( function(e) {
 		$('#demain-songdo-video-screen').animate({opacity:0}, 2000);
