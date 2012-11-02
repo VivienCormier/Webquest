@@ -84,6 +84,9 @@ $(document).ready(function() {
 	$("#btn-balance").click( function(e) {
 		alert('btn balance');
 	});
+	$("#btn-tv").click( function(e) {
+		alert('btn tv');
+	});
 
     // Simulation du flottement des nuages
     setInterval(function() {

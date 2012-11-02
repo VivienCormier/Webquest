@@ -570,7 +570,7 @@ left: -87px;
 	background:url("../res/partie-2/texte_balance.png") top left no-repeat;
 	position: relative;
 	top: -3852px;
-	left: 280px;
+	left: 180px;
 	width: 415px;
 	height: 280px;
 }
@@ -589,6 +589,35 @@ left: -87px;
 	top: -40px;
 }
 
+#aujourdhui-tv{
+	position: relative;
+	width: 371px;
+	height: 308px;
+	overflow: hidden;
+	top: -4370px;
+	left: 740px;
+}
+#aujourdhui-tv-texte{
+	background:url("../res/partie-2/texte_tv.png") top left no-repeat;
+	position: relative;
+	top: -4474px;
+	left: 690px;
+	width: 337px;
+	height: 164px;
+}
+
+#aujourdhui-tv-texte p {
+	padding:30px;
+}
+
+#aujourdhui-tv-texte p .majuscules {
+	color:#d2b7ea;
+}
+#btn-tv {
+	position: relative;
+	left: -130px;
+	top: -40px;
+}
 
 #aujourdhui-oeil{
 	position: relative;
