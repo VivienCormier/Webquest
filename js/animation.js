@@ -87,6 +87,9 @@ $(document).ready(function() {
 	$("#btn-tv").click( function(e) {
 		alert('btn tv');
 	});
+	$("#btn-camera").click( function(e) {
+		alert('btn camera');
+	});
 
     // Simulation du flottement des nuages
     setInterval(function() {
@@ -196,7 +199,7 @@ $(document).ready(function() {
 	controller.addTween('#aujourdhui-tv', TweenMax.fromTo( $('#aujourdhui-tv'), 2, {css:{rotation:0, top:-4250}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:20, top:-4360}, ease:Quad.easeOut}),300);
 	
 	//oeil img
-	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-2900}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-3030}, ease:Quad.easeOut}),800);
+	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-4000}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-4255}, ease:Quad.easeOut}),800);
 
 	//Paralax des objets derrière la machine 
 	controller.addTween(
@@ -215,6 +218,42 @@ $(document).ready(function() {
 			]),
 		1100 // scroll duration of tween
 	);
+	
+	//PARTIE DEMAIN
+	
+	//animation de la ligne de vie demain
+	//horizontal 3
+	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-ldvh-3 img'), 1.5, {css:{left:193}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}));
+	//horizontal 2
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-ldvh-2'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:628}, ease:Quad.easeInOut}),0,-200);
+	//vertical 2
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 5, {css:{height:1268}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}));
+	//verticale fin bout
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:1121}, immediateRender:true, ease:Back.easeOut}, {css:{height:1268}, ease:Quad.easeInOut}),0,-300);
+	//horizontal bout 5
+	controller.addTween('#demain-ldvh-bout5', TweenMax.fromTo( $('#demain-ldvh-bout5'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
+	//verticale bout 5
+	controller.addTween('#demain-ldvh-bout5', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:1010}, immediateRender:true, ease:Back.easeOut}, {css:{height:1121}, ease:Quad.easeInOut}),0,-300);
+	//horizontal bout 4
+	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-ldvh-bout4'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
+	//verticale bout 4
+	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:885}, immediateRender:true, ease:Back.easeOut}, {css:{height:1010}, ease:Quad.easeInOut}),0,-300);
+	//horizontal bout 3
+	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-ldvh-bout3'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
+	//verticale bout 3
+	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:766}, immediateRender:true, ease:Back.easeOut}, {css:{height:885}, ease:Quad.easeInOut}),0,-300);
+	//horizontal bout 2
+	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-ldvh-bout2'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-100);
+	//verticale bout 2
+	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:670}, immediateRender:true, ease:Back.easeOut}, {css:{height:766}, ease:Quad.easeInOut}),0,-200);
+	//horizontal bout 1
+	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-ldvh-bout1'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
+	//verticale bout 1
+	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:520}, immediateRender:true, ease:Back.easeOut}, {css:{height:670}, ease:Quad.easeInOut}),0,-300);
+	//horizontal 1
+	controller.addTween('#demain-ldvh-1', TweenMax.fromTo( $('#demain-ldvh-1 img'), 1.5, {css:{left:489}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,-200);
+	//début ligne de vie
+	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
 });
 
 function flottementNuageHeader(){

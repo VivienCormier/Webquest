@@ -28,6 +28,7 @@ body {
 	font-size:14px;
 	background-image: url('../res/background.jpg');
 	overflow-x: hidden;
+	color:#333333;
 }
 
 p {
@@ -49,6 +50,7 @@ p {
 
 .majuscules {
 	text-transform:uppercase;
+	font-weight:500;
 }
 
 #DIV_MOVE{
@@ -624,15 +626,60 @@ left: -87px;
 	width: 339px;
 	height: 153px;
 	overflow: hidden;
-	top: -3012px;
+	top: -4225px;
 	left: 335px;
 }
+
+#aujourdhui-oeil-texte{
+	background-image:url(../res/partie-2/texte_camera.png);
+	width: 298px;
+	height: 240px;
+	position: relative;
+	top: -4230px;
+	left: 355px;	
+}
+
+#aujourdhui-oeil-texte p .majuscules {
+	color:#abe2fb;
+}
+
+#btn-camera {
+position: relative;
+top: -37px;
+left: -108px;
+}
+
+#aujourdhui-arduino-texte1{
+	background-image:url(../res/partie-2/texte-arduino1.png);
+	width: 501px;
+	height: 158px;
+	position: relative;
+	top: -4230px;
+	left: 275px;	
+}
+
+#aujourdhui-arduino-texte2{
+	background-image:url(../res/partie-2/texte_arduino_2.png);
+	width: 501px;
+	height: 90px;
+	position: relative;
+	top: -4230px;
+	left: 275px;
+	z-index:50;
+}
+#aujourdhui-arduino-texte2 p{
+	padding-top:20px;
+}
+
 #transition-machine{
 	width: 100%;
 	height: 762px;
 	background-image:url(../res/transition-2-3/machine.png);
 	background-position: top,center;
 	background-repeat: no-repeat;
+	position: relative;
+	top: 90px;
+	left:-10px;
 }
 #anime-machine-wrapper{
 	width: 1000px;
@@ -682,8 +729,190 @@ left: -87px;
 	top: -400px;
 	z-index: -2;
 }
-#demain-wrapper{
-	height: 400px;
+
+/* PARTIE DEMAIN */
+#demain-lignedevie-vertical, #demain-lignedevie, #demain-wrapper,#demain-wrapper-vertical, #demain-content-wrapper{
+	width:1031px;
+	height:2894px;
+	margin:auto;
+}
+#demain-lignedevie-vertical{
+	background-image:url(../res/partie-3/ligne-de-vie-vertical.png);
+	position:relative;
+	top:-81px;
+	left:146px;
+}
+
+#demain-lignedevie-horizontal{
+	position:relative;
+	top:-2894px;
+}
+
+#demain-ldvh-1{
+	width:489px;
+	height:27px;
+	position: relative;
+	top: 415px;
+	left: 573px;
+	overflow:hidden;
+}
+#demain-ldvh-1 img{
+	position:relative;
+	left : -489px;
+}
+#demain-ldvh-bout1, #demain-ldvh-bout2, #demain-ldvh-bout3, #demain-ldvh-bout4, #demain-ldvh-bout5{
+	width:78px;
+	height:9px;
+	position:relative;
+	left: 337px;
+}
+#demain-ldvh-bout1{
+	background-image:url(../res/partie-3/ldv-bout-horizontale-1.png);
+	top: 556px;
+}
+
+#demain-ldvh-bout2{
+	background-image:url(../res/partie-3/ldv-bout-horizontale-2.png);
+	top:644px;
+}
+
+#demain-ldvh-bout3{
+	background-image:url(../res/partie-3/ldv-bout-horizontale-3.png);
+	top:753px;
+}
+
+#demain-ldvh-bout4{
+	background-image:url(../res/partie-3/ldv-bout-horizontale-4.png);
+	top:870px;
+}
+
+#demain-ldvh-bout5{
+	background-image:url(../res/partie-3/ldv-bout-horizontale-5.png);
+	top:971px;
+}
+
+#demain-ldvh-2{
+	background-image:url(../res/partie-3/ldv-horizontale-2.png);
+	width:628px;
+	height:21px;
+	position: relative;
+	top: 1098px;
+	left: 339px;
+}
+
+#demain-ldvh-3{
+	width:193px;
+	height:12px;
+	position: relative;
+	top: 1360px;
+	left: 781px;
+	overflow:hidden;
+}
+#demain-ldvh-3 img{
+	position:relative;
+	left:193px;
+}
+
+#demain-content-wrapper{
+	position:relative;
+	top:-2894px;
+}
+
+#demain-evolution-texte{
+	background-image:url(../res/partie-3/text-evolutions.png);
+	width:311px;
+	height:94px;
+	position:relative;
+	top: 375px;
+	left: 275px;
+}
+#demain-evolution-texte p{
+	padding-top:25px;
+	padding-left:20px;
+}
+#demain-energie-texte{
+	background-image:url(../res/partie-3/text-energie.png);
+	width:466px;
+	height:90px;
+	position:relative;
+	top: 415px;
+	left: 414px;
+}
+#demain-energie-texte p{
+	padding-top:25px;
+	padding-left:20px;
+}
+#demain-industrie-texte{
+	background-image:url(../res/partie-3/text-industrie.png);
+	width:356px;
+	height:90px;
+	position:relative;
+	top: 415px;
+	left: 414px;
+}
+#demain-industrie-texte p{
+	padding-top:22px;
+	padding-left:20px;
+}
+#demain-banque-texte{
+	background-image:url(../res/partie-3/text-banque.png);
+	width:427px;
+	height:105px;
+	position:relative;
+	top: 415px;
+	left: 414px;
+}
+#demain-banque-texte p{
+	padding-top:22px;
+	padding-left:20px;
+}
+#demain-sante-texte{
+	background-image:url(../res/partie-3/text-sante.png);
+	width:467px;
+	height:105px;
+	position:relative;
+	top: 420px;
+	left: 414px;
+}
+#demain-sante-texte p{
+	padding-top:22px;
+	padding-left:20px;
+}
+#demain-telecommunication-texte{
+	background-image:url(../res/partie-3/text-telecommunications.png);
+	width:403px;
+	height:90px;
+	position:relative;
+	top: 420px;
+	left: 414px;
+}
+#demain-telecommunication-texte p{
+	padding-top:22px;
+	padding-left:20px;
+}
+#demain-collectivite-texte{
+	background-image:url(../res/partie-3/text-collectivites-locales.png);
+	width:467px;
+	height:131px;
+	position:relative;
+	top: 440px;
+	left: 416px;
+}
+#demain-collectivite-texte p{
+	padding-top:22px;
+	padding-left:20px;
+}
+#demain-songdo-texte{
+	background-image:url(../res/partie-3/text-songdo.png);
+	width:501px;
+	height:208px;
+	position:relative;
+	top: 535px;
+	left: 280px;
+}
+#demain-collectivite-texte p{
+	padding-top:25px;
+	padding-left:20px;
 }
 /* clear float */
 .clearer{
