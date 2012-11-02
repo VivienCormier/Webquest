@@ -91,6 +91,10 @@ $(document).ready(function() {
 		alert('btn camera');
 	});
 
+	$("#demain-songdo-video-screen").click( function(e) {
+		$('#demain-songdo-video-screen').animate({opacity:0}, 2000);
+    });
+
     // Simulation du flottement des nuages
     setInterval(function() {
       flottementNuageHeader()

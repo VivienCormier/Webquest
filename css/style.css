@@ -899,7 +899,7 @@ left: -108px;
 	left: 416px;
 }
 #demain-collectivite-texte p{
-	padding-top:22px;
+	padding-top:25px;
 	padding-left:20px;
 }
 #demain-songdo-texte{
@@ -910,9 +910,16 @@ left: -108px;
 	top: 535px;
 	left: 280px;
 }
-#demain-collectivite-texte p{
-	padding-top:25px;
-	padding-left:20px;
+#demain-songdo-video{
+	width:729px;
+	height:406px;
+	position:relative;
+	top: 583px;
+	left: 161px;
+}
+#demain-songdo-video-screen{
+	position: relative;
+	top: -409px;
 }
 /* clear float */
 .clearer{
