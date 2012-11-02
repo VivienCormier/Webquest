@@ -192,6 +192,9 @@ $(document).ready(function() {
 	//balance img
 	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-3200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-3660, opacity:1}, ease:Quad.easeOut}),0,400);
 	
+	//tv img
+	controller.addTween('#aujourdhui-tv', TweenMax.fromTo( $('#aujourdhui-tv'), 2, {css:{rotation:0, top:-4250}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:20, top:-4360}, ease:Quad.easeOut}),300);
+	
 	//oeil img
 	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-2900}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-3030}, ease:Quad.easeOut}),800);
 
