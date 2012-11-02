@@ -228,31 +228,43 @@ $(document).ready(function() {
 	
 	//PARTIE DEMAIN
 	
-	//animation de la ligne de vie demain
+	//animation de la ligne de vie demain et de ses textes
 	//horizontal 3
-	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-ldvh-3 img'), 1.5, {css:{left:193}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}));
+	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-ldvh-3 img'), 0.5, {css:{left:193}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}));
 	//horizontal 2
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-ldvh-2'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:628}, ease:Quad.easeInOut}),0,-200);
 	//vertical 2
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 5, {css:{height:1268}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}));
+	//texte fin bout
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-collectivite-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//verticale fin bout
-	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:1121}, immediateRender:true, ease:Back.easeOut}, {css:{height:1268}, ease:Quad.easeInOut}),0,-300);
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:1121}, immediateRender:true, ease:Back.easeOut}, {css:{height:1268}, ease:Quad.easeInOut}),0,-200);
+	//texte bout 5
+	controller.addTween('#demain-ldvh-bout5', TweenMax.fromTo( $('#demain-telecommunication-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//horizontal bout 5
 	controller.addTween('#demain-ldvh-bout5', TweenMax.fromTo( $('#demain-ldvh-bout5'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
 	//verticale bout 5
-	controller.addTween('#demain-ldvh-bout5', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:1010}, immediateRender:true, ease:Back.easeOut}, {css:{height:1121}, ease:Quad.easeInOut}),0,-300);
+	controller.addTween('#demain-ldvh-bout5', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:1010}, immediateRender:true, ease:Back.easeOut}, {css:{height:1121}, ease:Quad.easeInOut}),0,-200);
+	//texte bout 4
+	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-sante-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//horizontal bout 4
 	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-ldvh-bout4'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
 	//verticale bout 4
-	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:885}, immediateRender:true, ease:Back.easeOut}, {css:{height:1010}, ease:Quad.easeInOut}),0,-300);
+	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:885}, immediateRender:true, ease:Back.easeOut}, {css:{height:1010}, ease:Quad.easeInOut}),0,-200);
+	//texte bout 3
+	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-banque-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//horizontal bout 3
 	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-ldvh-bout3'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
 	//verticale bout 3
-	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:766}, immediateRender:true, ease:Back.easeOut}, {css:{height:885}, ease:Quad.easeInOut}),0,-300);
+	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:766}, immediateRender:true, ease:Back.easeOut}, {css:{height:885}, ease:Quad.easeInOut}),0,-200);
+	//texte bout 2
+	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-industrie-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//horizontal bout 2
-	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-ldvh-bout2'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-100);
+	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-ldvh-bout2'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
 	//verticale bout 2
 	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:670}, immediateRender:true, ease:Back.easeOut}, {css:{height:766}, ease:Quad.easeInOut}),0,-200);
+	//texte bout 1
+	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-energie-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//horizontal bout 1
 	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-ldvh-bout1'), 0.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:78}, ease:Quad.easeInOut}),0,-200);
 	//verticale bout 1
@@ -261,6 +273,8 @@ $(document).ready(function() {
 	controller.addTween('#demain-ldvh-1', TweenMax.fromTo( $('#demain-ldvh-1 img'), 1.5, {css:{left:489}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,-200);
 	//début ligne de vie
 	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
+
+
 });
 
 function flottementNuageHeader(){
