@@ -184,7 +184,7 @@ $(document).ready(function() {
 	controller.addTween('#aujourdhui-brosse', TweenMax.fromTo( $('#aujourdhui-bouteille'), 2, {css:{top:-2800}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3100}, ease:Quad.easeOut}),700);
 	
 	//nike img
-	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-nike'), 2, {css:{top:-3100}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3425}, ease:Quad.easeOut}),500);
+	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-nike'), 2, {css:{top:-3350}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3590}, ease:Quad.easeOut}),500);
 	
 	//balance img
 	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-3200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-3660, opacity:1}, ease:Quad.easeOut}),0,400);
