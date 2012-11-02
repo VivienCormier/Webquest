@@ -81,6 +81,9 @@ $(document).ready(function() {
 	$("#btn-nike").click( function(e) {
 		alert('btn nike');
 	});
+	$("#btn-balance").click( function(e) {
+		alert('btn balance');
+	});
 
     // Simulation du flottement des nuages
     setInterval(function() {
@@ -184,7 +187,7 @@ $(document).ready(function() {
 	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-nike'), 2, {css:{top:-3100}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3425}, ease:Quad.easeOut}),500);
 	
 	//balance img
-	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-2700, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-3160, opacity:1}, ease:Quad.easeOut}),0,400);
+	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-3200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-3660, opacity:1}, ease:Quad.easeOut}),0,400);
 	
 	//oeil img
 	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-2900}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-3030}, ease:Quad.easeOut}),800);

@@ -566,6 +566,29 @@ left: -87px;
 	top: -3170px;
 	left: 60px;
 }
+#aujourdhui-balance-texte{
+	background:url("../res/partie-2/texte_balance.png") top left no-repeat;
+	position: relative;
+	top: -3852px;
+	left: 280px;
+	width: 415px;
+	height: 280px;
+}
+
+#aujourdhui-balance-texte p {
+	padding:40px;
+}
+
+#aujourdhui-balance-texte p .majuscules {
+	color:#ff8caf;
+}
+
+#btn-balance {
+	position: relative;
+	left: -161px;
+	top: -40px;
+}
+
 
 #aujourdhui-oeil{
 	position: relative;
