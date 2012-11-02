@@ -274,13 +274,10 @@ $(document).ready(function() {
 	//début ligne de vie
 	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
 
-<<<<<<< HEAD
-=======
 	//Lettre
 	controller.addTween('#message-futur-lettre', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-253px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "0px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
->>>>>>> Lettre
-
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
 });
 
 function flottementNuageHeader(){

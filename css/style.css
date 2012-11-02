@@ -921,7 +921,6 @@ left: -108px;
 	position: relative;
 	top: -409px;
 }
-<<<<<<< HEAD
 
 /* Partie 4 : acteurs et modèle économique */
 #acteurs-modele-economique-wrapper {
@@ -1019,7 +1018,6 @@ top: -40px;
 left: 35px;
 }
 
-=======
 #message-futur{
 	width:395px;
 	height:406px;
@@ -1035,7 +1033,18 @@ left: 35px;
 	margin: auto;
 	margin-top: 40px;
 }
->>>>>>> Lettre
+#message-futur-lettre-texte{
+	width:358px;
+	height:235px;
+	background-image:url(../res/partie-3/msg-futur/text-ce-matin.png);
+	position: relative;
+	top: -63px;
+	left: 36px;
+}
+#message-futur-lettre-texte p{
+	position: relative;
+	top: 103px;
+}
 /* clear float */
 .clearer{
 	clear:both;
