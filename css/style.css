@@ -1049,6 +1049,9 @@ left: -108px;
 	left: 554px;
     top:-1623px;
 }
+#acteur-evian-texte p .majuscules {
+	color:#77cff1;
+}
 #btn-evian {
 	position: relative;
 	top: -40px;
@@ -1070,6 +1073,9 @@ left: -108px;
 	left: 20px;
 	top: -1470px;
 }
+#acteur-kickstarter-texte p .majuscules.couleur {
+	color:#85c442;
+}
 #acteur-kickstarter{
 	position:relative;
 	width:405px;
@@ -1083,6 +1089,28 @@ left: -108px;
 	height:137px;
 	left:306px;
 	top:-1445px;
+}
+#acteur-cochon {
+    height: 423px;
+    left: 156px;
+    position: relative;
+    top: -1255px;
+    width: 599px;
+}
+#acteur-cochon-piece {
+    height: 149px;
+    left: 410px;
+    position: relative;
+    top: -1729px;
+    width: 149px;
+}
+#acteur-cochon-cache {
+    height: 349px;
+    left: 150px;
+    position: relative;
+    top: -374px;
+    width: 132px;
+    z-index: 5;
 }
 
 
