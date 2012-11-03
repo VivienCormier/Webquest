@@ -273,7 +273,7 @@ $(document).ready(function() {
 	//verticale bout 1
 	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:520}, immediateRender:true, ease:Back.easeOut}, {css:{height:670}, ease:Quad.easeInOut}),0,-300);
 	//horizontal 1
-	controller.addTween('#demain-ldvh-1', TweenMax.fromTo( $('#demain-ldvh-1 img'), 1.5, {css:{left:489}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,-200);
+	controller.addTween('#demain-ldvh-1', TweenMax.fromTo( $('#demain-ldvh-1 img'), 1.5, {css:{left:489}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,-400);
 	//début ligne de vie
 	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
 
