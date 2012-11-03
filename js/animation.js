@@ -298,7 +298,9 @@ $(document).ready(function() {
 	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-gens'), 1.5, {css:{opacity: "0", top: "-2595px", rotation: "35"}, immediateRender:true, ease:Back.easeOut}, {css:{opacity: "100", top: "-1495px", rotation: "0"}, ease:Quad.easeInOut}));
 	// Cochon et pièce
 	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
-	
+
+	//Diagramme
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#transition-diagramme-anime-img'), 10, {css:{rotation:0,}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360}, ease:Quad.easeOut}),0,400);
 });
 
 function flottementNuageHeader(){

@@ -930,8 +930,16 @@ left: -108px;
 	top: -346px;
 }
 #transition-diagramme-anime{
-	width: 550px;
+	width: 1000px;
 	height: 549px;
+	z-index: -2;
+	margin: auto;
+}
+#transition-diagramme-anime img{
+	z-index: -2;
+	position: relative;
+	left: 510px;
+	top: 90px;
 }
 
 /* Partie 4 : acteurs et modèle économique */
