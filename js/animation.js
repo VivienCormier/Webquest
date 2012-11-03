@@ -281,6 +281,11 @@ $(document).ready(function() {
 	controller.addTween('#message-futur-lettre', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-253px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "0px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
+	
+	// Partie 4 : Acteurs et modèle économique
+	// Cochon et pièce
+	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
+	
 });
 
 function flottementNuageHeader(){

@@ -1119,12 +1119,20 @@ left: -108px;
     width: 149px;
 }
 #acteur-cochon-cache {
-    height: 349px;
+    height: 250px;
     left: 150px;
     position: relative;
     top: -374px;
-    width: 132px;
+    width: 349px;
     z-index: 5;
+}
+#acteur-cochon-projet {
+    height: 172px;
+    left: 195px;
+    position: relative;
+    top: -494px;
+    width: 284px;
+    z-index: 6;
 }
 
 
