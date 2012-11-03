@@ -283,6 +283,14 @@ $(document).ready(function() {
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
 	
 	// Partie 4 : Acteurs et modèle économique
+	// Pizza
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate'), 0.5, {css:{top: "-375px", left: "-35px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-575px",  left: "-65px"}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-1'), 0.5, {css:{top: "-500px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1050px"}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-2'), 0.5, {css:{top: "-400px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-725px"}, ease:Quad.easeInOut}));
+	// Gouttes d'eau
+	controller.addTween('#message-futur-lettre-texte', TweenMax.fromTo( $('#acteur-goutte1'), 3.0, {css:{top: "-1075px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-goutte2'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-55px"}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-grosse-goutte'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-30px"}, ease:Quad.easeInOut}));
 	// Cochon et pièce
 	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
 	
