@@ -731,6 +731,12 @@ left: -108px;
 }
 
 /* PARTIE DEMAIN */
+#demain-titre{
+	position:relative;
+	top:-1780px;
+	left:280px;
+}
+
 #demain-lignedevie-vertical, #demain-lignedevie, #demain-wrapper,#demain-wrapper-vertical, #demain-content-wrapper{
 	width:1031px;
 	height:2894px;
@@ -1234,6 +1240,7 @@ left: -108px;
 }
 
 
+
 #message-futur-lettre{
 	width:252px;
 	height:246px;
@@ -1262,3 +1269,4 @@ left: -108px;
 .relative{
 	position:relative;
 }
+
