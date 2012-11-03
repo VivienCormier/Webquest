@@ -299,8 +299,9 @@ $(document).ready(function() {
 	// Cochon et pièce
 	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
 
-	//Diagramme
+	//Diagramme()
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#transition-diagramme-anime-img'), 10, {css:{rotation:0,}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360}, ease:Quad.easeOut}),0,400);
+
 });
 
 function flottementNuageHeader(){
