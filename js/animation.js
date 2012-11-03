@@ -288,6 +288,14 @@ $(document).ready(function() {
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 2, {css:{height:2630}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}),0,700);
 	
 	// Partie 4 : Acteurs et modèle économique
+	// Ligne de vie
+	controller.addTween('#transition-diagramme-anime', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 4, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:605}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-horiz-wrapper'), 1, {css:{width: 0, right:-855}, immediateRender:true, ease:Back.easeOut}, {css:{width:207, right:-695}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 8, {css:{height: 605}, immediateRender:true, ease:Back.easeOut}, {css:{height:777}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-domotique-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3, {css:{height: 777}, immediateRender:true, ease:Back.easeOut}, {css:{height:1323}, ease:Quad.easeInOut}));
+	controller.addTween('#tomate-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3, {css:{height: 1323}, immediateRender:true, ease:Back.easeOut}, {css:{height:1800}, ease:Quad.easeInOut}));
+	controller.addTween('#acteur-kickstarter-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3.5, {css:{height: 1800}, immediateRender:true, ease:Back.easeOut}, {css:{height:2120}, ease:Quad.easeInOut}));
+	
 	// Pizza
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate'), 0.5, {css:{top: "-375px", left: "-35px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-575px",  left: "-65px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-1'), 0.5, {css:{top: "-500px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1050px"}, ease:Quad.easeInOut}));
