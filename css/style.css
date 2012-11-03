@@ -1087,23 +1087,31 @@ left: -108px;
     position: relative;
 	left: 20px;
 	top: -1470px;
+	z-index:5;
 }
 #acteur-kickstarter-texte p .majuscules.couleur {
 	color:#85c442;
+}
+#acteur-kickstarter-fleche {
+	position:relative;
+	width:46px;
+	height:32px;
+	left:520px;
+	top:-1555px;
 }
 #acteur-kickstarter{
 	position:relative;
 	width:405px;
 	height:56px;
 	left:520px;
-	top:-1570px;
+	top:-1600px;
 }
 #acteur-gens{
 	position:relative;
 	width:381px;
 	height:137px;
 	left:306px;
-	top:-1445px;
+	top:-1495px;
 }
 #acteur-cochon {
     height: 423px;
