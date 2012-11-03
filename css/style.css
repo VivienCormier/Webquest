@@ -1232,7 +1232,7 @@ left: -108px;
 /* FIN transition 4-5 */
 
 /* PARTIE AVANTAGE & INCONVENIENTS */
-#avantage-lignedevie-vertical, #avantage-lignedevie, #avantage-wrapper-vertical, #avantage-content-wrapper{
+#avantage-lignedevie-vertical, #avantage-lignedevie, #avantage-wrapper-vertical, #avantage-content-wrapper, #avantages-limites-dangers-wrapper, #fond-key{
 	width:1031px;
 	height:2000px;
 	margin:auto;
@@ -1245,10 +1245,123 @@ left: -108px;
 	top:-227px;
 	left:-63px;
 }
-
 #avantage-lignedevie-horizontal{
 	position:relative;
 	top:-2000px;
+}
+#fond-key{
+	position:relative;
+	top:-2000px;
+}
+#key1{
+	position:relative;
+	top:635px;
+	left:870px;
+	z-index:5;
+}
+#key2{
+	position:relative;
+	top:585px;
+	left:430px;
+}
+#key3{
+	position:relative;
+	top:600px;
+	left:150px;
+}
+#key4{
+	position:relative;
+	top:615px;
+	left:-305px;
+}
+#key5{
+	position:relative;
+	top:870px;
+	left:200px;
+}
+#key6{
+	position:relative;
+	top:1140px;
+	left:-490px;
+}
+
+#avantage-content-wrapper{
+	position:relative;
+	top:-4000px;
+}
+#avantage-title{
+	position:relative;
+	left:270px;
+	top:-25px;
+}
+#avantage-avantage-texte{
+	background-image:url(../res/partie-5/text-avantage-1.png);
+	width:503px;
+	height:198px;
+	position:relative;
+	left: 270px;
+	top:-10px;
+}
+#avantage-maison{
+	width:244px;
+	height:245px;
+	position:relative;
+	top:-175px;
+	left: 800px;	
+}
+#avantage-text2-texte{
+	background-image:url(../res/partie-5/text-liste-avantage-2.png);
+	width:516px;
+	height:269px;
+	position:relative;
+	top:-224px;
+	left: 455px;
+}
+#avantage-text3-texte{
+	background-image:url(../res/partie-5/text-mais-3.png);
+	width:503px;
+	height:132px;
+	position:relative;
+	top:-185px;
+	left: 260px;
+}
+#avantage-text4-texte{
+	background-image:url(../res/partie-5/text-developpement-4.png);
+	width:425px;
+	height:158px;
+	position:relative;
+	top:-110px;
+	left: 85px;
+}
+#avantage-text5-texte{
+	background-image:url(../res/partie-5/text-objetintelligent-5.png);
+	width:416px;
+	height:256px;
+	position:relative;
+	top:-10px;
+	left: 560px;
+}
+#avantage-text6-texte{
+	background-image:url(../res/partie-5/text-final-6.png);
+	width:503px;
+	height:160px;
+	position:relative;
+	top:240px;
+	left: 280px;
+}
+#avantage-globe{
+	width:134px;
+	height:147px;
+	position:relative;
+	top:-1200px;
+	left:180px;
+}
+#avantage-cadenas{
+	width:235px;
+	height:588px;
+	position:relative;
+	top:-735px;
+	left:180px;
 }
 /* FIN PARTIE avantage & inconvenient */
 
