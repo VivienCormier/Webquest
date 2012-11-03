@@ -14,12 +14,12 @@ $(document).ready(function() {
 	});
 
 	$('#item3').click(function(){
-		var offset = $('#demain-wrapper').offset();
+		var offset = $('#demain-titre').offset();
 		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 
 	$('#item4').click(function(){
-		var offset = $('#acteurs-modele-economique-wrapper').offset();
+		var offset = $('#acteurs-title').offset();
 		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 

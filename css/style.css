@@ -1229,7 +1229,28 @@ left: -108px;
 	top: -935px;
 	z-index: -3;
 }
+/* FIN transition 4-5 */
 
+/* PARTIE AVANTAGE & INCONVENIENTS */
+#avantage-lignedevie-vertical, #avantage-lignedevie, #avantage-wrapper-vertical, #avantage-content-wrapper{
+	width:1031px;
+	height:2000px;
+	margin:auto;
+}
+#avantage-lignedevie-vertical{
+	background-image:url(../res/partie-5/ligne-de-vie.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+	top:-227px;
+	left:-63px;
+}
+
+#avantage-lignedevie-horizontal{
+	position:relative;
+	top:-2000px;
+}
+/* FIN PARTIE avantage & inconvenient */
 
 #message-futur{
 	width:395px;
