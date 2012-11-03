@@ -928,13 +928,12 @@ left: -108px;
 	height: 2220px;
 	margin : auto;
 	position: relative;
-	background:url("../res/partie-4/ligne-de-vie.png") no-repeat top center;
+	background:url("../res/partie-4/ligne-de-vie.png") no-repeat center -310px;
 }
 #acteurs-modele-economique-content-wrapper {
 	width: 1000px;
 	height: 200px;
 	margin: auto;
-	top: 310px;
 	position: relative;
 }
 #acteurs-title {
@@ -976,25 +975,25 @@ left: -108px;
 
 #tomate{
 	position:relative;
-	top:-500px;
-	left:0px;
+	top: -525px;
+	left: -65px;
 }
 #tomate-feuille-1{
 	position:relative;
-	top: -910px;
-	left: 130px;
+	top: -935px;
+	left: 45px;
 }
 #tomate-feuille-2{
-    left: 0;
+    left: -75px;
     position: relative;
-    top: -660px;
+    top: -725px;
 }
 #tomate-texte{
 	background:url("../res/partie-4/text-tomate.png") top left no-repeat;
     height: 191px;
-    left: 130px;
+    left: 60px;
     position: relative;
-    top:-824px;
+    top:-840px;
     width: 340px;
 }
 
@@ -1008,10 +1007,85 @@ left: -108px;
 }
 
 #btn-tomate {
-position: relative;
-top: -40px;
-left: 35px;
+	position: relative;
+	top: -40px;
+	left: 35px;
 }
+
+/*les gouttes */
+#acteur-wrapper-goutte{
+	width: 430px;
+	height: 580px;
+	position: relative;
+	top: -1400px;
+	left: 770px;
+}
+#acteur-goutte1{
+	position:relative;
+	width:69px;
+	height:117px;
+	left:170px;
+}
+#acteur-goutte2{
+	position:relative;
+	width:47px;
+	height:81px;
+	left:150px;
+	top:-55px;
+}
+#acteur-grosse-goutte{
+	position:relative;
+	width:192px;
+	height:328px;
+	top:-30px;
+	z-index:10;
+}
+/* fin gouttes */
+#acteur-evian-texte{
+	background:url("../res/partie-4/text-evian.png") top left no-repeat;
+	width: 344px;
+    height: 184px;
+    position: relative;
+	left: 554px;
+    top:-1623px;
+}
+#btn-evian {
+	position: relative;
+	top: -40px;
+	left: 35px;
+}
+#acteur-croissance-texte{
+	background:url('../res/partie-4/text-initiatives.png') top left no-repeat;
+	width: 493px;
+    height: 125px;
+    position: relative;
+	left: 260px;
+	top: -1525px;
+}
+#acteur-kickstarter-texte{
+	background:url('../res/partie-4/text-kickstrarter.png') top left no-repeat;
+	width: 502px;
+    height: 144px;
+    position: relative;
+	left: 20px;
+	top: -1470px;
+}
+#acteur-kickstarter{
+	position:relative;
+	width:405px;
+	height:56px;
+	left:520px;
+	top:-1570px;
+}
+#acteur-gens{
+	position:relative;
+	width:381px;
+	height:137px;
+	left:306px;
+	top:-1445px;
+}
+
+
 
 #message-futur{
 	width:395px;
@@ -1020,6 +1094,8 @@ left: 35px;
 	top: 673px;
 	left: 311px;
 }
+
+
 #message-futur-lettre{
 	width:252px;
 	height:246px;

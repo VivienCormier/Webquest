@@ -93,6 +93,9 @@ $(document).ready(function() {
 	$("#btn-tomate").click( function(e) {
 		alert('btn tomate');
 	});
+	$("#btn-evian").click( function(e) {
+		alert('btn evian');
+	});
 
 	$("#demain-songdo-video-screen").click( function(e) {
 		$('#demain-songdo-video-screen').animate({opacity:0}, 2000);
