@@ -1333,6 +1333,9 @@ left: -108px;
 	top:-224px;
 	left: 455px;
 }
+#avantage-text2-texte p{
+	padding:60px 70px;
+}
 #avantage-text3-texte{
 	background-image:url(../res/partie-5/text-mais-3.png);
 	width:503px;
