@@ -808,9 +808,17 @@ left: -108px;
 	left: 781px;
 	overflow:hidden;
 }
-#demain-ldvh-3 img{
+#demain-ldvh-4{
+	width:160px;
+	height:17px;
+	position: relative;
+	top: 2448px;
+	left: 197px;
+	overflow:hidden;
+}
+#demain-ldvh-4 img{
 	position:relative;
-	left:193px;
+	left:160px;
 }
 
 #demain-content-wrapper{
@@ -1152,6 +1160,65 @@ left: -108px;
     z-index: 6;
 }
 
+/* TRANSITION 4-5 */
+#transition-balance{
+	width: 100%;
+	height: 762px;
+	background-image:url(../res/transition%204-5/balance.png);
+	background-position: top,center;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 90px;
+	left:-10px;
+}
+#anime-balance-wrapper{
+	width: 1000px;
+	height: 700px;
+	margin: auto;
+	position: relative;
+	top: -149px;
+}
+#ligne-de-vie-balance{
+	width: 207px;
+	height: 480px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 509px;
+}
+#plus-balance{
+	width: 291px;
+	height: 292px;
+	background-image:url(../res/transition%204-5/plus.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 110px;
+	top:-365px;
+	z-index: -2;
+}
+#nuage-balance{
+	width: 814px;
+	height: 329px;
+	background-image:url(../res/transition%204-5/nuage.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 140px;
+	top: -480px;
+	z-index: -2;
+}
+#moins-balance{
+	width: 291px;
+	height: 292px;
+	background-image:url(../res/transition%204-5/moins.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 600px;
+	top: -935px;
+	z-index: -3;
+}
 
 
 #message-futur{

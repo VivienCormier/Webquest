@@ -237,7 +237,7 @@ $(document).ready(function() {
 	//horizontal 2
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-ldvh-2'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:628}, ease:Quad.easeInOut}),0,-200);
 	//vertical 2
-	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 5, {css:{height:1268}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}));
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 5, {css:{height:1268}, immediateRender:true, ease:Back.easeOut}, {css:{height:2630}, ease:Quad.easeInOut}));
 	//texte fin bout
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-collectivite-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//verticale fin bout
@@ -282,6 +282,11 @@ $(document).ready(function() {
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
 	
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
+	//vertical 2
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 2, {css:{height:2630}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}),0,700);
+	
 	// Partie 4 : Acteurs et modèle économique
 	// Pizza
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate'), 0.5, {css:{top: "-375px", left: "-35px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-575px",  left: "-65px"}, ease:Quad.easeInOut}));
@@ -295,13 +300,16 @@ $(document).ready(function() {
 	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-kickstarter-fleche'), 1.0, {css:{left: "420px"}, immediateRender:true, ease:Back.easeOut}, {css:{left: "520px"}, ease:Quad.easeInOut}));
 	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-kickstarter'), 0.5, {css:{left: "120px"}, immediateRender:true, ease:Back.easeOut}, {css:{left: "520px"}, ease:Quad.easeInOut}));
 	// Les petits hommes verts...
-	controller.addTween('#acteur-croissance-texte', TweenMax.fromTo( $('#acteur-gens'), 1.5, {css:{opacity: "0", top: "-2595px", rotation: "35"}, immediateRender:true, ease:Back.easeOut}, {css:{opacity: "100", top: "-1495px", rotation: "0"}, ease:Quad.easeInOut}));
+	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-gens'), 1.5, {css:{opacity: 0, top: -2595, rotation: 35}, immediateRender:true, ease:Back.easeOut}, {css:{opacity: 1, top: -1495, rotation: 0}, ease:Bounce.easeOut}));
+
 	// Cochon et pièce
 	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
 
 	//Diagramme()
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#transition-diagramme-anime-img'), 10, {css:{rotation:0,}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360}, ease:Quad.easeOut}),0,400);
-
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#transition-diagramme-anime-img'), 10, {css:{rotation:0,}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:1080}, ease:Quad.easeOut}),0,400);
+	
+	
+	//transition 4-5
 });
 
 function flottementNuageHeader(){
