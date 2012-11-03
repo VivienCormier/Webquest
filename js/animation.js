@@ -5,27 +5,27 @@ $(document).ready(function() {
 	// Liens de menu
 	$('#item1').click(function(){
 		var offset = $('#definition-wrapper').offset();
-		$('html,body').animate({scrollTop: offset.top}, 2000);
+		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 
 	$('#item2').click(function(){
 		var offset = $('#aujourdhui-wrapper').offset();
-		$('html,body').animate({scrollTop: offset.top}, 2000);
+		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 
 	$('#item3').click(function(){
 		var offset = $('#demain-wrapper').offset();
-		$('html,body').animate({scrollTop: offset.top}, 2000);
+		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 
 	$('#item4').click(function(){
 		var offset = $('#acteurs-modele-economique-wrapper').offset();
-		$('html,body').animate({scrollTop: offset.top}, 2000);
+		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 
 	$('#item5').click(function(){
 		var offset = $('#avantages-limites-dangers-wrapper').offset();
-		$('html,body').animate({scrollTop: offset.top}, 2000);
+		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 	
 	//cache ligne de vie 1 : definition click sur TIC

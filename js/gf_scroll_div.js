@@ -137,7 +137,7 @@ function DIV_InitScroll(){
 O_DivScroll = new DIV_Scroll('DIV_MOVE');
 //-- Lance inspection si existe
 if( O_DivScroll.Obj)
-IdTimer_2 = setInterval('DIV_CheckScroll()',100);
+IdTimer_2 = setInterval('DIV_CheckScroll()',50);
 }
 //========================================
 Add_Event( window, 'load', DIV_InitScroll);
