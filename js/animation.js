@@ -98,7 +98,7 @@ $(document).ready(function() {
 	});
 
 	$("#demain-songdo-video-screen").click( function(e) {
-		$('#demain-songdo-video-screen').animate({opacity:0}, 2000);
+		$('#demain-songdo-video-screen').fadeOut(1500);
     });
 
     // Simulation du flottement des nuages
