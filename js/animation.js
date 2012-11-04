@@ -109,13 +109,17 @@ $(document).ready(function() {
 	//Animation en Fonction du Scroll
 
 	//Animation de la ligne de vie 1 : #ligne_vie_1
-	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:0}, immediateRender:true, ease:Circ.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}));
+	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:600}, immediateRender:true, ease:Circ.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}),0,600);
+	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:0}, immediateRender:true, ease:Circ.easeOut}, {css:{height:600}, ease:Quad.easeInOut}));
 
 	//Animation de la ligne de vie 1 : #texte-definition1-part1
 	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#fleche-connecte img'), 1, {css:{left:-80}, immediateRender:true, ease:Quart.easeInOut,},{css:{left:0},ease:Quad.easeInOut,}));
 	
 	//Animation de la ligne de vie 1 : #text-association
 	controller.addTween('#texte-definition1-part1', TweenMax.fromTo( $('#text-association'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:203}, ease:Quad.easeInOut}),0, 100);
+
+	//Animation de la ligne de vie 1 : #text-association
+	controller.addTween('#texte-definition1-part1', TweenMax.fromTo( $('#nuage-definition'), 1.5, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0, 100);
 	
 	//Paralax des nuages et du soleil de la ville 
 	controller.addTween(
@@ -233,11 +237,15 @@ $(document).ready(function() {
 	
 	//animation de la ligne de vie demain et de ses textes
 	//horizontal 3
-	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-ldvh-3 img'), 0.5, {css:{left:193}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}));
+	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-ldvh-3 img'), 0.5, {css:{left:193}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,50);
 	//horizontal 2
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-ldvh-2'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:628}, ease:Quad.easeInOut}),0,-200);
+	//verticale 0
+	controller.addTween('#demain-songdo-video', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1560}, immediateRender:true, ease:Back.easeOut}, {css:{height:2800}, ease:Quad.easeInOut}),0,200);
+	//verticale 1
+	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1560}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}),0,150);
 	//vertical 2
-	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 5, {css:{height:1268}, immediateRender:true, ease:Back.easeOut}, {css:{height:2630}, ease:Quad.easeInOut}));
+	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1268}, immediateRender:true, ease:Back.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}));
 	//texte fin bout
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-collectivite-texte'), 1, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,-200);
 	//verticale fin bout
@@ -307,7 +315,11 @@ $(document).ready(function() {
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-1'), 0.5, {css:{top: "-500px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1050px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-2'), 0.5, {css:{top: "-400px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-725px"}, ease:Quad.easeInOut}));
 	// Gouttes d'eau
+<<<<<<< HEAD
 	controller.addTween('#message-futur-lettre-texte', TweenMax.fromTo( $('#acteur-goutte1'), 4.0, {css:{top: "-1075px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}),0,200);
+=======
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-goutte1'), 1.5, {css:{top: "-400px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}));
+>>>>>>> Ajustement Animation Ajout nuages
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-goutte2'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-55px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-grosse-goutte'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-30px"}, ease:Quad.easeInOut}));
 	// Kickstarter
@@ -335,6 +347,7 @@ function flottementNuageHeader(){
 
 	var deplacementNuage1 = deplacementAleatoire *100;
 	var deplacementNuage2 = 200 + (-1 * deplacementAleatoire *200);
+	var deplacementNuage3 = 200 + (deplacementAleatoire *200);
 
     $("#nuage-1").animate({
         right: deplacementNuage1+'px'
@@ -346,6 +359,13 @@ function flottementNuageHeader(){
 
     $("#nuage-2").animate({
         left: deplacementNuage2+'px'
+    }, {
+        queue:false, 
+        duration:2500, 
+        easing:'easeInOutSine'
+    });
+    $("#nuage-3").animate({
+        right: deplacementNuage3+'px'
     }, {
         queue:false, 
         duration:2500, 
