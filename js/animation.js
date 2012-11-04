@@ -277,6 +277,12 @@ $(document).ready(function() {
 	//début ligne de vie
 	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
 
+	// Icones
+	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-piles'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeOut}),0,-200);
+	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-usine'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeInOut}),0,-200);
+	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-piece'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeInOut}),0,-200);
+	controller.addTween('#demain-ldvh-bout4', TweenMax.fromTo( $('#demain-croix-rouge'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeInOut}),0,-200);
+	
 	//Lettre
 	controller.addTween('#message-futur-lettre', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-253px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "0px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
