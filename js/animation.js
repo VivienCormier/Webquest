@@ -315,11 +315,7 @@ $(document).ready(function() {
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-1'), 0.5, {css:{top: "-500px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1050px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-2'), 0.5, {css:{top: "-400px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-725px"}, ease:Quad.easeInOut}));
 	// Gouttes d'eau
-<<<<<<< HEAD
-	controller.addTween('#message-futur-lettre-texte', TweenMax.fromTo( $('#acteur-goutte1'), 4.0, {css:{top: "-1075px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}),0,200);
-=======
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-goutte1'), 1.5, {css:{top: "-400px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}));
->>>>>>> Ajustement Animation Ajout nuages
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-goutte2'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-55px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-grosse-goutte'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-30px"}, ease:Quad.easeInOut}));
 	// Kickstarter
