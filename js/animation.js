@@ -2,6 +2,12 @@ $(document).ready(function() {
 	
 	$('body').css('visibility','visible');
 
+	// Simulation du flottement des nuages
+	flottementNuageHeader();
+    setInterval(function() {
+      flottementNuageHeader()
+	}, 2500);
+
 	// Liens de menu
 	$('#item1').click(function(){
 		var offset = $('#definition-wrapper').offset();
@@ -101,11 +107,6 @@ $(document).ready(function() {
 		$('#demain-songdo-video-screen').fadeOut(1500);
     });
 
-    // Simulation du flottement des nuages
-    setInterval(function() {
-      flottementNuageHeader()
-	}, 2500);
-
 	//Animation en Fonction du Scroll
 
 	//Animation de la ligne de vie 1 : #ligne_vie_1
@@ -193,7 +194,9 @@ $(document).ready(function() {
 			]),
 		800 // scroll duration of tween
 	);
-	
+	//twitter img
+	controller.addTween('#aujourdhui-raquette-texte', TweenMax.fromTo( $('#twitter-decors-1'), 2, {css:{top:260,left:400}, immediateRender:true, ease:Back.easeOut}, {css:{top:170,left:480}, ease:Quad.easeOut}),100,-100);
+
 	//babyfoot img
 	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-2500}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2230}, ease:Quad.easeOut}),500);
 	
@@ -240,8 +243,10 @@ $(document).ready(function() {
 	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-ldvh-3 img'), 0.5, {css:{left:193}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,50);
 	//horizontal 2
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-ldvh-2'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:628}, ease:Quad.easeInOut}),0,-200);
+	//verticale -1
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:2620}, immediateRender:true, ease:Back.easeOut}, {css:{height:2850}, ease:Quad.easeInOut}),0,700);
 	//verticale 0
-	controller.addTween('#demain-songdo-video', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1560}, immediateRender:true, ease:Back.easeOut}, {css:{height:2800}, ease:Quad.easeInOut}),0,200);
+	controller.addTween('#demain-songdo-video', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1560}, immediateRender:true, ease:Back.easeOut}, {css:{height:2620}, ease:Quad.easeInOut}),0,200);
 	//verticale 1
 	controller.addTween('#demain-ldvh-3', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1560}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}),0,150);
 	//vertical 2
@@ -296,7 +301,6 @@ $(document).ready(function() {
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
 	
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
 	//vertical 2
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 2, {css:{height:2630}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}),0,700);

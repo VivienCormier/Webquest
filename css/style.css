@@ -306,10 +306,11 @@ p {
 	height: 3886px;
 }
 #aujourdhui_ligne_vie_vertical{
-	height: 3886px;
+	height: 0px;
 	background-image:url(../res/partie-2/ligne-de-vie-vertical.png);
 	background-position: top,center;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 #aujourdhui_ligne_vie_horizontal{
 	height: 860px;
@@ -324,6 +325,17 @@ p {
 	position: relative;
 	top: 310px;
 	left: 650px;
+}
+#nuage-decors-aujourdhui-2{
+	position: relative;
+	top: 290px;
+	left: 560px;
+}
+#twitter-decors-1{
+	position: relative;
+	top: 260px;
+	left: 400px;
+	z-index: -1;
 }
 #aujourdhui-wrapper{
 	width: 1000px;
