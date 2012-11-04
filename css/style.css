@@ -835,7 +835,11 @@ left: -108px;
 	position:relative;
 	top:-2894px;
 }
-
+#demain-pictos {
+    left: 150px;
+    position: relative;
+    top: -1490px;
+}
 #demain-evolution-texte{
 	background-image:url(../res/partie-3/text-evolutions.png);
 	width:311px;
