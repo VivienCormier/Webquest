@@ -286,7 +286,7 @@ $(document).ready(function() {
 	//verticale bout 1
 	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 0.5, {css:{height:520}, immediateRender:true, ease:Back.easeOut}, {css:{height:670}, ease:Quad.easeInOut}),0,-300);
 	//horizontal 1
-	controller.addTween('#demain-ldvh-1', TweenMax.fromTo( $('#demain-ldvh-1 img'), 1.5, {css:{left:489}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,-400);
+	controller.addTween('#demain-ldvh-1', TweenMax.fromTo( $('#demain-ldvh-1 img'), 1.5, {css:{left:489}, immediateRender:true, ease:Back.easeOut}, {css:{left:0}, ease:Quad.easeInOut}),0,-200);
 	//début ligne de vie
 	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
 
@@ -302,8 +302,6 @@ $(document).ready(function() {
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
 	
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
-	//vertical 2
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 2, {css:{height:2630}, immediateRender:true, ease:Back.easeOut}, {css:{height:2894}, ease:Quad.easeInOut}),0,700);
 	
 	// Partie 4 : Acteurs et modèle économique
 	// Ligne de vie
@@ -330,7 +328,8 @@ $(document).ready(function() {
 
 	// Cochon et pièce
 	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
-
+	//Nuage
+	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#demain-nuage-decors-1'), 2, {css:{opacity:0,left: 890}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1,left: 490}, ease:Quad.easeInOut}),0,-200);
 	//Diagramme()
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#transition-diagramme-anime-img'), 10, {css:{rotation:0,}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:1080}, ease:Quad.easeOut}),0,400);
 	
@@ -338,7 +337,10 @@ $(document).ready(function() {
 	controller.addTween('#acteur-cochon-projet', TweenMax.fromTo( $('#ligne-de-vie-balance'), 1.5, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:408}, ease:Quad.easeInOut}));
 	
 	//ligne de vie partie 5
-	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 10, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}));
+	controller.addTween('#avantage-text5-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 1460}, immediateRender:true, ease:Back.easeOut}, {css:{height:1950}, ease:Quad.easeInOut}));
+	controller.addTween('#avantage-text3-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:1460}, ease:Quad.easeInOut}));
+	controller.addTween('#avantage-avantage-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:930}, ease:Quad.easeInOut}));
+	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:430}, ease:Quad.easeInOut}));
 	
 });
 
