@@ -1194,8 +1194,16 @@ left: -108px;
 	background-position: top,center;
 	background-repeat: no-repeat;
 	position: relative;
-	top: 90px;
-	left:-10px;
+	top: -166px;
+	left:-30px;
+}
+#ldvh-wrapper-vertical{
+	width:15px;
+	height:408px;
+	position: relative;
+	left: 514px;
+	top:-13px;
+	
 }
 #anime-balance-wrapper{
 	width: 1000px;
@@ -1205,12 +1213,12 @@ left: -108px;
 	top: -149px;
 }
 #ligne-de-vie-balance{
-	width: 207px;
+	background-image:url(../res/transition%204-5/ligne-de-vie.png);
+	width: 15px;
 	height: 480px;
 	background-position: center;
 	background-repeat: no-repeat;
-	position: relative;
-	left: 509px;
+
 }
 #plus-balance{
 	width: 291px;
@@ -1253,14 +1261,19 @@ left: -108px;
 	height:2000px;
 	margin:auto;
 }
+#avantages-limites-dangers-wrapper{
+	position: relative;
+	top: -255px;
+	left: -20px;
+}
 #avantage-lignedevie-vertical{
 	background-image:url(../res/partie-5/ligne-de-vie.png);
-	background-position:center;
 	background-repeat:no-repeat;
 	position:relative;
-	top:-227px;
-	left:-63px;
+	top:-185px;
+	left:176px;
 }
+
 #avantage-lignedevie-horizontal{
 	position:relative;
 	top:-2000px;

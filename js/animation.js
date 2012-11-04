@@ -289,19 +289,19 @@ $(document).ready(function() {
 	
 	// Partie 4 : Acteurs et modèle économique
 	// Ligne de vie
-	controller.addTween('#transition-diagramme-anime', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 4, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:605}, ease:Quad.easeInOut}));
+	controller.addTween('#transition-diagramme-anime', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:605}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-horiz-wrapper'), 1, {css:{width: 0, right:-855}, immediateRender:true, ease:Back.easeOut}, {css:{width:207, right:-695}, ease:Quad.easeInOut}));
-	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 8, {css:{height: 605}, immediateRender:true, ease:Back.easeOut}, {css:{height:777}, ease:Quad.easeInOut}));
-	controller.addTween('#acteurs-domotique-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3, {css:{height: 777}, immediateRender:true, ease:Back.easeOut}, {css:{height:1323}, ease:Quad.easeInOut}));
-	controller.addTween('#tomate-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3, {css:{height: 1323}, immediateRender:true, ease:Back.easeOut}, {css:{height:1800}, ease:Quad.easeInOut}));
-	controller.addTween('#acteur-kickstarter-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 3.5, {css:{height: 1800}, immediateRender:true, ease:Back.easeOut}, {css:{height:2120}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 1, {css:{height: 605}, immediateRender:true, ease:Back.easeOut}, {css:{height:777}, ease:Quad.easeInOut}));
+	controller.addTween('#acteurs-domotique-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 1.5, {css:{height: 777}, immediateRender:true, ease:Back.easeOut}, {css:{height:1323}, ease:Quad.easeInOut}));
+	controller.addTween('#tomate-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 2, {css:{height: 1323}, immediateRender:true, ease:Back.easeOut}, {css:{height:1900}, ease:Quad.easeInOut}));
+	controller.addTween('#acteur-kickstarter-texte', TweenMax.fromTo( $('#acteurs-modele-economique-ldv-wrapper'), 2, {css:{height: 1900}, immediateRender:true, ease:Back.easeOut}, {css:{height:2120}, ease:Quad.easeInOut}));
 	
 	// Pizza
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate'), 0.5, {css:{top: "-375px", left: "-35px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-575px",  left: "-65px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-1'), 0.5, {css:{top: "-500px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1050px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#tomate-feuille-2'), 0.5, {css:{top: "-400px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-725px"}, ease:Quad.easeInOut}));
 	// Gouttes d'eau
-	controller.addTween('#message-futur-lettre-texte', TweenMax.fromTo( $('#acteur-goutte1'), 3.0, {css:{top: "-1075px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}));
+	controller.addTween('#message-futur-lettre-texte', TweenMax.fromTo( $('#acteur-goutte1'), 4.0, {css:{top: "-1075px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-25px"}, ease:Quad.easeInOut}),0,200);
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-goutte2'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-55px"}, ease:Quad.easeInOut}));
 	controller.addTween('#acteurs-title', TweenMax.fromTo( $('#acteur-grosse-goutte'), 1.5, {css:{top: "-375px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-30px"}, ease:Quad.easeInOut}));
 	// Kickstarter
@@ -316,8 +316,12 @@ $(document).ready(function() {
 	//Diagramme()
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#transition-diagramme-anime-img'), 10, {css:{rotation:0,}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:1080}, ease:Quad.easeOut}),0,400);
 	
-	
 	//transition 4-5
+	controller.addTween('#acteur-cochon-projet', TweenMax.fromTo( $('#ligne-de-vie-balance'), 1.5, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:408}, ease:Quad.easeInOut}));
+	
+	//ligne de vie partie 5
+	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 10, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:2000}, ease:Quad.easeInOut}));
+	
 });
 
 function flottementNuageHeader(){
