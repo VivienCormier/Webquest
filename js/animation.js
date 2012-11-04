@@ -195,7 +195,7 @@ $(document).ready(function() {
 		800 // scroll duration of tween
 	);
 	//twitter img
-	controller.addTween('#aujourdhui-raquette-texte', TweenMax.fromTo( $('#twitter-decors-1'), 2, {css:{top:260,left:400}, immediateRender:true, ease:Back.easeOut}, {css:{top:170,left:480}, ease:Quad.easeOut}),100,-100);
+	controller.addTween('#aujourdhui-raquette-texte', TweenMax.fromTo( $('#twitter-decors-1'), 2, {css:{top:260,left:547}, immediateRender:true, ease:Back.easeOut}, {css:{top:170,left:646}, ease:Quad.easeOut}),100,-100);
 
 	//babyfoot img
 	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-2500}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2230}, ease:Quad.easeOut}),500);
@@ -338,7 +338,7 @@ $(document).ready(function() {
 	
 	//ligne de vie partie 5
 	controller.addTween('#avantage-text5-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 1460}, immediateRender:true, ease:Back.easeOut}, {css:{height:1950}, ease:Quad.easeInOut}));
-	controller.addTween('#avantage-text3-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:1460}, ease:Quad.easeInOut}));
+	controller.addTween('#avantage-text3-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 930}, immediateRender:true, ease:Back.easeOut}, {css:{height:1460}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-avantage-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:930}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:430}, ease:Quad.easeInOut}));
 	
@@ -349,7 +349,7 @@ function flottementNuageHeader(){
 
 	var deplacementNuage1 = deplacementAleatoire *100;
 	var deplacementNuage2 = 200 + (-1 * deplacementAleatoire *200);
-	var deplacementNuage3 = 200 + (deplacementAleatoire *200);
+	var deplacementNuage3 = 200 + (deplacementAleatoire *300);
 
     $("#nuage-1").animate({
         right: deplacementNuage1+'px'
