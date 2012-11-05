@@ -880,6 +880,7 @@ left: -108px;
 }
 #demain-pictos div {
     position: relative;
+	margin:0 0 55px 0;
 }
 #demain-evolution-texte{
 	background-image:url(../res/partie-3/text-evolutions.png);
@@ -972,6 +973,9 @@ left: -108px;
 	position:relative;
 	top: 535px;
 	left: 280px;
+}
+#demain-songdo-texte p {
+	padding:45px;
 }
 #demain-songdo-video{
 	width:729px;
@@ -1469,6 +1473,7 @@ left: -108px;
 }
 #message-futur-lettre-texte{
 	width:358px;
+	z-index: 2;
 	height:235px;
 	background-image:url(../res/partie-3/msg-futur/text-ce-matin.png);
 	position: relative;

@@ -287,7 +287,12 @@ $(document).ready(function() {
 	//Lettre
 	controller.addTween('#message-futur-lettre', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-253px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "0px 0px"}, ease:Quad.easeInOut}));
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);
+	/*controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);*/
+	
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:23, opacity:1}, ease:Quad.easeInOut}),0,200);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 23}, immediateRender:true, ease:Back.easeOut}, {css:{height:55}, ease:Quad.easeInOut}),0,300);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 55}, immediateRender:true, ease:Back.easeOut}, {css:{height:96}, ease:Quad.easeInOut}),0,400);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 96}, immediateRender:true, ease:Back.easeOut}, {css:{height:235}, ease:Quad.easeInOut}),0,500);
 	
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
 	
