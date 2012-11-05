@@ -580,7 +580,6 @@ left: -87px;
 	left: 710px;
 	width:250px;
 	height:295px;
-	z-index: 1;
 }
 
 #aujourdhui-nike-texte p {
@@ -1011,8 +1010,8 @@ left: -108px;
 #transition-diagramme-anime img{
 	z-index: -2;
 	position: relative;
-	left: 510px;
-	top: 90px;
+	left: 560px;
+	top: 95px;
 }
 
 /* Partie 4 : acteurs et modèle économique */
