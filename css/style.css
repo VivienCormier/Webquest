@@ -1512,9 +1512,18 @@ left: -108px;
 	margin-right: 20px;
 }
 #footer-ligne-vie{
-	width: 57px;
 	position: relative;
-	left: 240px;
+	left: 60px;
+	overflow:hidden;
+	height:0;
+}
+#footer-ligne-vie-horiz{
+	width: 0;
+	height:35px;
+	right: 130px;
+	overflow:hidden;
+	position: absolute;
+	top: 180px;
 }
 #imgCredit {
 	opacity:0;

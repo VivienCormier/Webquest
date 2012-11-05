@@ -334,21 +334,18 @@ $(document).ready(function() {
 	controller.addTween('#avantage-avantage-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:930}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:430}, ease:Quad.easeInOut}));
 	
-	// Pour aller plus loin
-	function copyrightOpacity1() {
-		$("#imgCredit").stop().animate({opacity: 1}, 1500);
-	}
-	function copyrightOpacity0() {
-		$("#imgCredit").stop().animate({opacity: 0}, 1500);
-	}
-	
-	var copyrightIsOpen = false;	
+	// Pour aller plus loin	
+	var copyrightIsOpen = false;
 	$("#copyrightLink").click(function(e) {
 		if(!copyrightIsOpen){
-        	$("#footer-ligne-vie").stop().animate({height: 97}, 1500); 
+        	$("#footer-ligne-vie").stop().animate({height: 47}, 400).delay(400).animate({height: 97});
+        	$("#footer-ligne-vie-horiz").stop().delay(400).animate({width: 47}, 400);
+			$("#imgCredit").stop().delay(1500).animate({opacity: 1}, 2000);
 			copyrightIsOpen = true;
 		}else {
-			$("#footer-ligne-vie").stop().animate({height: 0}, 1500); 
+			$("#imgCredit").stop().animate({opacity: 0}, 1000);
+        	$("#footer-ligne-vie").stop().delay(1000).animate({height: 47}, 400).delay(400).animate({height: 0});
+        	$("#footer-ligne-vie-horiz").stop().delay(1400).animate({width: 0}, 400);
 			copyrightIsOpen = false;
 		}
     });
