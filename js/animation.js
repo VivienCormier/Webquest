@@ -230,7 +230,7 @@ $(document).ready(function() {
 	//horizontal 2
 	controller.addTween('#demain-ldvh-2', TweenMax.fromTo( $('#demain-ldvh-2'), 1.5, {css:{width:0}, immediateRender:true, ease:Back.easeOut}, {css:{width:628}, ease:Quad.easeInOut}),0,-200);
 	//verticale -1
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:2620}, immediateRender:true, ease:Back.easeOut}, {css:{height:2850}, ease:Quad.easeInOut}),0,700);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:2620}, immediateRender:true, ease:Back.easeOut}, {css:{height:2850}, ease:Quad.easeInOut}),0,650);
 	//verticale 0
 	controller.addTween('#demain-songdo-video', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1, {css:{height:1560}, immediateRender:true, ease:Back.easeOut}, {css:{height:2620}, ease:Quad.easeInOut}),0,200);
 	//verticale 1
@@ -287,11 +287,12 @@ $(document).ready(function() {
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre'), 0.001, {css:{backgroundPosition: "-504px 0px"}, immediateRender:true, ease:Back.easeOut}, {css:{backgroundPosition: "-253px 0px"}, ease:Quad.easeInOut}));
 	/*controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 2, {css:{rotation:-90, opacity:0,scale:0,top: -163,left: 200}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:0, opacity:1,scale:1,top: -63,left: 36}, ease:Quad.easeOut}),0,400);*/
 	
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:23, opacity:1}, ease:Quad.easeInOut}),0,200);
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 23}, immediateRender:true, ease:Back.easeOut}, {css:{height:55}, ease:Quad.easeInOut}),0,300);
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 55}, immediateRender:true, ease:Back.easeOut}, {css:{height:96}, ease:Quad.easeInOut}),0,400);
-	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 1, {css:{height: 96}, immediateRender:true, ease:Back.easeOut}, {css:{height:235}, ease:Quad.easeInOut}),0,500);
-	
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 0.01, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:23, opacity:1}, ease:Quad.easeInOut}),0,100);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 0.01, {css:{height: 23}, immediateRender:true, ease:Back.easeOut}, {css:{height:55}, ease:Quad.easeInOut}),0,200);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 0.01, {css:{height: 55}, immediateRender:true, ease:Back.easeOut}, {css:{height:106}, ease:Quad.easeInOut}),0,300);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte'), 0.01, {css:{height: 106}, immediateRender:true, ease:Back.easeOut}, {css:{height:248}, ease:Quad.easeInOut}),0,400);
+	controller.addTween('#message-futur', TweenMax.fromTo( $('#message-futur-lettre-texte p'), 0.01, {css:{opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,400);
+
 	controller.addTween('#message-futur', TweenMax.fromTo( $('#demain-ldvh-4 img'), 1, {css:{left: 160}, immediateRender:true, ease:Back.easeOut}, {css:{left: 0}, ease:Quad.easeOut}),0,600);
 	
 	// Partie 4 : Acteurs et modèle économique
@@ -333,6 +334,7 @@ $(document).ready(function() {
 	controller.addTween('#avantage-avantage-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:930}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:430}, ease:Quad.easeInOut}));
 	
+<<<<<<< HEAD
 	// Pour aller plus loin
 	function copyrightOpacity1() {
 		$("#imgCredit").stop().animate({opacity: 1}, 1500);
@@ -352,6 +354,35 @@ $(document).ready(function() {
 		}
     });
 	
+=======
+	//paralax des clefs
+	controller.addTween(
+		'#avantage-cadenas',
+		(new TimelineLite())
+			.append([
+				TweenMax.fromTo($('#key1'), 5, 
+					{css:{top: 750}, immediateRender:true}, 
+					{css:{top: 550}}),
+				TweenMax.fromTo($('#key2'), 5, 
+					{css:{top: 900}, immediateRender:true}, 
+					{css:{top: 0}}),
+				TweenMax.fromTo($('#key3'), 5, 
+					{css:{top: 200}, immediateRender:true}, 
+					{css:{top: 800}}),
+				TweenMax.fromTo($('#key4'), 5, 
+					{css:{top: 0}, immediateRender:true}, 
+					{css:{top: 600}}),
+				TweenMax.fromTo($('#key5'), 5, 
+					{css:{top: 800}, immediateRender:true}, 
+					{css:{top: 600}}),
+				TweenMax.fromTo($('#key6'), 5, 
+					{css:{top: 1200}, immediateRender:true}, 
+					{css:{top: 1000}})
+			]),
+		1000 // scroll duration of tween
+	);
+
+>>>>>>> Commiteeee
 });
 
 function flottementNuageHeader(){
