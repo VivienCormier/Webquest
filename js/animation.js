@@ -101,8 +101,7 @@ $(document).ready(function() {
 	//Animation en Fonction du Scroll
 
 	//Animation de la ligne de vie 1 : #ligne_vie_1
-	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:600}, immediateRender:true, ease:Circ.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}),0,600);
-	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:0}, immediateRender:true, ease:Circ.easeOut}, {css:{height:600}, ease:Quad.easeInOut}));
+	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#ligne_vie_1'), 5, {css:{height:0}, immediateRender:true, ease:Circ.easeOut}, {css:{height:1560}, ease:Quad.easeInOut}),1500,0);
 
 	//Animation de la ligne de vie 1 : #texte-definition1-part1
 	controller.addTween('#twitter_ligne_vie_1', TweenMax.fromTo( $('#fleche-connecte img'), 1, {css:{left:-80}, immediateRender:true, ease:Quart.easeInOut,},{css:{left:0},ease:Quad.easeInOut,}));
@@ -115,15 +114,15 @@ $(document).ready(function() {
 	
 	//Paralax des nuages et du soleil de la ville 
 	controller.addTween(
-		1900,
+		2100,
 		(new TimelineLite())
 			.append([
 				TweenMax.fromTo($('#transition-nuages'), 1, 
 					{css:{top: -430}, immediateRender:true}, 
 					{css:{top: -600}}),
 				TweenMax.fromTo($('#transition-soleil'), 1, 
-					{css:{top: 350}, immediateRender:true}, 
-					{css:{top: -400}})
+					{css:{top: 250}, immediateRender:true}, 
+					{css:{top: -200}})
 			]),
 		1100 // scroll duration of tween
 	);
@@ -138,8 +137,6 @@ $(document).ready(function() {
 
 	//Animation de la partie Aujourd'hui
 	
-	//titre section
-	controller.addTween('#aujourdhui-title', TweenMax.fromTo( $('#aujourdhui-title'), 1.5, {css:{top:-85, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:0, opacity:1}, ease:Quad.easeInOut}),0,-200);
 	
 	//Ligne de vie
 	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 5, {css:{height:2210}, immediateRender:true, ease:Back.easeOut}, {css:{height:4000}, ease:Quad.easeInOut}));
@@ -201,10 +198,10 @@ $(document).ready(function() {
 	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-nike'), 2, {css:{top:-3350}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3590}, ease:Quad.easeOut}),500);
 	
 	//balance img
-	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{rotation:0, top:-3200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:360, top:-3660, opacity:1}, ease:Quad.easeOut}),0,400);
+	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui-balance'), 2, {css:{top:-3200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:-3660, opacity:1}, ease:Quad.easeOut}),0,400);
 	
 	//tv img
-	controller.addTween('#aujourdhui-tv', TweenMax.fromTo( $('#aujourdhui-tv'), 2, {css:{rotation:0, top:-4250}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:20, top:-4360}, ease:Quad.easeOut}),300);
+	controller.addTween('#aujourdhui-tv', TweenMax.fromTo( $('#aujourdhui-tv'), 2, {css:{rotation:0, top:-4360}, immediateRender:true, ease:Back.easeOut}, {css:{rotation:20, top:-4400}, ease:Quad.easeOut}),100);
 	
 	//oeil img
 	controller.addTween('#aujourdhui-balance', TweenMax.fromTo( $('#aujourdhui-oeil'), 2, {css:{top:-4000}, immediateRender:true, ease:Back.easeOut}, {css:{ top:-4255}, ease:Quad.easeOut}),800);
