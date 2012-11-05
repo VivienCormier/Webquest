@@ -24,10 +24,16 @@
 
 body {
 	background: white;
-	font-family: Dosis ,Georgia, Times New Roman, Times, serif;
+	font-family: dosisregular ,Georgia, Times New Roman, Times, serif;
 	font-size:14px;
 	background-image: url('../res/background.jpg');
 	overflow-x: hidden;
+	color:#333333;
+}
+
+strong{
+	font-family: dosissemibold ,Georgia, Times New Roman, Times, serif;
+	font-size:14px;
 	color:#333333;
 }
 
