@@ -317,7 +317,7 @@ $(document).ready(function() {
 	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-kickstarter-fleche'), 1.0, {css:{left: "420px"}, immediateRender:true, ease:Back.easeOut}, {css:{left: "520px"}, ease:Quad.easeInOut}));
 	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-kickstarter'), 0.5, {css:{left: "120px"}, immediateRender:true, ease:Back.easeOut}, {css:{left: "520px"}, ease:Quad.easeInOut}));
 	// Les petits hommes verts...
-	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-gens'), 1.5, {css:{opacity: 0, top: -2595, rotation: 35}, immediateRender:true, ease:Back.easeOut}, {css:{opacity: 1, top: -1495, rotation: 0}, ease:Bounce.easeOut}));
+	controller.addTween('#acteur-croissance-texte', TweenMax.fromTo( $('#acteur-gens'), 1.5, {css:{opacity: 0, top: -1695, rotation: 35}, immediateRender:true, ease:Back.easeOut}, {css:{opacity: 1, top: -1495, rotation: 0}, ease:Bounce.easeOut}));
 
 	// Cochon et pièce
 	controller.addTween('#acteur-cochon-projet', TweenMax.fromTo( $('#acteur-cochon-piece'), 1, {css:{top: "-1880px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Back.easeOut}),0,-200);
