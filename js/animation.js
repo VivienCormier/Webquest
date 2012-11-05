@@ -58,9 +58,6 @@ $(document).ready(function() {
     });
 	
 	//les click boutons
-	$("#more-tic-link").click( function(e) {
-    });
-	
 	$("#btn-nabaztag").click( function(e) {
 		alert('btn nabaztag');
     });
@@ -72,15 +69,9 @@ $(document).ready(function() {
 	$("#btn-raquette").click( function(e) {
 		alert('btn raquette');
     });
-	$("#btn-babyfoot").click( function(e) {
-		alert('btn babyfoot');
-	});
 	$("#btn-chaussure").click( function(e) {
 		alert('btn chaussure');
     });
-	$("#btn-brosse").click( function(e) {
-		alert('btn brosse');
-	});
 	$("#btn-bouteille").click( function(e) {
 		alert('btn bouteille');
 	});
