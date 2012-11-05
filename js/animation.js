@@ -318,7 +318,7 @@ $(document).ready(function() {
 	controller.addTween('#btn-tomate', TweenMax.fromTo( $('#acteur-gens'), 1.5, {css:{opacity: 0, top: -2595, rotation: 35}, immediateRender:true, ease:Back.easeOut}, {css:{opacity: 1, top: -1495, rotation: 0}, ease:Bounce.easeOut}));
 
 	// Cochon et pièce
-	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#acteur-cochon-piece'), 0.5, {css:{top: "-1750px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Quad.easeInOut}));
+	controller.addTween('#acteur-cochon-projet', TweenMax.fromTo( $('#acteur-cochon-piece'), 1, {css:{top: "-1880px"}, immediateRender:true, ease:Back.easeOut}, {css:{top: "-1575px"}, ease:Back.easeOut}),0,-200);
 	//Nuage
 	controller.addTween('#acteur-cochon-piece', TweenMax.fromTo( $('#demain-nuage-decors-1'), 2, {css:{opacity:0,left: 890}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1,left: 490}, ease:Quad.easeInOut}),0,-200);
 	//Diagramme()
