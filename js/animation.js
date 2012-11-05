@@ -377,6 +377,9 @@ $(document).ready(function() {
 		1000 // scroll duration of tween
 	);
 
+	controller.addTween('#avantage-cadenas', TweenMax.fromTo( $('#avantage-cadenas #key'), 1, {css:{top: 210}, immediateRender:true, ease:Back.easeOut}, {css:{top:0}, ease:Quad.easeInOut}));
+	controller.addTween('#avantage-cadenas', TweenMax.fromTo( $('#avantage-cadenas #lock'), 1, {css:{top: 60}, immediateRender:true, ease:Back.easeOut}, {css:{top:0}, ease:Quad.easeInOut}),0,200);
+
 });
 
 function flottementNuageHeader(){

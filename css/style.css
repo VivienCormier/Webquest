@@ -1456,6 +1456,18 @@ left: -108px;
 	top:-735px;
 	left:180px;
 }
+#avantage-cadenas #cadenas{
+	position: relative;
+	top: -320px;
+}
+#avantage-cadenas #key{
+	position: relative;
+	top: 210px;
+}
+#avantage-cadenas #lock{
+	position: relative;
+	top: 60px;
+}
 /* FIN PARTIE avantage & inconvenient */
 
 #message-futur{
