@@ -276,7 +276,7 @@ $(document).ready(function() {
 	//début ligne de vie
 	controller.addTween('#demain-lignedevie-vertical', TweenMax.fromTo( $('#demain-lignedevie-vertical'), 1.5, {css:{height:0}, immediateRender:true, ease:Back.easeOut}, {css:{height:520}, ease:Quad.easeInOut}));
 
-	// Icones
+	// Icone
 	controller.addTween('#demain-ldvh-bout1', TweenMax.fromTo( $('#demain-piles'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeOut}),0,-200);
 	controller.addTween('#demain-ldvh-bout2', TweenMax.fromTo( $('#demain-usine'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeInOut}),0,-200);
 	controller.addTween('#demain-ldvh-bout3', TweenMax.fromTo( $('#demain-piece'), 1, {css:{opacity:0, left:-275, rotation:15}, immediateRender:true, ease:Back.easeOut}, {css:{opacity:1, left:0, rotation:0}, ease:Quad.easeInOut}),0,-200);
@@ -334,7 +334,6 @@ $(document).ready(function() {
 	controller.addTween('#avantage-avantage-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:930}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:430}, ease:Quad.easeInOut}));
 	
-<<<<<<< HEAD
 	// Pour aller plus loin
 	function copyrightOpacity1() {
 		$("#imgCredit").stop().animate({opacity: 1}, 1500);
@@ -354,7 +353,6 @@ $(document).ready(function() {
 		}
     });
 	
-=======
 	//paralax des clefs
 	controller.addTween(
 		'#avantage-cadenas',
@@ -382,7 +380,6 @@ $(document).ready(function() {
 		1000 // scroll duration of tween
 	);
 
->>>>>>> Commiteeee
 });
 
 function flottementNuageHeader(){
