@@ -36,9 +36,7 @@ $(document).ready(function() {
 	
 	//cache ligne de vie 1 : definition click sur TIC
 	$("#texte-definition1-tic").css('height', '0');
-
-	
-	
+		
 	
 	//var de test si définition TIC ouverte
 	var ticIsOpen = false;
@@ -334,6 +332,25 @@ $(document).ready(function() {
 	controller.addTween('#avantage-text3-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 930}, immediateRender:true, ease:Back.easeOut}, {css:{height:1460}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-avantage-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 430}, immediateRender:true, ease:Back.easeOut}, {css:{height:930}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-lignedevie-vertical', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 1, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:430}, ease:Quad.easeInOut}));
+	
+	// Pour aller plus loin
+	function copyrightOpacity1() {
+		$("#imgCredit").stop().animate({opacity: 1}, 1500);
+	}
+	function copyrightOpacity0() {
+		$("#imgCredit").stop().animate({opacity: 0}, 1500);
+	}
+	
+	var copyrightIsOpen = false;	
+	$("#copyrightLink").click(function(e) {
+		if(!copyrightIsOpen){
+        	$("#footer-ligne-vie").stop().animate({height: 97}, 1500); 
+			copyrightIsOpen = true;
+		}else {
+			$("#footer-ligne-vie").stop().animate({height: 0}, 1500); 
+			copyrightIsOpen = false;
+		}
+    });
 	
 });
 

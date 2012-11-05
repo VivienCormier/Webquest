@@ -1510,6 +1510,9 @@ left: -108px;
 	position: relative;
 	left: 240px;
 }
+#imgCredit {
+	opacity:0;
+}
 /* clear float */
 .clearer{
 	clear:both;
