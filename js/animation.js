@@ -13,6 +13,11 @@ $(document).ready(function() {
 		var offset = $('#definition-wrapper').offset();
 		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
+	
+	$('#item0').click(function(){
+		var offset = $('#wrapper').offset();
+		$('html,body').animate({scrollTop: offset.top}, 500);
+	});
 
 	$('#item2').click(function(){
 		var offset = $('#aujourdhui-wrapper').offset();
