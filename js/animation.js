@@ -328,6 +328,23 @@ $(document).ready(function() {
 	//transition 4-5
 	controller.addTween('#acteur-cochon-projet', TweenMax.fromTo( $('#ligne-de-vie-balance'), 1.5, {css:{height: 0}, immediateRender:true, ease:Back.easeOut}, {css:{height:408}, ease:Quad.easeInOut}));
 	
+	controller.addTween(
+		'#transition-balance',
+		(new TimelineLite())
+			.append([
+				TweenMax.fromTo($('#nuage-balance'), 1, 
+					{css:{top: -400}, immediateRender:true}, 
+					{css:{top: -500}}),
+				TweenMax.fromTo($('#plus-balance'), 1, 
+					{css:{top: -200, rotation:5}, immediateRender:true}, 
+					{css:{top: -650, rotation:-25}}),
+				TweenMax.fromTo($('#moins-balance'), 1, 
+					{css:{top: -800, rotation:-5}, immediateRender:true}, 
+					{css:{top: -1000, rotation:8}})
+			]),
+		1100 // scroll duration of tween
+	);
+	
 	//ligne de vie partie 5
 	controller.addTween('#avantage-text5-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 1460}, immediateRender:true, ease:Back.easeOut}, {css:{height:1950}, ease:Quad.easeInOut}));
 	controller.addTween('#avantage-text3-texte', TweenMax.fromTo( $('#avantage-lignedevie-vertical'), 2, {css:{height: 930}, immediateRender:true, ease:Back.easeOut}, {css:{height:1460}, ease:Quad.easeInOut}));
