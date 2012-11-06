@@ -35,7 +35,7 @@ $(document).ready(function() {
 	});
 
 	$('#item5').click(function(){
-		var offset = $('#avantages-limites-dangers-wrapper').offset();
+		var offset = $('#avantage-title').offset();
 		$('html,body').animate({scrollTop: offset.top}, 500);
 	});
 	
