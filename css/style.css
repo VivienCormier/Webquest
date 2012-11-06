@@ -205,9 +205,6 @@ p {
 	z-index:9;
 	overflow:hidden;
 }
-#texte-definition1-part2 img{
-	float:left;
-}
 
 #text-association, #wrapper-association{
 	float:left;
@@ -229,26 +226,37 @@ p {
 }
 /* image définition tic */
 #texte-definition1-tic{
-	overflow:hidden;
+	overflow: hidden;
+	position: relative;
+	margin-top: 95px;
+	background: url("../res/partie-1/definition_tic.png") no-repeat top center;
+	left: -15px;
+	z-index: -1;
+}
+#texte-definition1-tic p {
+	padding:30px;
+	font-size:13px;
+	padding:65px 25px 45px 65px;
+}
+#texte-definition1-tic p .majuscules {
+	color:#e53669;
 }
 
-#texte-definition1-tic img{
-	float:left;
-	margin-top:105px;
-	margin-left:-5px;
-	position:relative;
-}
 /* image cliquable pour lien TIC */
 #tic-link:hover{
 	cursor:pointer;
 }
 /* image cliquable pour lien vers PLUS TIC */
 #more-tic-link{
-	top: 235px;
-	left: -150px;
+	top: -50px;
+	position: relative;
+	left: -43px;
 }
 #more-tic-link:hover{
 	cursor:pointer;
+	position: relative;
+	top: -50px;
+	left: -43px;
 }
 /* FIN DIV IMAGE DEFINITION ET TIC */
 

@@ -1,642 +1,647 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Webquest</title>
-	<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/jquery.lettering-0.6.1.min.js"></script>
-	<script src="js/jquery.superscrollorama.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/gf_scroll_div.js"></script>
-	<script src="js/animation.js"></script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Webquest - Objets connectés et objets intelligents</title>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering-0.6.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/gf_scroll_div.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+	</head>
 
-<body>
-    <div id="DIV_MOVE">
-      <div id="menu">
-       <ul>
-        <li id="item0">
-         <a href="#" title="Haut de page">
-          <img src="res/menu/0-haut-de-page.png" title="Haut de page" alt="Haut de page" />
-         </a>
-        <li id="item1">
-         <a href="#" title="Définition">
-          <img src="res/menu/1-definition.png" title="Définition" alt="Définition" />
-         </a>
-        </li>
-        <li id="item2">
-         <a href="#" title="Aujourd'hui">
-          <img src="res/menu/2-aujourdhui.png" title="Aujourd'hui" alt="Aujourd'hui" />
-         </a>
-        </li>
-        <li id="item3">
-         <a href="#" title="Demain">
-          <img src="res/menu/3-demain.png" title="Demain" alt="Demain" />
-         </a>
-        </li>
-        <li id="item4">
-         <a href="#" title="Acteurs et modèle économique">
-          <img src="res/menu/4-acteurs-modele-economique.png" title="Acteurs et modèle économique" alt="Acteurs et modèle économique" />
-         </a>
-        </li>
-        <li id="item5">
-         <a href="#" title="Avantages, limites et dangers">
-          <img src="res/menu/5-avantages-limites-dangers.png" title="Avantages, limites et dangers" alt="Avantages, limites et dangers" />
-         </a>
-        </li>
-       </ul>
-      </div>
-    </div>
-    <div id="wrapper">
-        <div id="header">
-            <img src="./res/header.png" />
-            <img src="res/nuage_1.png" id="nuage-1" />
-            <img src="res/nuage_2.png" id="nuage-2" />
-            <img src="res/nuage_3.png" id="nuage-3" />
-        </div>
-        <div id="definition">
-            <div id="twitter_ligne_vie_1">
-                <div id="ligne_vie_1">
-                    <img src="res/nuage_5.png" id="nuage-definition" />
-                </div>
-            </div>
-            <div id="definition-wrapper">
-                <!-- Image 1 definition avec def manuscrite -->
-                <div id="definition1-title">
-                    <img src="res/partie-1/titre-1.png" /> 
-                </div>
-                <div id="texte-definition1-wrapper">
-                
-                    <!-- Images bulles texte de definitions part 1 -->
-                    <div id="texte-definition1-part1">
-                    	<div id="def-objet"> <p> <strong>Objet, n. m. :</strong><br />Chose solide qui est affectée <br />à un usage précis. </p> </div>
-                        <div id="fleche-connecte">
-                        	<img src="res/partie-1/fleche_definition1.png" />
-                        </div>
-                       	<div id="def-connecte"> <p> <strong>Connectés, adj. :</strong> <br />Éléments, objets, unis par <br />une mise en relation. </p> </div>
-                        <div class="clearer" > </div>
-                    </div>
-                    
-                    <!-- Images bulles texte de definitions part 2 -->
-                    <div id="texte-definition1-part2">
-                    	<!--Ce wrapper permet de maintenir la structure avant apparition du block -->
-                    	<div id="wrapper-association">
-                            <div id="text-association">
-                                <div>
-                                	<p>
-                                        <span class="majuscules "><strong>Association</strong><br />
-                                        des <strong>Technologies de l’Information et de la Communication - <span id="tic-link">TIC*</span></strong>,<br />
-                                        <strong>&</strong> d’<strong>objets</strong> rendus "<strong>intelligents</strong>" et <strong>communicants</strong>, </span><br />
-                                        <span class="majuscules"><strong>pour</strong></span> leur donner les moyens d’<strong>interagir</strong> sans intervention humaine<br />
-                                        <span class="majuscules"><strong>avec</strong></span> le système d’information d’une organisation ou d’une entreprise.
-                                    </p>
-                                 </div>
-                            </div>
-                        </div>
-                        <!-- Images info TIC-->
-                        <div id="texte-definition1-tic">
-                            <img src="res/partie-1/definition_tic.png" />
-                            <a href="http://fr.wikipedia.org/wiki/Technologies_de_l'information_et_de_la_communication" target="_blank"><img id="more-tic-link" src="res/partie-1/bnt_lien_tic.png" /></a>
-                        </div>
-                    </div>
-            	</div>
-                <div class="clearer"></div>
-                
-                <!--Images illustrations définition -->
-                <div id="illustration-definition1">
-                	<div id="illustration-part1">
-                    	<img src="res/partie-1/illustration_explication_part1.png" />
-                    </div>
-                    <div id="wrapper-illustration-fleche">
-                        <div id="illustration-fleche">
-                            <img class="relative" src="res/partie-1/illustration_explication_fleche.png" />
-                        </div>
-                    </div>
-                    <div id="illustration-part2">
-                    	<img src="res/partie-1/illustration_explication_part2.png" />
-                    </div>
-                </div>
-                <div class="clearer"></div>
-            </div>
-            
-        </div>
-        <div id="transition-ville">
-        	<!--Image bg de la ville -->
-            <div id="la-ville">
-                <div id="transition-soleil"> </div>
-                <div id="transition-nuages"> </div>
-            </div>
-        </div>
-        <!-- Partie Aujourd'hui -->
-        <div id="aujourdhui">
-            <div id="aujourdhui_ligne_vie">
-                <div id="aujourdhui_ligne_vie_vertical">
-                    <div id="aujourdhui_ligne_vie_horizontal">
-                        <img src="res/partie-2/nuage-decors-1.png" id="nuage-decors-aujourdhui" />
-                    </div>
-                    <img src="res/partie-2/nuage-decors-2.png" id="nuage-decors-aujourdhui-2" />
-                    <img src="res/partie-2/twitter-decors.png" id="twitter-decors-1" />
-                    <img src="res/partie-2/nuage-decors-3.png" id="nuage-decors-aujourdhui-3" />
-                </div>
-            </div>
-            <div id="aujourdhui-wrapper">
-                <!-- Image 1 definition avec def manuscrite -->
-                <div id="aujourdhui-title">
-                    <img src="res/partie-2/titre.png" /> 
-                </div>
-                
-                <!-- texte 1 -->
-                <div id="aujourdhui-texte1">
-					<p>Avec l’évolution des technologies les <span class="majuscules">objets connectés</span> n’ont cessé de se multiplier. Ces objets n’appartiennent plus à la fiction et sont facilement accessibles. Ces objets nous accompagnent dans notre quotidien. Ils sont de tous types et ont des usages variés, de l’utile à l’expérimental.</p>
-                </div>
-                
-                <!-- img nabaztag -->
-                <div id="aujourdhui-nabaztag">
-                	<img src="res/partie-2/nabaztag.png" />
-                </div>
-                
-                <!-- texte nabaztag  -->
-                <div id="aujourdhui-nabaztag-texte">
-					<p><span class="majuscules">Nabaztag</span> est un lapin connecté qui communique avec son utilisateur en émettant des messages vocaux, lumineux ou en remuant les oreilles. Il diffuse des informations. Par exemple la météo, la bourse, la qualité de l’air, la circulation sur le périphérique de Paris, la réception d’un mail, etc.</p>
-                    <img id="btn-nabaztag" src="res/partie-2/btn_text_nabaztag.png" />
-                </div>
-                
-                <!-- img iPhone  -->
-                <div id="aujourdhui-iphone">
-                	<img src="res/partie-2/iphone.png" />
-                </div>
-                
-                <!-- texte iphone  -->
-                <div id="aujourdhui-iphone-texte">
-					<p><span class="majuscules">Le paiement par smartphone&nbsp;:</span><br />
-					Petite puce appelée NFC intégrée dans les cartes SIM de certains téléphones permettant le transfert de données entre deux terminaux. Le processus est encore en expérimentation dans certaines villes. Mais si les essais sont concluants, ce processus devrait devenir bientôt un moyen de paiement comme un autre. À ce jour, l’opérateur de téléphonie Orange a pris les devants en intégrant cette puce dans ses nouvelles cartes SIM.</p>
-                    <img id="btn-iphone" src="res/partie-2/btn_texte_iphone.png" />
-                </div>
-                
-                <!-- img raquette  -->
-                <div id="aujourdhui-raquette">
-                	<img src="res/partie-2/raquette.png" />
-                </div>
-                
-                <!-- texte raquette  -->
-                <div id="aujourdhui-raquette-texte">
-					<p><span class="majuscules">La raquette Babolat&nbsp;:</span><br />
-					La première raquette connectée à un iPhone, iPad ou autre qui permet de donner toutes les informations du joueur pendant un match&nbsp;: le type de mouvements, la vitesse de la balle, la vitesse de déplacement, l’emplacement sur le terrain, etc.</p>
-                    <img id="btn-raquette" src="res/partie-2/btn_texte_raquette.png" />
-                </div>
-                
-                <!-- nuage nabaztag -->
-                <div id="nuage-nabaztag" >
-                	<img src="res/partie-2/nuage_nabaztag.png" />
-               	</div>
-                
-                <!-- img chaussure  -->
-                <div id="aujourdhui-chaussure">
-                	<img src="res/partie-2/chaussure.png" />
-                </div>
-                
-                <!-- texte chaussure  -->
-                <div id="aujourdhui-chaussure-texte">
-                	<p><span class="majuscules">CHAUSSURE GPS :</span> <br />
-					Une hésitation dans la direction à prendre?  <br />
-					Il suffit de baisser les yeux et de regarder  <br />
-					ses chaussures pour savoir où aller.<br /> Connectées à un ordinateur, ces chaussures <br /> baptisées “No place Like Home”, fonctionnent très simplement. Il suffit de les synchroniser avec un programme spécial et de choisir la destination choisie.  Par un système de LED, la chaussure droite va indiquer la distance restante à parcourir et la chaussure gauche la direction à prendre.</p>
-					<img id="btn-chaussure" src="res/partie-2/btn_texte_chaussure.png"/>
-                </div>
-                
-                <!-- img babyfoot  -->
-                <div id="aujourdhui-babyfoot">
-                	<img src="res/partie-2/babyfoot.png"/>
-                </div>
-
-                <!-- texte babyfoot  -->
-                <div id="aujourdhui-babyfoot-texte">
-					<p><span class="majuscules">Baby Foot&nbsp;:</span><br />
-					Le B12:0 est la nouvelle génération de babyfoot géolocalisé, intégrant de manière transparente des fonctionnalités d’affichage et d’assistance à l’arbitrage électronique. Les informations liées aux joueurs ou la partie peuvent ensuite être agrégées et remontées sur une plate-forme de «&nbsp;scoring&nbsp;» et peuvent être commentées sur les réseaux sociaux Twitter, Facebook, Google+, etc. Le système comptabilise les buts, des LED dissimulées dans les parois intérieures de la table affichent le score voire des informations géo-localisées. L’énergie produite par les joueurs sera récupérée pour alimenter le système.</p>
-                    <a href="http://ckab.com/" target="_blank"><img id="btn-babyfoot" src="res/partie-2/btn_texte_babyfoot.png" /></a>
-                </div>
-
-                <!-- img brosse  -->
-                <div id="aujourdhui-brosse">
-                    <img src="res/partie-2/brosse.png"/>
-                </div>
-
-                <!-- texte brosse  -->
-                <div id="aujourdhui-brosse-texte">
-                   	<p><span class="majuscules"> BROSSE À DENTS BLUETOOTH: </span> <br />
-                    La Beam Brush est une brosse <br />
-                    à dents manuelle, connectée <br />
-                    en Bluetooth à une application Android. L’application permet<br /> 
-                    de suivre la régularité et la durée de ses brossages de dents, <br />
-                    de se fixer des objectifs <br />
-                    et d’accéder à des conseils <br />
-                    sur l’hygiène buccale.
-                    </p>
-                    <a href="http://www.beamtoothbrush.com/beam/brush-overview.php" target="_blank"><img id="btn-brosse" src="res/partie-2/btn_text_brosse.png" /></a>
-                </div>
-                
-                <!-- img bouteille -->
-                <div id="aujourdhui-bouteille" >
-                	<img src="res/partie-2/bouteille.png" />
-                </div>
-
-                <!-- texte bouteille  -->
-                <div id="aujourdhui-bouteille-texte">
-					<p><span class="majuscules">Tweetelier&nbsp;:</span><br />
-					La bouteille de vin qui envoie un tweet lorsqu’on remplit un verre.</p>
-                    <img id="btn-bouteille" src="res/partie-2/btn_text_bouteille.png" />
-                </div>
-                
-                <!-- img nike -->
-                <div id="aujourdhui-nike" >
-                	<img src="res/partie-2/nike.png" />
-                </div>
-
-                <!-- texte nike  -->
-                <div id="aujourdhui-nike-texte">
-					<p><span class="majuscules">Bracelet Nike+ FuelBand&nbsp;:</span><br />
-					Le bracelet Nike+ FuelBand donne des informations sur votre activité physique grâce à un accéléromètre sportif&nbsp;:: nombre de mouvements, rythme cardiaque, etc. Connécté à votre ordinateur vous pouvez retrouvez toutes ces informations sur votre écran et ainsi vous fixer des objectifs, etc.</p>
-                    <img id="btn-nike" src="res/partie-2/btn_text_nike.png" />
-                </div>
-                
-                <!-- img balance -->
-                <div id="aujourdhui-balance" >
-                	<img src="res/partie-2/balance.png" />
-                </div>
-
-                <!-- texte balance  -->
-                <div id="aujourdhui-balance-texte">
-					<p><span class="majuscules">La balance&nbsp;:</span><br />
-					La balance connectée WS-30 de la marque withings affiche l’IMC, et aide au positionnenement sur la balance pour une pesée régulière. Connectée à un iPhone ou iPad en wifi ou par bluetooth, on peut créer différents comptes pour toute la famille. Chacun peut suivre sonévolution, se fixer des objectifs, etc. Elle reconnaît instantanément l’utilisateur qui vient se peser.</p>
-                    <img id="btn-balance" src="res/partie-2/btn_texte_balance.png" />
-                </div>
-                
-                <!-- img tv -->
-                <div id="aujourdhui-tv" >
-                	<img src="res/partie-2/tv.png" />
-                </div>
-
-                <!-- texte tv  -->
-                <div id="aujourdhui-tv-texte">
-					<p><span class="majuscules">TV LG&nbsp;:</span><br />
-					Télévision interactive de la marque LG sur laquelle on peut dessiner directement sur l’écran grâce à un stylet</p>
-                    <img id="btn-tv" src="res/partie-2/btn_texte_tv.png" />
-                </div>
-                
-                <!-- img oeil -->
-                <div id="aujourdhui-oeil" >
-                	<img src="res/partie-2/oeil.png" />
-                </div>
-                
-                <!-- texte oeil  -->
-                <div id="aujourdhui-oeil-texte">
-					<p><span class="majuscules">CAMÉRA&nbsp;: </span><br />
-                    Détecteur de mouvement qui signale <br />
-                    par une alarme tous mouvements inattendus. Une photo est envoyée <br />
-                    par mail au propriétaire de la maison <br />
-                    qui peut en cas d’absence alerter <br />
-                    d’une intrusion à son domicile.</p>
-                    <img id="btn-camera" src="res/partie-2/btn_text_brosse.png" />
-                </div>
-                
-                 <!-- texte arduino  -->
-                <div id="aujourdhui-arduino-texte1">
-					<p><span class="majuscules"><a href="http://www.arduino.cc/" target="_blank">Les circuits imprimés “Arduino”</a></span>
-                     sont des bons exemples d’objets connectés. Ces circuits sont composés d’un micro- contrôleur programmable ainsi que d’une interface d’entrée et de sortie pour permettre une connexion. Ils possèdent alors les éléments de base pour être définis comme objets connectés.</p>
-                </div>
-                <div id="aujourdhui-arduino-texte2">
-					<p>Leur originalité réside dans leur personnalisation puisqu’il est possible de transformer cette petite carte en une centrale de domotique.</p>
-                </div>
-
-            </div>
-        </div>
-        
-         <div id="transition-machine">
-            <!--Image bg de la ville -->
-                <div id="anime-machine-wrapper">
-                    <div id="ligne-de-vie-machine">
-                        
-                    </div>
-                    <div id="eclair-machine">
-                        
-                    </div>
-                    <div id="nuage-machine">
-                        
-                    </div>
-                    <div id="spirale-machine">
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <!--PARTIE DEMAIN -->
-            <div id="demain-wrapper">
-            	<!--WRAPPER DES LIGNES DE VIES -->
-                <div id="demain-lignedevie">
-                	<!--VERTICAL -->
-                	<div id="demain-wrapper-vertical">
-                		<div id="demain-lignedevie-vertical"> </div>
-                   	</div>
-                    <!--HORIZONTAL -->
-                    <div id="demain-lignedevie-horizontal">
-                    	<div id="demain-ldvh-1"> <img src="res/partie-3/ldv-horizontale-1.png" /> </div>
-                        
-                        <div id="demain-ldvh-bout1"> </div>
-                        <div id="demain-ldvh-bout2"> </div>
-                        <div id="demain-ldvh-bout3"> </div>
-                        <div id="demain-ldvh-bout4"> </div>
-                        <div id="demain-ldvh-bout5"> </div>
-                        
-                        <div id="demain-ldvh-2"> </div>
-                        <div id="demain-ldvh-3"> <img src="res/partie-3/ldv-horizontale-3.png" /> </div>
-                        <div id="demain-ldvh-4"> <img src="res/partie-3/ldv-horizontale-4.png" /> </div>
-                    </div>
-                </div>
-                
-                <!--WRAPPER DU CONTENU de DEMAIN -->
-                <div id="demain-content-wrapper">
-                	<!-- Texte evolution -->
-                	<div id="demain-evolution-texte" > <p>De manière générale, on peut noter <br /> <span class="majuscules">quelques évolutions envisageables :</span></p>  </div>
-                    <!-- Texte énergie -->
-                	<div id="demain-energie-texte" > <p> <span class="majuscules">Energie (EDF, GDF) & infrastructure partagée (type Veolia) :</span><br />
-                   		mesure et diffusion d’informations de la consommation</p>  
-                    </div>
-                    <!-- Texte industrie -->
-                	<div id="demain-industrie-texte" > <p> <span class="majuscules">Industrie&nbsp;:</span><br />
-                        gestion de la chaîne d’approvisionnement</p>  
-                    </div>
-                    <!-- Texte banque -->
-                	<div id="demain-banque-texte" > <p> <span class="majuscules">Banque&nbsp;:</span><br />
-                        géolocalisation des personnes lors de paiements mobiles permettant la détection de fraudes...</p>  
-                    </div>
-                    <!-- Texte sante -->
-                	<div id="demain-sante-texte" > <p> <span class="majuscules">Santé&nbsp;:</span><br />
-                        mise à jour d’informations en temps réel d’un dossier médical personnel. (activités, suivi à distance...)</p>  
-                    </div>
-                     <!-- Texte telecommunication -->
-                	<div id="demain-telecommunication-texte" > <p> <span class="majuscules">Télécommunication&nbsp;:</span><br />
-                        suivi d’activité pour optimiser les topologies réseaux</p>  
-                    </div>
-                     <!-- Texte collectivite -->
-                	<div id="demain-collectivite-texte" > <p> <span class="majuscules">collectivités locales&nbsp;:</span><br />
-                        adaptation en temps réel des réseaux de transports en fonction de l’affluence, gestion de l’éclairage public en fonction de la présence de personnes dans les rues, etc.</p>  
-                    </div>
-                    
-                    <!-- Texte songdo -->
-                	<div id="demain-songdo-texte" > 
-                    	<p> 
-                        On peut constater que l’éxpérience des objets connectés aujourd’hui plutôt réservée à l’usage personnel d’une petite partie de la population va se démocratiser et s’étendre vers la ville. La ville de <span class="majuscules">Songdo</span>, en Corée du Sud, annoncée comme la première ville entièrement connectée et dont les travaux s’achèveront en 2016 pourraît en être la concrétisation&nbsp;:
-                        </p>  
-                    </div>
-                    
-                    <div id="demain-songdo-video"> 
-                        <iframe width="722" height="406" src="http://www.youtube.com/embed/ZufT4WozWeQ?wmode=opaque" frameborder="0" allowfullscreen></iframe>
-                        <div id="demain-songdo-video-screen"><img src="res/partie-3/btn-lecture.png" ></div>
-                    </div>
-
-                    <div id="message-futur"> 
-                        <img src="res/partie-3/msg-futur/titre.png" >
-                        <div id="message-futur-lettre"> 
-                        </div>
-                        <div id="message-futur-lettre-texte"> 
-                            <p>“Ce matin après avoir claqué la porte, mon manteau s’est immédiatement adapté aux conditions extérieures...”</p>
-                        </div>
-                    </div>
-                   <div id="demain-titre">
-							<img src="res/partie-3/titre.png" /><br /><br /><br />
-							<img src="res/partie-3/sous-titre.png" />
+	<body>
+		<div id="DIV_MOVE">
+			<div id="menu">
+				<ul>
+					<li id="item0">
+						<a href="#" title="Haut de page">
+							<img src="res/menu/0-haut-de-page.png" title="Haut de page" alt="Haut de page" />
+						</a>
+					</li>
+					<li id="item1">
+						<a href="#" title="Définition">
+							<img src="res/menu/1-definition.png" title="Définition" alt="Définition" />
+						</a>
+					</li>
+					<li id="item2">
+						<a href="#" title="Aujourd'hui">
+							<img src="res/menu/2-aujourdhui.png" title="Aujourd'hui" alt="Aujourd'hui" />
+						</a>
+					</li>
+					<li id="item3">
+						<a href="#" title="Demain">
+							<img src="res/menu/3-demain.png" title="Demain" alt="Demain" />
+						</a>
+					</li>
+					<li id="item4">
+						<a href="#" title="Acteurs et modèle économique">
+							<img src="res/menu/4-acteurs-modele-economique.png" title="Acteurs et modèle économique" alt="Acteurs et modèle économique" />
+						</a>
+					</li>
+					<li id="item5">
+						<a href="#" title="Avantages, limites et dangers">
+							<img src="res/menu/5-avantages-limites-dangers.png" title="Avantages, limites et dangers" alt="Avantages, limites et dangers" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="wrapper">
+			<div id="header">
+				<img src="./res/header.png" title="Internet of things" alt="Internet of things" />
+				<img src="res/nuage_1.png" id="nuage-1" title="Nuage" alt="Nuage" />
+				<img src="res/nuage_2.png" id="nuage-2" title="Nuage" alt="Nuage" />
+				<img src="res/nuage_3.png" id="nuage-3" title="Nuage" alt="Nuage" />
+			</div>
+			<div id="definition">
+				<div id="twitter_ligne_vie_1">
+					<div id="ligne_vie_1">
+						<img src="res/nuage_5.png" id="nuage-definition" title="Nuage" alt="Nuage" />
 					</div>
-					<div id="demain-pictos">
-						<div id="demain-piles">
-							<img src="res/partie-3/piles.png" alt="Piles" title="Piles" />						
-						</div>
-						<div id="demain-usine">
-							<img src="res/partie-3/usine.png" alt="Usine" title="Usine" />						
-						</div>
-						<div id="demain-piece">
-							<img src="res/partie-3/piece.png" alt="Pièce" title="Pièce" />						
-						</div>
-						<div id="demain-croix-rouge">
-							<img src="res/partie-3/croix-rouge.png" alt="Croix Rouge" title="Croix Rouge" />						
-						</div>
-					</div>
-					
-                </div>
-            </div>
-            <div id="transition-diagramme">
-            <!--Image bg de la ville -->
-                <div id="transition-diagramme-anime">
-                    <img src="res/transition-3-4/diagramme.png"  id="transition-diagramme-anime-img"/>
-                </div>
-            </div>
-            
-            <div id="acteurs-modele-economique-wrapper">
-                <!-- Wrapper du contenu de Acteurs & Modèle économique -->
-                <div id="acteurs-modele-economique-content-wrapper">
-    					<div id="acteurs-title">
-    						<img src="res/partie-4/titre.png" /> 
-    					</div>
-    					<div id="acteurs-sous-titre">
-    						<img src="res/partie-4/sous-titre.png" /> 
-    					</div>
-    				
-
-    				<div id="acteurs-domotique-texte">
-    					<p>Le monde évolue, il en va de même pour <span class="majuscules">les acteurs</span> de l’internet des objets. <span class="majuscules">la domotique</span>, par exemple, change de mains et passe chez de nouveaux acteurs que sont ubē, SmartThings, Belkin, LIFX, Lockitron, ADT Pulse, Nest,&nbsp;… Chacun y trouve un intérêt&nbsp;: certains en font leur spécialité alors que d’autres utilisent ces nouvelles technologies pour faire parler d’eux.</p>
-    				</div>
-    				
-    				<div id="marques-texte">
-    					<p>Les marques commencent à proposer à leurs clients de petits objets connectés, qui sont souvent de simples gadgets, qui peuvent prêter à sourire, mais qui vont leur permettre de <strong>mettre un pied dans les foyers des consommateurs.</strong></p>
-    				</div>
-    				
-    				<!-- img Pizza tomate -->
-    				<div id="tomate">
-    					<img src="res/partie-4/tomate.png" title="Red tomato pizza" alt="Red tomato pizza"/>
-    				</div>
-    				<div id="tomate-feuille-1">
-    					<img src="res/partie-4/tomate-feuille-1.png" title="Red tomato pizza" alt="Red tomato pizza"/>
-    				</div>
-    				<div id="tomate-feuille-2">
-    					<img src="res/partie-4/tomate-feuille-2.png" title="Red tomato pizza" alt="Red tomato pizza"/>
-    				</div>
-    				
-					<!-- Ligne de vie verticale du contenu de Acteurs & Modèle économique -->
-					<div id="acteurs-modele-economique-ldv-horiz-wrapper"></div>
-					
-    				<!-- txt Pizza tomates -->
-    				<div id="tomate-texte">
-    					<p><span class="majuscules">Red tomato pizza&nbsp;:</span><br />
-    					Un magnet à coller sur son réfrigérateur qui permettra de commander une pizza par une simple pression sur un bouton, en cas de grosse fringale...</p>
-                        <img id="btn-tomate" src="res/partie-4/btn-tomate.png" />
-    				</div>
-                    
-                    <!--Les gouttes -->
-                    <div id="acteur-wrapper-goutte">
-                    	<div id="acteur-goutte1">
-                            <img src="res/partie-4/evian-goutte-1.png"/>
-                        </div>
-                        <div id="acteur-grosse-goutte">
-                            <img src="res/partie-4/evian.png" />
-                        </div>
-                        <div id="acteur-goutte2">
-                            <img src="res/partie-4/evian-goutte-2.png" />
-                        </div>
-                    </div>
-                    
-                    <!-- txt evian -->
-    				<div id="acteur-evian-texte">
-    					<p><span class="majuscules">Evian Smart Drop&nbsp;:</span><br />
-    					Autre gadget, lancé cet été par la marque pour accompagner la sortie du site evianchezvous, permettant de se faire livrer en 3 clics ses packs d’eau minérale à domicile.</p>
-                        <img id="btn-evian" src="res/partie-4/btn-evian.png" />
-    				</div>
-                    
-                    <!-- txt croissance -->
-    				<div id="acteur-croissance-texte">
-    					<p>On note également la <span class="majuscules">croissance des initiatives</span> relatives aux objets connectés et intelligents grâce à des sites de financement collaboratif, tels que <span class="majuscules couleur">Kickstarter</span>.</p>
-    				</div>
-                    
-                     <!-- txt kickstarter -->
-    				<div id="acteur-kickstarter-texte">
-    					<p>Il s'agit d'une forme particulière de mécénat où l'on fait appel à un grand nombres de personnes pour financer un projet, grâce à de petites sommes. Chaque internaute peut devenir contributeur d'un projet en aidant au développement d'un projet, par un investissement ou un service particulier.</p>
-    				</div>
-                    
-                    <!-- kickstarter -->
-    				<div id="acteur-kickstarter-fleche">
-    					<img src="res/partie-4/kickstarter-fleche.png" />
-    				</div>
-    				<div id="acteur-kickstarter">
-    					<a href="http://www.kickstarter.com/" target="_blank"><img src="res/partie-4/kickstarter.png" /></a>
-    				</div>
-                    
-                    <!-- gens -->
-    				<div id="acteur-gens">
-    					<img src="res/partie-4/bonhommes-verts.png" />
-    				</div>
-					
-					<!-- cochon -->
-					<div id="acteur-cochon">
-    					<img src="res/partie-4/cochon.png" title="Cochon" alt="Cochon" />
-						<div id="acteur-cochon-cache">
-							<img src="res/partie-4/cochon-cache.png" title="Cache" alt="Cache" />
-						</div>
-						<div id="acteur-cochon-projet">
-							<img src="res/partie-4/cochon-projet.png" title="Projet" alt="Projet" />
-						</div>
-					</div>
-					<div id="acteur-cochon-piece">
-    					<img src="res/partie-4/piece.png" title="Pièce" alt="Pièce" />
-					</div>
-                    	
 				</div>
-                <!-- Ligne de vie verticale du contenu de Acteurs & Modèle économique -->
-				<div id="acteurs-modele-economique-ldv-wrapper"><img src="res/partie-3/nuage-decors-1.png" id="demain-nuage-decors-1" /> </div>
-            </div>
-            
-             <div id="transition-balance">
-            <!--Image bg de la ville -->
-                <div id="anime-balance-wrapper">
-                	<div id="ldvh-wrapper-vertical">
-                  		<div id="ligne-de-vie-balance"></div>
-                    </div>
-                    <div id="plus-balance"></div>
-                    <div id="nuage-balance"></div>
-                    <div id="moins-balance"></div>
-                    
-                </div>
-            </div>
+				<div id="definition-wrapper">
+					<!-- Image 1 definition avec def manuscrite -->
+					<div id="definition1-title">
+						<img src="res/partie-1/titre-1.png" title="Définition" alt="Définition" /> 
+					</div>
+					<div id="texte-definition1-wrapper">
+					
+						<!-- Images bulles texte de definitions part 1 -->
+						<div id="texte-definition1-part1">
+							<div id="def-objet">
+								<p><strong>Objet, n. m.&nbsp;:</strong><br />Chose solide qui est affectée <br />à un usage précis.</p>
+							</div>
+							<div id="fleche-connecte">
+								<img src="res/partie-1/fleche_definition1.png" title="Flèche" alt="Flèche" />
+							</div>
+							<div id="def-connecte">
+								<p><strong>Connectés, adj.&nbsp;:</strong><br />Éléments, objets, unis par <br />une mise en relation.</p>
+							</div>
+							<div class="clearer" > </div>
+						</div>
+						
+						<!-- Images bulles texte de definitions part 2 -->
+						<div id="texte-definition1-part2">
+							<!--Ce wrapper permet de maintenir la structure avant apparition du block -->
+							<div id="wrapper-association">
+								<div id="text-association">
+									<div>
+										<p>
+											<span class="majuscules "><strong>Association</strong><br />
+											des <strong>Technologies de l’Information et de la Communication - <span id="tic-link">TIC*</span></strong>,<br />
+											<strong>&</strong> d’<strong>objets</strong> rendus "<strong>intelligents</strong>" et <strong>communicants</strong>, </span><br />
+											<span class="majuscules"><strong>pour</strong></span> leur donner les moyens d’<strong>interagir</strong> sans intervention humaine<br />
+											<span class="majuscules"><strong>avec</strong></span> le système d’information d’une organisation ou d’une entreprise.
+										</p>
+									 </div>
+								</div>
+							</div>
+							<!-- Images info TIC-->
+							<div id="texte-definition1-tic">
+								<p><span class="majuscules">Les TIC</span> regroupent les techniques utilisées dans le traitement et la transmission des informations. Soit en majorité de l'informatique, de l'Internet et des télécommunications...</p>
+								<a href="http://fr.wikipedia.org/wiki/Technologies_de_l'information_et_de_la_communication" target="_blank" title="Les TIC" ><img id="more-tic-link" src="res/partie-1/bnt_lien_tic.png" title="Les TIC" alt="Les TIC" /></a>
+							</div>
+						</div>
+						
+					</div>
+					<div class="clearer"></div>
+					
+					<!--Images illustrations définition -->
+					<div id="illustration-definition1">
+						<div id="illustration-part1">
+							<img src="res/partie-1/illustration_explication_part1.png" title="Schéma explicatif" alt="Schéma explicatif"/>
+						</div>
+						<div id="wrapper-illustration-fleche">
+							<div id="illustration-fleche">
+								<img class="relative" src="res/partie-1/illustration_explication_fleche.png" title="Flèche" alt="Flèche" />
+							</div>
+						</div>
+						<div id="illustration-part2">
+							<img src="res/partie-1/illustration_explication_part2.png" title="Schéma explicatif" alt="Schéma explicatif" />
+						</div>
+					</div>
+					<div class="clearer"></div>
+				</div>
+				
+			</div>
+			<div id="transition-ville">
+				<!--Image bg de la ville -->
+				<div id="la-ville">
+					<div id="transition-soleil"> </div>
+					<div id="transition-nuages"> </div>
+				</div>
+			</div>
+			<!-- Partie Aujourd'hui -->
+			<div id="aujourdhui">
+				<div id="aujourdhui_ligne_vie">
+					<div id="aujourdhui_ligne_vie_vertical">
+						<div id="aujourdhui_ligne_vie_horizontal">
+							<img src="res/partie-2/nuage-decors-1.png" id="nuage-decors-aujourdhui" title="Nuage" alt="Nuage" />
+						</div>
+						<img src="res/partie-2/nuage-decors-2.png" id="nuage-decors-aujourdhui-2" title="Nuage" alt="Nuage" />
+						<img src="res/partie-2/twitter-decors.png" id="twitter-decors-1" title="Nuage" alt="Nuage" />
+						<img src="res/partie-2/nuage-decors-3.png" id="nuage-decors-aujourdhui-3" title="Nuage" alt="Nuage" />
+					</div>
+				</div>
+				<div id="aujourdhui-wrapper">
+					<!-- Image 1 definition avec def manuscrite -->
+					<div id="aujourdhui-title">
+						<img src="res/partie-2/titre.png" title="Aujourd'hui" alt="Aujourd'hui" /> 
+					</div>
+					
+					<!-- texte 1 -->
+					<div id="aujourdhui-texte1">
+						<p>Avec l’évolution des technologies les <span class="majuscules">objets connectés</span> n’ont cessé de se multiplier. Ces objets n’appartiennent plus à la fiction et sont facilement accessibles. Ces objets nous accompagnent dans notre quotidien. Ils sont de tous types et ont des usages variés, de l’utile à l’expérimental.</p>
+					</div>
+					
+					<!-- img nabaztag -->
+					<div id="aujourdhui-nabaztag">
+						<img src="res/partie-2/nabaztag.png" title="Nabaztag" alt="Nabaztag" />
+					</div>
+					
+					<!-- texte nabaztag  -->
+					<div id="aujourdhui-nabaztag-texte">
+						<p><span class="majuscules">Nabaztag</span> est un lapin connecté qui communique avec son utilisateur en émettant des messages vocaux, lumineux ou en remuant les oreilles. Il diffuse des informations. Par exemple la météo, la bourse, la qualité de l’air, la circulation sur le périphérique de Paris, la réception d’un mail, etc.</p>
+						<img id="btn-nabaztag" src="res/partie-2/btn_text_nabaztag.png"  title="Nabaztag" alt="Nabaztag" />
+					</div>
+					
+					<!-- img iPhone  -->
+					<div id="aujourdhui-iphone">
+						<img src="res/partie-2/iphone.png" title="iPhone" alt="iPhone" />
+					</div>
+					
+					<!-- texte iphone  -->
+					<div id="aujourdhui-iphone-texte">
+						<p><span class="majuscules">Le paiement par smartphone&nbsp;:</span><br />
+						Petite puce appelée NFC intégrée dans les cartes SIM de certains téléphones permettant le transfert de données entre deux terminaux. Le processus est encore en expérimentation dans certaines villes. Mais si les essais sont concluants, ce processus devrait devenir bientôt un moyen de paiement comme un autre. À ce jour, l’opérateur de téléphonie Orange a pris les devants en intégrant cette puce dans ses nouvelles cartes SIM.</p>
+						<img id="btn-iphone" src="res/partie-2/btn_texte_iphone.png" title="iPhone" alt="iPhone" />
+					</div>
+					
+					<!-- img raquette  -->
+					<div id="aujourdhui-raquette">
+						<img src="res/partie-2/raquette.png" title="Raquette Babolat" alt="Raquette Babolat" />
+					</div>
+					
+					<!-- texte raquette  -->
+					<div id="aujourdhui-raquette-texte">
+						<p><span class="majuscules">La raquette Babolat&nbsp;:</span><br />
+						La première raquette connectée à un iPhone, iPad ou autre qui permet de donner toutes les informations du joueur pendant un match&nbsp;: le type de mouvements, la vitesse de la balle, la vitesse de déplacement, l’emplacement sur le terrain, etc.</p>
+						<img id="btn-raquette" src="res/partie-2/btn_texte_raquette.png" title="Raquette Babolat" alt="Raquette Babolat" />
+					</div>
+					
+					<!-- nuage nabaztag -->
+					<div id="nuage-nabaztag" >
+						<img src="res/partie-2/nuage_nabaztag.png" title="Nuage" alt="Nuage" />
+					</div>
+					
+					<!-- img chaussure  -->
+					<div id="aujourdhui-chaussure">
+						<img src="res/partie-2/chaussure.png" title="Chaussure GPS" alt="Chaussure GPS" />
+					</div>
+					
+					<!-- texte chaussure  -->
+					<div id="aujourdhui-chaussure-texte">
+						<p><span class="majuscules">Chaussure GPS&nbsp;:</span> <br />
+						Une hésitation dans la direction à prendre&nbsp;?<br />
+						Il suffit de baisser les yeux et de regarder<br />
+						ses chaussures pour savoir où aller.<br /> Connectées à un ordinateur, ces chaussures <br /> baptisées “No place Like Home”, fonctionnent très simplement. Il suffit de les synchroniser avec un programme spécial et de choisir la destination choisie.  Par un système de LED, la chaussure droite va indiquer la distance restante à parcourir et la chaussure gauche la direction à prendre.</p>
+						<img id="btn-chaussure" src="res/partie-2/btn_texte_chaussure.png"/>
+					</div>
+					
+					<!-- img babyfoot  -->
+					<div id="aujourdhui-babyfoot">
+						<img src="res/partie-2/babyfoot.png" title="Babyfoot" alt="Babyfoot" />
+					</div>
+
+					<!-- texte babyfoot  -->
+					<div id="aujourdhui-babyfoot-texte">
+						<p><span class="majuscules">Babyfoot&nbsp;:</span><br />
+						Le B12:0 est la nouvelle génération de babyfoot géolocalisé, intégrant de manière transparente des fonctionnalités d’affichage et d’assistance à l’arbitrage électronique. Les informations liées aux joueurs ou la partie peuvent ensuite être agrégées et remontées sur une plate-forme de «&nbsp;scoring&nbsp;» et peuvent être commentées sur les réseaux sociaux Twitter, Facebook, Google+, etc. Le système comptabilise les buts, des LED dissimulées dans les parois intérieures de la table affichent le score voire des informations géo-localisées. L’énergie produite par les joueurs sera récupérée pour alimenter le système.</p>
+						<a href="http://ckab.com/" target="_blank" title="Babyfoot" ><img id="btn-babyfoot" src="res/partie-2/btn_texte_babyfoot.png" title="Babyfoot" alt="Babyfoot" /></a>
+					</div>
+
+					<!-- img brosse  -->
+					<div id="aujourdhui-brosse">
+						<img src="res/partie-2/brosse.png" title="Brosse à dents Bluetooth" alt="Brosse à dents Bluetooth"/>
+					</div>
+
+					<!-- texte brosse  -->
+					<div id="aujourdhui-brosse-texte">
+						<p><span class="majuscules">Brosse à dents Bluetooth&nbsp;:</span><br />
+						La Beam Brush est une brosse <br />
+						à dents manuelle, connectée <br />
+						en Bluetooth à une application Android. L’application permet<br /> 
+						de suivre la régularité et la durée de ses brossages de dents, <br />
+						de se fixer des objectifs <br />
+						et d’accéder à des conseils <br />
+						sur l’hygiène buccale.
+						</p>
+						<a href="http://www.beamtoothbrush.com/beam/brush-overview.php" title="Brosse à dents Bluetooth" target="_blank"><img id="btn-brosse" src="res/partie-2/btn_text_brosse.png" title="Brosse à dents Bluetooth" alt="Brosse à dents Bluetooth"/></a>
+					</div>
+					
+					<!-- img bouteille -->
+					<div id="aujourdhui-bouteille" >
+						<img src="res/partie-2/bouteille.png" title="Tweetelier" alt="Tweetelier" />
+					</div>
+
+					<!-- texte bouteille  -->
+					<div id="aujourdhui-bouteille-texte">
+						<p><span class="majuscules">Tweetelier&nbsp;:</span><br />
+						La bouteille de vin qui envoie un tweet lorsqu’on remplit un verre.</p>
+						<img id="btn-bouteille" src="res/partie-2/btn_text_bouteille.png" title="Tweetelier" alt="Tweetelier"  />
+					</div>
+					
+					<!-- img nike -->
+					<div id="aujourdhui-nike" >
+						<img src="res/partie-2/nike.png" title="Bracelet Nike+ FuelBand" alt="Bracelet Nike+ FuelBand" />
+					</div>
+
+					<!-- texte nike  -->
+					<div id="aujourdhui-nike-texte">
+						<p><span class="majuscules">Bracelet Nike+ FuelBand&nbsp;:</span><br />
+						Le bracelet Nike+ FuelBand donne des informations sur votre activité physique grâce à un accéléromètre sportif&nbsp;:: nombre de mouvements, rythme cardiaque, etc. Connécté à votre ordinateur vous pouvez retrouvez toutes ces informations sur votre écran et ainsi vous fixer des objectifs, etc.</p>
+						<img id="btn-nike" src="res/partie-2/btn_text_nike.png" title="Bracelet Nike+ FuelBand" alt="Bracelet Nike+ FuelBand" />
+					</div>
+					
+					<!-- img balance -->
+					<div id="aujourdhui-balance" >
+						<img src="res/partie-2/balance.png" title="Balance" alt="Balance" />
+					</div>
+
+					<!-- texte balance  -->
+					<div id="aujourdhui-balance-texte">
+						<p><span class="majuscules">La balance&nbsp;:</span><br />
+						La balance connectée WS-30 de la marque withings affiche l’IMC, et aide au positionnenement sur la balance pour une pesée régulière. Connectée à un iPhone ou iPad en wifi ou par bluetooth, on peut créer différents comptes pour toute la famille. Chacun peut suivre sonévolution, se fixer des objectifs, etc. Elle reconnaît instantanément l’utilisateur qui vient se peser.</p>
+						<img id="btn-balance" src="res/partie-2/btn_texte_balance.png" title="Balance" alt="Balance" />
+					</div>
+					
+					<!-- img tv -->
+					<div id="aujourdhui-tv" >
+						<img src="res/partie-2/tv.png" title="TV LG" alt="TV LG" />
+					</div>
+
+					<!-- texte tv  -->
+					<div id="aujourdhui-tv-texte">
+						<p><span class="majuscules">TV LG&nbsp;:</span><br />
+						Télévision interactive de la marque LG sur laquelle on peut dessiner directement sur l’écran grâce à un stylet</p>
+						<img id="btn-tv" src="res/partie-2/btn_texte_tv.png" title="TV LG" alt="TV LG" />
+					</div>
+					
+					<!-- img oeil -->
+					<div id="aujourdhui-oeil" >
+						<img src="res/partie-2/oeil.png" title="Caméra" alt="Caméra" />
+					</div>
+					
+					<!-- texte oeil  -->
+					<div id="aujourdhui-oeil-texte">
+						<p><span class="majuscules">Caméra&nbsp;: </span><br />
+						Détecteur de mouvement qui signale <br />
+						par une alarme tous mouvements inattendus. Une photo est envoyée <br />
+						par mail au propriétaire de la maison <br />
+						qui peut en cas d’absence alerter <br />
+						d’une intrusion à son domicile.</p>
+						<img id="btn-camera" src="res/partie-2/btn_text_brosse.png" title="Caméra" alt="Caméra" />
+					</div>
+					
+					 <!-- texte arduino  -->
+					<div id="aujourdhui-arduino-texte1">
+						<p><span class="majuscules"><a href="http://www.arduino.cc/" target="_blank" title="Circuits imprimés Arduino" alt="Circuits imprimés Arduino">Les circuits imprimés “Arduino”</a></span>
+						 sont des bons exemples d’objets connectés. Ces circuits sont composés d’un micro- contrôleur programmable ainsi que d’une interface d’entrée et de sortie pour permettre une connexion. Ils possèdent alors les éléments de base pour être définis comme objets connectés.</p>
+					</div>
+					<div id="aujourdhui-arduino-texte2">
+						<p>Leur originalité réside dans leur personnalisation puisqu’il est possible de transformer cette petite carte en une centrale de domotique.</p>
+					</div>
+
+				</div>
+			</div>
 			
-            <!--PARTIE AVANTAGE & INCONVENIENT -->
-            <div id="avantages-limites-dangers-wrapper">
-            	<!--WRAPPER DES LIGNES DE VIES -->
-                <div id="avantage-lignedevie">
-                	<!--VERTICAL -->
-                	<div id="avantage-wrapper-vertical">
-                		<div id="avantage-lignedevie-vertical"> </div>
-                   	</div>
-                    <!--HORIZONTAL -->
-                    <div id="avantage-lignedevie-horizontal">
-                    <!--aucune pour le moment -->
-                    </div>
-                </div>
-                <!--les clés -->
-                <div id="fond-key">
-                	<img id="key1" src="res/partie-5/cle-1.png" />
-                    <img id="key2" src="res/partie-5/cle-2.png" />
-                    <img id="key3" src="res/partie-5/cle-3.png" />
-                    <img id="key4" src="res/partie-5/cle-4.png" />
-                    <img id="key5" src="res/partie-5/cle-5.png" />
-                    <img id="key6" src="res/partie-5/cle-6.png" />               
-                </div>
-                <!--Tout le contenu de avantage & inconvenient -->
-                <div id="avantage-content-wrapper">
-                	<div id="avantage-title">
-                    	<img src="res/partie-5/titre.png" />
-                   	</div>
-              	  
-                	<!-- txt avantage -->
-    				<div id="avantage-avantage-texte">
-    					<p><span class="majuscules">Les avantages</span> de ces technologies toujours plus avancées sont indéniables. Aujourd’hui, les objets connectés sont conçus pour répondre à une <strong>demande des utilisateurs</strong> (sécurité, mobilité...) et pour favoriser leur <strong>confort</strong> (automatisation et practicité) en leur permettant un accès à leurs <strong>données personnelles</strong> et la gestion de leurs biens à distance...</p>
-    				</div> 
-                    
-                    <div id="avantage-maison">
-                    	<img src="res/partie-5/maison.png" />
-                   	</div>
-                    
-                    <!-- txt 2 -->
-    				<div id="avantage-text2-texte">
-    					<p><span class="majuscules">La liste est des avantages est longue</span> car au-delà d’évolutions d’ordre pratique, l’internet des objets pourrait s’avérer d’une grande utilité à l’échelle mondiale, qu’ils’agisse de santé publique ou d’environnement. En rassemblant une quantité gigantesque de données, on sera en mesure de <strong>prévoir</strong> et donc d’<strong>optimiser</strong> la gestion des ressources naturelles, notamment.</p>
-    				</div> 
-                    <!-- txt 3 -->
-    				<div id="avantage-text3-texte">
-    					<p>Mais si nous pouvons accéder à nos données et contrôler une grande partie de ce que nous possédons à distance, <strong>nous ne sommes certainement pas les seuls à pouvoir le faire...</strong></p>
-    				</div>
-                    <!-- txt 4 -->
-    				<div id="avantage-text4-texte">
-    					<p>Le développement et l'expansion des objets connectés et intelligents posent aujourd'hui un <span class="majuscules">problème majeur</span>&nbsp;: celui de la sécurité et de la confidentialité des données personnelles. </p>
-    				</div>
-                    <!-- txt 5 -->
-    				<div id="avantage-text5-texte">
-    					<p>Les objets intelligents et connectés peuvent ainsi très vite devenir des objets espions. On ne sait pas vraiment qui a accès à toutes ces informations que l'on fournit à ces objets, ni même quelles sont les intentions des personnes qui les récupèrent. On ignore donc plus ou moins la manière dont elles sont utilisées. </p>
-    				</div>
-                    <!-- txt 6 -->
-    				<div id="avantage-text6-texte">
-    					<p>Aujourd'hui, il est devenu quasiment impossible d'échapper au système des objets connectés. En définitive, <span class="majuscules">les enjeux</span> de l’internet des objets seront peut-être davantage <strong>une affaire d’humains</strong>, que d’objets connectés et de technologie...</p>
-    				</div>
-                    <div id="avantage-globe">
-                    	<img src="res/partie-5/globe.png" />
-                   	</div>
-                    
-                    <div id="avantage-cadenas">
-                        <img id="lock" src="res/partie-5/cadenas/lock.png"  />
-                        <img id="key" src="res/partie-5/cadenas/key.png"  />
-                    	<img id="cadenas" src="res/partie-5/cadenas/cadenas.png"  />
-                   	</div> 
-              	</div> 
-                
-            </div>
-            <div id="footer">
-                <div id="footer-wrapper">
-                    <img src="res/footer/plusloin.png"  />
-                    <div id="footer-file">
-                        <img src="res/footer/pdf.png"  /><img src="res/footer/www.png"  />
-						<img src="res/footer/c.png" title="Copyright" alt="Copyright" id="copyrightLink" />
-                    </div>
-                    <div id="footer-ligne-vie-horiz">
-                        <img src="res/footer/ligne-horiz.png" />
-                    </div>
-                    <div id="footer-ligne-vie">
-                        <img src="res/footer/ligne.png" />
-                    </div>
-                    <img src="res/footer/credits.png" id="imgCredit"/>
-                </div>
-            </div>
-            <!-- Ne pas toucher - Vivien :) Utilisé pour la lettre-->
-            <div id="exapmles-2"></div>
-    </div>
-</body>
+			 <div id="transition-machine">
+				<!--Image bg de la ville -->
+					<div id="anime-machine-wrapper">
+						<div id="ligne-de-vie-machine">
+							
+						</div>
+						<div id="eclair-machine">
+							
+						</div>
+						<div id="nuage-machine">
+							
+						</div>
+						<div id="spirale-machine">
+							
+						</div>
+					</div>
+				</div>
+				
+				<!--PARTIE DEMAIN -->
+				<div id="demain-wrapper">
+					<!--WRAPPER DES LIGNES DE VIES -->
+					<div id="demain-lignedevie">
+						<!--VERTICAL -->
+						<div id="demain-wrapper-vertical">
+							<div id="demain-lignedevie-vertical"> </div>
+						</div>
+						<!--HORIZONTAL -->
+						<div id="demain-lignedevie-horizontal">
+							<div id="demain-ldvh-1"> <img src="res/partie-3/ldv-horizontale-1.png" title="Ligne de vie" alt="Ligne de vie" /> </div>
+							
+							<div id="demain-ldvh-bout1"> </div>
+							<div id="demain-ldvh-bout2"> </div>
+							<div id="demain-ldvh-bout3"> </div>
+							<div id="demain-ldvh-bout4"> </div>
+							<div id="demain-ldvh-bout5"> </div>
+							
+							<div id="demain-ldvh-2"> </div>
+							<div id="demain-ldvh-3"> <img src="res/partie-3/ldv-horizontale-3.png" title="Ligne de vie" alt="Ligne de vie" /> </div>
+							<div id="demain-ldvh-4"> <img src="res/partie-3/ldv-horizontale-4.png" title="Ligne de vie" alt="Ligne de vie" /> </div>
+						</div>
+					</div>
+					
+					<!--WRAPPER DU CONTENU de DEMAIN -->
+					<div id="demain-content-wrapper">
+						<!-- Texte evolution -->
+						<div id="demain-evolution-texte" > <p>De manière générale, on peut noter <br /> <span class="majuscules">quelques évolutions envisageables&nbsp;:</span></p>  </div>
+						<!-- Texte énergie -->
+						<div id="demain-energie-texte" > <p> <span class="majuscules">Energie (EDF, GDF) & infrastructure partagée (type Veolia)&nbsp;:</span><br />
+							mesure et diffusion d’informations de la consommation</p>  
+						</div>
+						<!-- Texte industrie -->
+						<div id="demain-industrie-texte" > <p> <span class="majuscules">Industrie&nbsp;:</span><br />
+							gestion de la chaîne d’approvisionnement</p>  
+						</div>
+						<!-- Texte banque -->
+						<div id="demain-banque-texte" > <p> <span class="majuscules">Banque&nbsp;:</span><br />
+							géolocalisation des personnes lors de paiements mobiles permettant la détection de fraudes...</p>  
+						</div>
+						<!-- Texte sante -->
+						<div id="demain-sante-texte" > <p> <span class="majuscules">Santé&nbsp;:</span><br />
+							mise à jour d’informations en temps réel d’un dossier médical personnel. (activités, suivi à distance...)</p>  
+						</div>
+						 <!-- Texte telecommunication -->
+						<div id="demain-telecommunication-texte" > <p> <span class="majuscules">Télécommunication&nbsp;:</span><br />
+							suivi d’activité pour optimiser les topologies réseaux</p>  
+						</div>
+						 <!-- Texte collectivite -->
+						<div id="demain-collectivite-texte" > <p> <span class="majuscules">collectivités locales&nbsp;:</span><br />
+							adaptation en temps réel des réseaux de transports en fonction de l’affluence, gestion de l’éclairage public en fonction de la présence de personnes dans les rues, etc.</p>  
+						</div>
+						
+						<!-- Texte songdo -->
+						<div id="demain-songdo-texte" > 
+							<p> 
+							On peut constater que l’éxpérience des objets connectés aujourd’hui plutôt réservée à l’usage personnel d’une petite partie de la population va se démocratiser et s’étendre vers la ville. La ville de <span class="majuscules">Songdo</span>, en Corée du Sud, annoncée comme la première ville entièrement connectée et dont les travaux s’achèveront en 2016 pourraît en être la concrétisation&nbsp;:
+							</p>  
+						</div>
+						
+						<div id="demain-songdo-video"> 
+							<iframe width="722" height="406" src="http://www.youtube.com/embed/ZufT4WozWeQ?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+							<div id="demain-songdo-video-screen"><img src="res/partie-3/btn-lecture.png" title="Lire la vidéo" alt="Lire la vidéo"></div>
+						</div>
+
+						<div id="message-futur"> 
+							<img src="res/partie-3/msg-futur/titre.png" title="Message du futur" alt="Message du futur">
+							<div id="message-futur-lettre"> 
+							</div>
+							<div id="message-futur-lettre-texte"> 
+								<p>“Ce matin après avoir claqué la porte, mon manteau s’est immédiatement adapté aux conditions extérieures...”</p>
+							</div>
+						</div>
+					   <div id="demain-titre">
+								<img src="res/partie-3/titre.png" title="Demain" alt="Demain" /><br /><br /><br />
+								<img src="res/partie-3/sous-titre.png" title="Demain" alt="Demain" />
+						</div>
+						<div id="demain-pictos">
+							<div id="demain-piles">
+								<img src="res/partie-3/piles.png" alt="Piles" title="Piles" />						
+							</div>
+							<div id="demain-usine">
+								<img src="res/partie-3/usine.png" alt="Usine" title="Usine" />						
+							</div>
+							<div id="demain-piece">
+								<img src="res/partie-3/piece.png" alt="Pièce" title="Pièce" />						
+							</div>
+							<div id="demain-croix-rouge">
+								<img src="res/partie-3/croix-rouge.png" alt="Croix Rouge" title="Croix Rouge" />						
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="transition-diagramme">
+				<!--Image bg de la ville -->
+					<div id="transition-diagramme-anime">
+						<img src="res/transition-3-4/diagramme.png" id="transition-diagramme-anime-img" title="Diagramme" alt="Diagramme" />
+					</div>
+				</div>
+				
+				<div id="acteurs-modele-economique-wrapper">
+					<!-- Wrapper du contenu de Acteurs & Modèle économique -->
+					<div id="acteurs-modele-economique-content-wrapper">
+							<div id="acteurs-title">
+								<img src="res/partie-4/titre.png" title="Acteurs et modèle économique" alt="Acteurs et modèle économique" /> 
+							</div>
+							<div id="acteurs-sous-titre">
+								<img src="res/partie-4/sous-titre.png" title="Acteurs et modèle économique" alt="Acteurs et modèle économique" /> 
+							</div>
+						
+
+						<div id="acteurs-domotique-texte">
+							<p>Le monde évolue, il en va de même pour <span class="majuscules">les acteurs</span> de l’internet des objets. <span class="majuscules">la domotique</span>, par exemple, change de mains et passe chez de nouveaux acteurs que sont ubē, SmartThings, Belkin, LIFX, Lockitron, ADT Pulse, Nest,&nbsp;… Chacun y trouve un intérêt&nbsp;: certains en font leur spécialité alors que d’autres utilisent ces nouvelles technologies pour faire parler d’eux.</p>
+						</div>
+						
+						<div id="marques-texte">
+							<p>Les marques commencent à proposer à leurs clients de petits objets connectés, qui sont souvent de simples gadgets, qui peuvent prêter à sourire, mais qui vont leur permettre de <strong>mettre un pied dans les foyers des consommateurs.</strong></p>
+						</div>
+						
+						<!-- img Pizza tomate -->
+						<div id="tomate">
+							<img src="res/partie-4/tomate.png" title="Red tomato pizza" alt="Red tomato pizza"/>
+						</div>
+						<div id="tomate-feuille-1">
+							<img src="res/partie-4/tomate-feuille-1.png" title="Red tomato pizza" alt="Red tomato pizza"/>
+						</div>
+						<div id="tomate-feuille-2">
+							<img src="res/partie-4/tomate-feuille-2.png" title="Red tomato pizza" alt="Red tomato pizza"/>
+						</div>
+						
+						<!-- Ligne de vie verticale du contenu de Acteurs & Modèle économique -->
+						<div id="acteurs-modele-economique-ldv-horiz-wrapper"></div>
+						
+						<!-- txt Pizza tomates -->
+						<div id="tomate-texte">
+							<p><span class="majuscules">Red tomato pizza&nbsp;:</span><br />
+							Un magnet à coller sur son réfrigérateur qui permettra de commander une pizza par une simple pression sur un bouton, en cas de grosse fringale...</p>
+							<img id="btn-tomate" src="res/partie-4/btn-tomate.png" title="Red tomato pizza" alt="Red tomato pizza"/>
+						</div>
+						
+						<!--Les gouttes -->
+						<div id="acteur-wrapper-goutte">
+							<div id="acteur-goutte1">
+								<img src="res/partie-4/evian-goutte-1.png" title="Evian Smart Drop" alt="Evian Smart Drop" />
+							</div>
+							<div id="acteur-grosse-goutte">
+								<img src="res/partie-4/evian.png" title="Evian Smart Drop" alt="Evian Smart Drop" />
+							</div>
+							<div id="acteur-goutte2">
+								<img src="res/partie-4/evian-goutte-2.png" title="Evian Smart Drop" alt="Evian Smart Drop" />
+							</div>
+						</div>
+						
+						<!-- txt evian -->
+						<div id="acteur-evian-texte">
+							<p><span class="majuscules">Evian Smart Drop&nbsp;:</span><br />
+							Autre gadget, lancé cet été par la marque pour accompagner la sortie du site evianchezvous, permettant de se faire livrer en 3 clics ses packs d’eau minérale à domicile.</p>
+							<img id="btn-evian" src="res/partie-4/btn-evian.png" title="Evian Smart Drop" alt="Evian Smart Drop" />
+						</div>
+						
+						<!-- txt croissance -->
+						<div id="acteur-croissance-texte">
+							<p>On note également la <span class="majuscules">croissance des initiatives</span> relatives aux objets connectés et intelligents grâce à des sites de financement collaboratif, tels que <span class="majuscules couleur">Kickstarter</span>.</p>
+						</div>
+						
+						 <!-- txt kickstarter -->
+						<div id="acteur-kickstarter-texte">
+							<p>Il s'agit d'une forme particulière de mécénat où l'on fait appel à un grand nombres de personnes pour financer un projet, grâce à de petites sommes. Chaque internaute peut devenir contributeur d'un projet en aidant au développement d'un projet, par un investissement ou un service particulier.</p>
+						</div>
+						
+						<!-- kickstarter -->
+						<div id="acteur-kickstarter-fleche">
+							<img src="res/partie-4/kickstarter-fleche.png" title="Flèche" alt="Flèche" />
+						</div>
+						<div id="acteur-kickstarter">
+							<a href="http://www.kickstarter.com/" title="Kickstarter" target="_blank"><img  title="Kickstarter" alt="Kickstarter" src="res/partie-4/kickstarter.png" /></a>
+						</div>
+						
+						<!-- gens -->
+						<div id="acteur-gens">
+							<img src="res/partie-4/bonhommes-verts.png" title="Acteurs" alt="Acteurs" />
+						</div>
+						
+						<!-- cochon -->
+						<div id="acteur-cochon">
+							<img src="res/partie-4/cochon.png" title="Cochon" alt="Cochon" />
+							<div id="acteur-cochon-cache">
+								<img src="res/partie-4/cochon-cache.png" title="Cochon" alt="Cochon" />
+							</div>
+							<div id="acteur-cochon-projet">
+								<img src="res/partie-4/cochon-projet.png" title="Projet" alt="Projet" />
+							</div>
+						</div>
+						<div id="acteur-cochon-piece">
+							<img src="res/partie-4/piece.png" title="Pièce" alt="Pièce" />
+						</div>
+							
+					</div>
+					<!-- Ligne de vie verticale du contenu de Acteurs & Modèle économique -->
+					<div id="acteurs-modele-economique-ldv-wrapper"><img src="res/partie-3/nuage-decors-1.png" id="demain-nuage-decors-1" title="Nuage" alt="Nuage" /> </div>
+				</div>
+				
+				 <div id="transition-balance">
+				<!--Image bg de la ville -->
+					<div id="anime-balance-wrapper">
+						<div id="ldvh-wrapper-vertical">
+							<div id="ligne-de-vie-balance"></div>
+						</div>
+						<div id="plus-balance"></div>
+						<div id="nuage-balance"></div>
+						<div id="moins-balance"></div>
+						
+					</div>
+				</div>
+				
+				<!--PARTIE AVANTAGE & INCONVENIENT -->
+				<div id="avantages-limites-dangers-wrapper">
+					<!--WRAPPER DES LIGNES DE VIES -->
+					<div id="avantage-lignedevie">
+						<!--VERTICAL -->
+						<div id="avantage-wrapper-vertical">
+							<div id="avantage-lignedevie-vertical"> </div>
+						</div>
+						<!--HORIZONTAL -->
+						<div id="avantage-lignedevie-horizontal">
+						<!--aucune pour le moment -->
+						</div>
+					</div>
+					<!--les clés -->
+					<div id="fond-key">
+						<img id="key1" src="res/partie-5/cle-1.png" title="Clé" alt="Clé" />
+						<img id="key2" src="res/partie-5/cle-2.png" title="Clé" alt="Clé" />
+						<img id="key3" src="res/partie-5/cle-3.png" title="Clé" alt="Clé" />
+						<img id="key4" src="res/partie-5/cle-4.png" title="Clé" alt="Clé" />
+						<img id="key5" src="res/partie-5/cle-5.png" title="Clé" alt="Clé" />
+						<img id="key6" src="res/partie-5/cle-6.png" title="Clé" alt="Clé" />               
+					</div>
+					<!--Tout le contenu de avantage & inconvenient -->
+					<div id="avantage-content-wrapper">
+						<div id="avantage-title">
+							<img src="res/partie-5/titre.png" title="Avantages, dangers et limites" alt="Avantages, dangers et limites" />
+						</div>
+					  
+						<!-- txt avantage -->
+						<div id="avantage-avantage-texte">
+							<p><span class="majuscules">Les avantages</span> de ces technologies toujours plus avancées sont indéniables. Aujourd’hui, les objets connectés sont conçus pour répondre à une <strong>demande des utilisateurs</strong> (sécurité, mobilité...) et pour favoriser leur <strong>confort</strong> (automatisation et practicité) en leur permettant un accès à leurs <strong>données personnelles</strong> et la gestion de leurs biens à distance...</p>
+						</div> 
+						
+						<div id="avantage-maison">
+							<img src="res/partie-5/maison.png" title="Maison" alt="Maison" />
+						</div>
+						
+						<!-- txt 2 -->
+						<div id="avantage-text2-texte">
+							<p><span class="majuscules">La liste est des avantages est longue</span> car au-delà d’évolutions d’ordre pratique, l’internet des objets pourrait s’avérer d’une grande utilité à l’échelle mondiale, qu’ils’agisse de santé publique ou d’environnement. En rassemblant une quantité gigantesque de données, on sera en mesure de <strong>prévoir</strong> et donc d’<strong>optimiser</strong> la gestion des ressources naturelles, notamment.</p>
+						</div> 
+						<!-- txt 3 -->
+						<div id="avantage-text3-texte">
+							<p>Mais si nous pouvons accéder à nos données et contrôler une grande partie de ce que nous possédons à distance, <strong>nous ne sommes certainement pas les seuls à pouvoir le faire...</strong></p>
+						</div>
+						<!-- txt 4 -->
+						<div id="avantage-text4-texte">
+							<p>Le développement et l'expansion des objets connectés et intelligents posent aujourd'hui un <span class="majuscules">problème majeur</span>&nbsp;: celui de la sécurité et de la confidentialité des données personnelles. </p>
+						</div>
+						<!-- txt 5 -->
+						<div id="avantage-text5-texte">
+							<p>Les objets intelligents et connectés peuvent ainsi très vite devenir des objets espions. On ne sait pas vraiment qui a accès à toutes ces informations que l'on fournit à ces objets, ni même quelles sont les intentions des personnes qui les récupèrent. On ignore donc plus ou moins la manière dont elles sont utilisées. </p>
+						</div>
+						<!-- txt 6 -->
+						<div id="avantage-text6-texte">
+							<p>Aujourd'hui, il est devenu quasiment impossible d'échapper au système des objets connectés. En définitive, <span class="majuscules">les enjeux</span> de l’internet des objets seront peut-être davantage <strong>une affaire d’humains</strong>, que d’objets connectés et de technologie...</p>
+						</div>
+						<div id="avantage-globe">
+							<img src="res/partie-5/globe.png"title="Globe" alt="Globe" />
+						</div>
+						
+						<div id="avantage-cadenas">
+							<img id="lock" src="res/partie-5/cadenas/lock.png" title="Cadenas" alt="Cadenas" />
+							<img id="key" src="res/partie-5/cadenas/key.png" title="Clé" alt="Clé" />
+							<img id="cadenas" src="res/partie-5/cadenas/cadenas.png" title="Cadenas" alt="Cadenas" />
+						</div> 
+					</div> 
+					
+				</div>
+				<div id="footer">
+					<div id="footer-wrapper">
+						<img src="res/footer/plusloin.png"  />
+						<div id="footer-file">
+							<img src="res/footer/pdf.png" title="PDF" alt="PDF" /><img src="res/footer/www.png" title="www" alt="www" />
+							<img src="res/footer/c.png" title="Copyright" alt="Copyright" id="copyrightLink" />
+						</div>
+						<div id="footer-ligne-vie-horiz">
+							<img src="res/footer/ligne-horiz.png" title="Ligne de vie" alt="Ligne de vie" />
+						</div>
+						<div id="footer-ligne-vie">
+							<img src="res/footer/ligne.png" title="Ligne de vie" alt="Ligne de vie" />
+						</div>
+						<img src="res/footer/credits.png" id="imgCredit" title="Crédits" alt="Crédits" />
+					</div>
+				</div>
+				<!-- Ne pas toucher - Vivien :) Utilisé pour la lettre-->
+				<div id="exapmles-2"></div>
+		</div>
+	</body>
 </html>
