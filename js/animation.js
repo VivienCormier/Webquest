@@ -60,42 +60,6 @@ $(document).ready(function() {
 		}
     });
 	
-	//les click boutons
-	$("#btn-nabaztag").click( function(e) {
-		alert('btn nabaztag');
-    });
-	
-	$("#btn-iphone").click( function(e) {
-		alert('btn iphone');
-    });
-	
-	$("#btn-raquette").click( function(e) {
-		alert('btn raquette');
-    });
-	$("#btn-chaussure").click( function(e) {
-		alert('btn chaussure');
-    });
-	$("#btn-bouteille").click( function(e) {
-		alert('btn bouteille');
-	});
-	$("#btn-nike").click( function(e) {
-		alert('btn nike');
-	});
-	$("#btn-balance").click( function(e) {
-		alert('btn balance');
-	});
-	$("#btn-tv").click( function(e) {
-		alert('btn tv');
-	});
-	$("#btn-camera").click( function(e) {
-		alert('btn camera');
-	});
-	$("#btn-tomate").click( function(e) {
-		alert('btn tomate');
-	});
-	$("#btn-evian").click( function(e) {
-		alert('btn evian');
-	});
 
 	$("#demain-songdo-video-screen").click( function(e) {
 		$('#demain-songdo-video-screen').fadeOut(1500);
