@@ -137,7 +137,8 @@ $(document).ready(function() {
 	
 	
 	//Ligne de vie
-	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 5, {css:{height:2210}, immediateRender:true, ease:Back.easeOut}, {css:{height:4000}, ease:Quad.easeInOut}));
+	controller.addTween('#aujourdhui-balance-texte', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1, {css:{height:3100}, immediateRender:true, ease:Back.easeOut}, {css:{height:4000}, ease:Quad.easeInOut}));
+	controller.addTween('#aujourdhui-bouteille', TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1, {css:{height:2210}, immediateRender:true, ease:Back.easeOut}, {css:{height:3100}, ease:Quad.easeInOut}));
 	controller.addTween(4200, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1824}, immediateRender:true, ease:Back.easeOut}, {css:{height:2210}, ease:Quad.easeInOut}));
 	controller.addTween(3900, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:1300}, immediateRender:true, ease:Back.easeOut}, {css:{height:1824}, ease:Quad.easeInOut}));
 	controller.addTween(3400, TweenMax.fromTo( $('#aujourdhui_ligne_vie_vertical'), 1.5, {css:{height:835}, immediateRender:true, ease:Back.easeOut}, {css:{height:1300}, ease:Quad.easeInOut}));
@@ -172,7 +173,7 @@ $(document).ready(function() {
 		(new TimelineLite())
 			.append([
 				TweenMax.fromTo($('#aujourdhui-raquette'), 1, 
-					{css:{top: -700}, immediateRender:true}, 
+					{css:{top: -800}, immediateRender:true}, 
 					{css:{top: -1000}}),
 				TweenMax.fromTo($('#aujourdhui-chaussure'), 1, 
 					{css:{top: -1200}, immediateRender:true}, 
@@ -184,7 +185,7 @@ $(document).ready(function() {
 	controller.addTween('#aujourdhui-raquette-texte', TweenMax.fromTo( $('#twitter-decors-1'), 2, {css:{top:260,left:547}, immediateRender:true, ease:Back.easeOut}, {css:{top:170,left:646}, ease:Quad.easeOut}),100,-100);
 
 	//babyfoot img
-	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-2500}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2230}, ease:Quad.easeOut}),500);
+	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-babyfoot'), 2, {css:{top:-2300}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2230}, ease:Quad.easeOut}),500);
 	
 	//brosse img
 	controller.addTween('#aujourdhui-babyfoot', TweenMax.fromTo( $('#aujourdhui-brosse'), 2, {css:{top:-2200, opacity:0}, immediateRender:true, ease:Back.easeOut}, {css:{top:-2600, opacity:1}, ease:Quad.easeOut}),500);
